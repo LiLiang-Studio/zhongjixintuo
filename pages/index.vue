@@ -1,9 +1,11 @@
 <template>
-  <div>this is home page</div>
-  <hello-world title="world" />
-  <img src="~/assets/admin.jpg" alt="">
-  <div>计数：{{ count }}, double: {{ double }}</div>
-  <button @click="increment">+</button>
+  <div>
+    <div>this is home page</div>
+    <hello-world title="world" />
+    <img src="~/assets/admin.jpg" alt="">
+    <div>计数：{{ count }}, double: {{ double }}</div>
+    <button @click="increment">+</button>
+  </div>
 </template>
 
 <script setup>
