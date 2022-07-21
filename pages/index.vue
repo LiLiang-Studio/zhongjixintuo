@@ -1,7 +1,10 @@
 <template>
   <div :class="cls">
-    <home-business-introduction />
-    <home-why-choose-us />
+    <home-banner />
+    <div :class="`${cls}_main`">
+      <home-business-introduction />
+      <home-why-choose-us />
+    </div>
   </div>
 </template>
 
@@ -11,6 +14,8 @@ const cls = 'page-home'
 
 <style lang="less">
 .page-home {
-  padding: 0 11.7%;
+  &_main {
+    padding: 0 11.7%;
+  }
 }
 </style>
