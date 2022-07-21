@@ -1,6 +1,9 @@
 <template>
   <div>
-    Some default layout shared across all pages
-    <slot />
+    <AppHeader />
+    <main>
+      <slot />
+    </main>
+    <AppFooter />
   </div>
 </template>

@@ -2,7 +2,7 @@
 <div>
   <div>{{ data }}</div>
   <div>{{ $hello('test') }}</div>
-  <div>{{ $t.value.navMenu.video }}</div>
+  <div>{{ $t.value.video }}</div>
   <button @click="$switchLang">切换语言</button>
 </div>
 </template>
