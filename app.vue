@@ -21,7 +21,6 @@ useHead({
 
 body {
   background-color: #fff;
-  font-size: 14px;
   color: #232323;
 }
 
@@ -34,6 +33,16 @@ a {
   text-decoration: none;
   &:hover {
     color: #0060fe;
+  }
+}
+
+html {
+  font-size: 14px;
+  @media screen and (min-width: 768px) {
+    font-size: 15px;
+  }
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
   }
 }
 </style>

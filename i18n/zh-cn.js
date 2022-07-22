@@ -86,5 +86,9 @@ export default {
       label: '关于我们',
       link: '/'
     }
-  ]
+  ],
+  partner: {
+    title: '合作伙伴',
+    items: []
+  }
 }

@@ -3,6 +3,7 @@
     <home-banner />
     <div :class="`${cls}_main`">
       <home-business-introduction />
+      <home-partner />
       <home-why-choose-us />
     </div>
   </div>
