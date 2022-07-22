@@ -28,4 +28,12 @@ body {
 li {
   list-style: none;
 }
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    color: #0060fe;
+  }
+}
 </style>

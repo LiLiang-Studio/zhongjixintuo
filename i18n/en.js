@@ -55,5 +55,36 @@ export default {
         desc: 'In order to ensure the realization of enterprise goals, Zhongji Xintuo can improve project management solutions, Internet customer service solutions and sales management solutions for you;<br><br>More clearly and efficiently to empower the development of enterprises.'
       }
     ]
-  }
+  },
+  navMenu: [
+    {
+      label: 'Video',
+      link: '/'
+    },
+    {
+      label: 'AI',
+      link: '/'
+    },
+    {
+      label: 'Enterprise',
+      children: [
+        {
+          label: 'Internet customer service solutions',
+          link: '/'
+        },
+        {
+          label: 'Project Management Solutions',
+          link: '/'
+        },
+        {
+          label: 'Sales Management Solutions',
+          link: '/'
+        }
+      ]
+    },
+    {
+      label: 'About Us',
+      link: '/'
+    }
+  ]
 }
