@@ -90,5 +90,32 @@ export default {
   partner: {
     title: 'Partner',
     items: []
+  },
+  videoPage: {
+    bannerTitle: 'What can we<br>do?',
+    portraitBeauty: {
+      title: 'Portrait beauty',
+      subTitle: 'Medical Beauty Portrait Retouching',
+      desc: 'Through this technology, based on face detection, 68 feature points in key positions such as eyes, eyebrows, and corners of the mouth are accurately detected. Smooth, etc.;<br><br>Allows each part of the face to be finely adjusted, and the effect of applying makeup quickly can be achieved through beauty adjustment;'
+    },
+    videoFilter: {
+      title: 'Video filter',
+      items: [
+        'real-time rendering', 
+        'self-adjusting', 
+        'Diverse templates', 
+        'background isolated', 
+        'scene replacement', 
+        'multiple effects'
+      ]
+    },
+    faceEffect: {
+      title: 'Face effect',
+      desc: 'Through the tracking of the face and head position;<br><br>Through interactive sticker rendering, video special effects such as animation face change, scene change, spoofing and ugliness are realized.'
+    },
+    cartoonDriver: {
+      title: '3D cartoon driver',
+      desc: 'Use high-precision face key points and facial expressions to drive cartoon faces in real time; customize cartoon images; <br><br>Provide intimate and easy-to-use cartoon customization tools.'
+    }
   }
-}
+} 

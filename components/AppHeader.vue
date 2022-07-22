@@ -17,7 +17,7 @@
                 </li>
               </ul>
             </template>
-            <NuxtLink v-else :to="_.link">{{ _.label }}</NuxtLink>
+            <a v-else :href="_.link">{{ _.label }}</a>
           </li>
         </ul>
       </div>

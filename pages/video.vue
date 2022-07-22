@@ -1,5 +1,11 @@
 <template>
-  <div></div>
+  <div>
+    <VideoBanner />
+    <VideoPortraitBeauty />
+    <VideoFilter />
+    <VideoFaceEffect />
+    <VideoCartoonDriver />
+  </div>
 </template>
 
 <script setup>
