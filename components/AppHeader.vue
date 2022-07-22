@@ -11,13 +11,13 @@
               <span class="label">{{ _.label }}
                 <span class="arrow">&#8250;</span>
               </span>
-              <ul v-if="_.children">
+              <ul>
                 <li v-for="item in _.children" :key="item.label">
                   <NuxtLink :to="item.link">{{ item.label }}</NuxtLink>
                 </li>
               </ul>
             </template>
-            <a v-else :href="_.link">{{ _.label }}</a>
+            <NuxtLink v-else :to="_.link">{{ _.label }}</NuxtLink>
           </li>
         </ul>
       </div>
@@ -28,10 +28,10 @@
         </div>
         <span :class="`${cls}_lang`">
 
-          <a v-if="isEn" @click="$switchLang">中</a>
+          <a v-if="$isEn.value" @click="$switchLang">中</a>
           <span v-else>中</span>
           <span class="fgline">|</span>
-          <span v-if="isEn">EN</span>
+          <span v-if="$isEn.value">EN</span>
           <a v-else @click="$switchLang">EN</a>
         </span>
       </div>
@@ -41,13 +41,11 @@
 
 <script setup>
 const cls = 'app-header'
-const route = useRoute()
-const isEn = computed(() => route.query.lang === 'en')
 </script>
 
 <style lang="less">
 .app-header {
-  padding: 30px 11.7%;
+  padding: 20px 11.7%;
   a:not(:hover) {
     color: #171717;
   }
@@ -62,7 +60,7 @@ const isEn = computed(() => route.query.lang === 'en')
     align-items: center;
   }
   &_logo {
-    height: 40px;
+    height: 36px;
   }
   &_nav {
     display: flex;

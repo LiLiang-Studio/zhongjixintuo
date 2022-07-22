@@ -32,7 +32,7 @@ a {
   cursor: pointer;
   text-decoration: none;
   &:hover {
-    color: #0060fe;
+    color: #1857FF;
   }
 }
 

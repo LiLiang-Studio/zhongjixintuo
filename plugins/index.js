@@ -4,9 +4,9 @@ import zhCn from "~~/i18n/zh-cn"
 export default defineNuxtPlugin((nuxtApp) => {
   const route = useRoute()
   const router = useRouter()
+  const isEn = computed(() => route.query.lang === 'en')
   return {
     provide: {
-      hello: msg => `Hello ${msg}`,
       switchLang: () => {
         if (route.query.lang === 'en') {
           router.replace({
@@ -20,7 +20,8 @@ export default defineNuxtPlugin((nuxtApp) => {
           })
         }
       },
-      t: computed(() => route.query.lang === 'en' ? en : zhCn)
+      isEn,
+      t: computed(() => isEn.value ? en : zhCn)
     }
   }
 })

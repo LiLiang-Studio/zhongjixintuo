@@ -3,7 +3,11 @@
     <h2 :class="`${cls}_title`">{{ $t.value.businessIntroduction.title }}</h2>
     <ul :class="`${cls}_list`">
       <li v-for="_ in $t.value.businessIntroduction.items" :key="_.title">
-        <home-business-item-image class="image" v-bind="_" />
+        <home-business-item-image
+          class="image"
+          :icon="_.icon"
+          :image="_.image"
+          :background="_.background" />
         <div class="content">
           <h3 class="sub_title">{{ _.title }}</h3>
           <p class="desc" v-html="_.desc"></p>

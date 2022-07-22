@@ -88,7 +88,7 @@ export default {
     }
   ],
   partner: {
-    title: '合作伙伴',
+    title: 'Partner',
     items: []
   }
 }
