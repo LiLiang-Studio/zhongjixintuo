@@ -116,6 +116,22 @@ export default {
     cartoonDriver: {
       title: '3D卡通驱动',
       desc: '利用高精度人脸关键点与人脸表情实时驱动卡通人脸；可供定制化设计卡通形象；<br><br>提供贴心易用的卡通定制工具。'
+    },
+    faceDetectionAlignment: {
+      title: '人脸检测对齐',
+      desc: '采用自行设计的叠层监督归约函数对齐算法实现高精度与高效率的标准68点人脸对齐；<br><br>采用自我标注数据进行训练，可实现最快单人脸1ms检测、4ms关键点对齐的高速度，可达到同时8人左右的实时检测，速度从未如此之快。'
+    },
+    faceRecognition: {
+      title: '视频人脸识别',
+      desc: '提供高效、准确的图像或视频中人脸信息，返回人脸的大小、位置等；<br><br>并根据人脸的特征准确判断人的身份等信息、安防从来没有如此轻松过。'
+    },
+    virtualBackground: {
+      title: '视频虚拟背景',
+      desc: '通过边缘识别将人工座席人员从背景画面分离出来，并可选背景进行替换。<br><br>背景指在场景中静止不动的景物。'
+    },
+    fullPlatformSupport: {
+      title: '全平台支持',
+      desc: '中玑信拓的先进技术支持多个平台 Windows/Android/ios/Linux<br><br>让您无需为设备设备不兼容而烦恼。'
     }
   }
 }

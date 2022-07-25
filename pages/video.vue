@@ -5,6 +5,10 @@
     <VideoFilter />
     <VideoFaceEffect />
     <VideoCartoonDriver />
+    <VideoFaceDetectionAlignment />
+    <VideoFaceRecognition />
+    <VideoVirtualBackground />
+    <VideoFullPlatformSupport />
   </div>
 </template>
 

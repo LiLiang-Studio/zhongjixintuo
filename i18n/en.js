@@ -116,6 +116,22 @@ export default {
     cartoonDriver: {
       title: '3D cartoon driver',
       desc: 'Use high-precision face key points and facial expressions to drive cartoon faces in real time; customize cartoon images; <br><br>Provide intimate and easy-to-use cartoon customization tools.'
+    },
+    faceDetectionAlignment: {
+      title: 'Face detection alignment',
+      desc: 'Adopt self-designed stack supervised reduction function alignment algorithm to achieve high-precision and high-efficiency standard 68-point face alignment;<br><br>Use self-labeled data for training, which can achieve the fastest single face detection of 1ms, 4ms The high speed of key point alignment can achieve real-time detection of about 8 people at the same time, and the speed has never been so fast.'
+    },
+    faceRecognition: {
+      title: 'Video face recognition',
+      desc: 'Provide efficient and accurate face information in images or videos, return the size, location, etc. of the face;<br><br>Accurately determine the identity and other information of the person according to the characteristics of the face, and security has never been so easy.'
+    },
+    virtualBackground: {
+      title: 'Video virtual background',
+      desc: 'Separate the human agent from the background image through edge recognition, and replace it with optional background. <br><br>Background refers to something that is still in the scene.'
+    },
+    fullPlatformSupport: {
+      title: 'Full platform support',
+      desc: 'Zhongji Xintuo\'s advanced technology supports multiple platforms Windows/Android/ios/Linux<br><br>so you don\'t need to worry about the incompatibility of the device.'
     }
   }
 } 
