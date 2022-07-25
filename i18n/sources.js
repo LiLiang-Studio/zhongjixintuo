@@ -11,3 +11,7 @@ export { default as imgAiApp } from '~~/assets/ai_apply.png'
 export { default as iconAiApp } from '~~/assets/ai_apply_icon.png'
 export { default as imgEntEffectiveness } from '~~/assets/ent_effectiveness.png'
 export { default as iconEntEffectiveness } from '~~/assets/ent_effectiveness_icon.png'
+
+export { default as imgVideoUseCase1 } from '~~/assets/video/case-1.png'
+export { default as imgVideoUseCase2 } from '~~/assets/video/case-2.png'
+export { default as imgVideoUseCase3 } from '~~/assets/video/case-3.png'

@@ -2,6 +2,7 @@
   <div>
     <VideoBanner />
     <VideoPortraitBeauty />
+    <VideoQualityImprovement />
     <VideoFilter />
     <VideoFaceEffect />
     <VideoCartoonDriver />
@@ -12,6 +13,7 @@
     <VideoQualityMms />
     <VideoSmartVideoCss />
     <VideoConferenceSystem />
+    <VideoUseCase />
   </div>
 </template>
 

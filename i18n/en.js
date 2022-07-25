@@ -144,6 +144,31 @@ export default {
     conferenceSystem: {
       title: 'HD video conference system',
       desc: 'It has high-definition and stable audio and video effects and clear and smooth data sharing and collaboration. Support mobile phone, computer, tablet, smart large screen, third-party conference terminal and other terminal access;<br><br>Provide customers with cloud conference solutions with full scene coverage, easy to use, rapid deployment, and integration of software and hardware .'
+    },
+    useCase: {
+      title: 'Use Cases',
+      items: [
+        {
+          img: S.imgVideoUseCase1,
+          title: 'Beauty software',
+          desc: 'Equipped with a variety of beautifying and microdermabrasion techniques on the market, background replacement, and adding special effects templates, etc.'
+        },
+        {
+          img: S.imgVideoUseCase2,
+          title: 'Internet customer service',
+          desc: '5G video call service, customer service and customer video calls run smoothly, and can also beautify and replace the background.'
+        },
+        {
+          img: S.imgVideoUseCase3,
+          title: 'Live platform',
+          desc: 'In addition to the most basic beauty effects, you can also replace the live broadcast background wall in real time and add various atmospheric effects.'
+        }
+      ]
+    },
+    qualityImprovement: {
+      title: 'Video quality improvement',
+      subTitle: 'blur to clear',
+      desc: 'Perform image quality repair and color enhancement on old videos with poor quality, improve video resolution and clarity, and allow you to keep memorable videos forever;'
     }
   }
 }

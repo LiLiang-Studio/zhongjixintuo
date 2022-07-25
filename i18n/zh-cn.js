@@ -144,6 +144,31 @@ export default {
     conferenceSystem: {
       title: '高清视频会议系统',
       desc: '拥有高清稳定的音视频效果及清晰流畅的数据共享协作。支持手机、电脑、平板、智慧大屏、第三方会议终端等各类终端接入；<br><br>为客户提供全场景覆盖、简单易用、快速部署、软硬一体的云会议解决方案。'
+    },
+    useCase: {
+      title: '使用案例',
+      items: [
+        {
+          img: S.imgVideoUseCase1,
+          title: '美颜软件',
+          desc: '配备各种市面上美颜磨皮技术，背景替换，以及增加特效模板等。'
+        },
+        {
+          img: S.imgVideoUseCase2,
+          title: '互联网客服',
+          desc: '5G视频通话服务，客服与客户视频通话中流畅运行，也可进行美颜，替换背景。'
+        },
+        {
+          img: S.imgVideoUseCase3,
+          title: '直播平台',
+          desc: '除了最基础的美颜效果，还可以实时替换直播背景墙以及增加各种氛围特效。'
+        }
+      ]
+    },
+    qualityImprovement: {
+      title: '视频质量提升',
+      subTitle: '模糊变清晰',
+      desc: '对画质较差的老视频进行画质修复和色彩增强, 提高视频分辨率和清晰度, 让您永久留存具有纪念意义的视频;'
     }
   }
 }
