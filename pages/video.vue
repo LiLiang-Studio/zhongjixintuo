@@ -11,6 +11,7 @@
     <VideoFullPlatformSupport />
     <VideoQualityMms />
     <VideoSmartVideoCss />
+    <VideoConferenceSystem />
   </div>
 </template>
 
