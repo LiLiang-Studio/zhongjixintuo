@@ -52,6 +52,7 @@ const cls = 'video-card'
     color: #565656;
     font-weight: normal;
     margin-top: .3rem;
+    font-family: 'Times New Roman', Times, serif;
   }
   &_desc {
     color: #323232;

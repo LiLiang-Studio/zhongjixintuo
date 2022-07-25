@@ -168,7 +168,7 @@ export default {
     qualityImprovement: {
       title: 'Video quality improvement',
       subTitle: 'blur to clear',
-      desc: 'Perform image quality repair and color enhancement on old videos with poor quality, improve video resolution and clarity, and allow you to keep memorable videos forever;'
+      desc: 'Perform image quality repair and color enhancement on old videos with poor quality, <br>improve video resolution and clarity, and allow you to keep memorable videos forever;'
     }
   }
 }

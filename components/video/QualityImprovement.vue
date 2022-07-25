@@ -2,7 +2,7 @@
   <div :class="cls">
     <h2 class="title">{{ obj.title }}</h2>
     <h3 class="subtitle">{{ obj.subTitle }}</h3>
-    <p class="desc">{{ obj.desc }}</p>
+    <p class="desc" v-html="obj.desc"></p>
   </div>
 </template>
 
@@ -22,6 +22,11 @@ const obj = computed(() => $t.value.videoPage.qualityImprovement)
   .subtitle {
     font-size: 3rem;
     font-weight: normal;
+    color: #565656;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .desc {
+    line-height: 1.8;
   }
 }
 </style>
