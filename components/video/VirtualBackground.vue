@@ -7,13 +7,13 @@
 </template>
 
 <script setup>
-const cls = 'video-face-detection-alignment'
+const cls = 'video-virtual-background'
 const { $t } = useNuxtApp()
 const obj = computed(() => $t.value.videoPage.virtualBackground)
 </script>
 
 <style lang="less">
-.video-face-detection-alignment {
+.video-virtual-background {
   &_box {
     left: 11.5%;
     right: 56%;

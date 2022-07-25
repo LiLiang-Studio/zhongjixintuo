@@ -7,13 +7,13 @@
 </template>
 
 <script setup>
-const cls = 'video-face-detection-alignment'
+const cls = 'video-smart-video-css'
 const { $t } = useNuxtApp()
 const obj = computed(() => $t.value.videoPage.smartVideoCss)
 </script>
 
 <style lang="less">
-.video-face-detection-alignment {
+.video-smart-video-css {
   &_box {
     left: 11.9%;
     right: 54%;

@@ -7,13 +7,13 @@
 </template>
 
 <script setup>
-const cls = 'video-face-recognition'
+const cls = 'video-quality-mms'
 const { $t } = useNuxtApp()
 const obj = computed(() => $t.value.videoPage.qualityMms)
 </script>
 
 <style lang="less">
-.video-face-recognition {
+.video-quality-mms {
   &_box {
     left: 55.7%;
     right: 11.3%;
