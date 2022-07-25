@@ -17,7 +17,7 @@
                 </li>
               </ul>
             </template>
-            <a v-else :href="_.link">{{ _.label }}</a>
+            <a v-else :href="$getTo(_.link)">{{ _.label }}</a>
           </li>
         </ul>
       </div>
@@ -60,16 +60,16 @@ const cls = 'app-header'
     align-items: center;
   }
   &_logo {
-    height: 36px;
+    height: 2rem;
   }
   &_nav {
     display: flex;
     align-items: center;
-    font-size: 1.2em;
     margin-left: 1em;
     &_item {
       margin: 0 2em;
       position: relative;
+      z-index: 10;
       ul {
         font-size: .9em;
         position: absolute;
@@ -111,9 +111,9 @@ const cls = 'app-header'
   }
   &_searchbox {
     position: relative;
-    margin-right: 30px;
+    margin-right: 1.5rem;
     .input {
-      width: 226px;
+      width: 220px;
       height: 26px;
       border-radius: 26px;
       padding: 0 46px 0 12px;

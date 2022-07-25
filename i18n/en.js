@@ -59,7 +59,7 @@ export default {
   navMenu: [
     {
       label: 'Video',
-      link: '/'
+      link: '/video'
     },
     {
       label: 'AI',

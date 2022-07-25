@@ -8,7 +8,7 @@ export default defineNuxtPlugin((nuxtApp) => {
   return {
     provide: {
       switchLang: () => {
-        if (route.query.lang === 'en') {
+        if (isEn.value) {
           router.replace({
             path: route.path,
             query: { ...route.query, lang: undefined }
@@ -21,7 +21,14 @@ export default defineNuxtPlugin((nuxtApp) => {
         }
       },
       isEn,
-      t: computed(() => isEn.value ? en : zhCn)
+      t: computed(() => isEn.value ? en : zhCn),
+      getTo: url => {
+        const r = router.resolve(url)
+        return router.resolve({
+          path: r.path,
+          query: { ...r.query, lang: isEn.value ? 'en' : undefined }
+        }).href
+      }
     }
   }
 })

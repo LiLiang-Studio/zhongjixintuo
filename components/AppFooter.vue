@@ -15,7 +15,7 @@
       <div :class="`${cls}_right`">
         <ul>
           <li>
-            <NuxtLink to="/">{{ $t.value.video }}</NuxtLink>
+            <NuxtLink :to="$getTo('/video')">{{ $t.value.video }}</NuxtLink>
           </li>
           <li>
             <NuxtLink to="/">{{ $t.value.aiApp }}</NuxtLink>
@@ -44,7 +44,7 @@ const cls = 'app-footer'
 
 <style lang="less">
 .app-footer {
-  padding: 80px 11.7% 160px;
+  padding: 3rem 11.7% 6rem;
   background: url("~~/assets/footer_bg.png") no-repeat center center;
   background-size: cover;
   &_inner {
@@ -52,7 +52,7 @@ const cls = 'app-footer'
     align-items: flex-end;
   }
   &_left {
-    width: 320px;
+    width: 300px;
     margin-right: 3em;
   }
   &_right {
