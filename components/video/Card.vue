@@ -44,11 +44,11 @@ const cls = 'video-card'
     margin-bottom: 2rem;
   }
   &_title {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     font-weight: normal;
   }
   &_subtitle {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #565656;
     font-weight: normal;
     margin-top: .3rem;

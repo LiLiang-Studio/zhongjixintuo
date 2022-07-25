@@ -22,7 +22,6 @@ const obj = computed(() => $t.value.videoPage.qualityMms)
     }
     h2 {
       font-style: italic;
-      letter-spacing: .125rem;
     }
   }
 }

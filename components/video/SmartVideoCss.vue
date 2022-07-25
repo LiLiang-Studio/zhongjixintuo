@@ -19,7 +19,6 @@ const obj = computed(() => $t.value.videoPage.smartVideoCss)
     right: 54%;
     h2 {
       font-style: italic;
-      letter-spacing: .125rem;
     }
   }
 }
