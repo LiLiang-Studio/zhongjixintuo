@@ -132,6 +132,14 @@ export default {
     fullPlatformSupport: {
       title: '全平台支持',
       desc: '中玑信拓的先进技术支持多个平台 Windows/Android/ios/Linux<br><br>让您无需为设备设备不兼容而烦恼。'
+    },
+    qualityMms: {
+      title: '5G视频质量监测管理系统',
+      desc: '构建视频质量评估框架对视频质量进行实时监测，对视频通话中可能出现的花屏、黑屏、异常色块、卡顿、延时、帧率下降等故障画面情况进行分析诊断；<br><br>同时生成可视化的性能指标统计数据。'
+    },
+    smartVideoCss: {
+      title: '<span style="color:#1161EF;">5G</span>智能视频客服业务系统',
+      desc: '在人工客服与客户进行实时视频通话时，通过调用滤镜SDK改善客服视频的画面风格， 将摄像头采集到的YUV图像数据通过SDK的数据输入接口（ProcessFrame）传入进来;<br><br>然后通过滤镜风格设置接口（SetFilterParam）设置滤镜风格参数，由SDK进行滤镜算法处理，处理完后再转换为YUV数据输出给调用方，再经编码后传输给客户。<br><br>滤镜支持多种色彩风格，适用于不同色调环境下的场景。'
     }
   }
 }

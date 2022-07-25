@@ -5,7 +5,7 @@
     </div>
     <div :class="[`${cls}_box`, boxClass]" :style="boxStyle">
       <div :class="`${cls}_titlebox`">
-        <h2 :class="`${cls}_title`">{{ title }}</h2>
+        <h2 :class="`${cls}_title`" v-html="title"></h2>
         <h3 v-if="subTitle" :class="`${cls}_subtitle`">{{ subTitle }}</h3>
       </div>
       <div :class="`${cls}_content`">

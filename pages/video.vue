@@ -9,6 +9,8 @@
     <VideoFaceRecognition />
     <VideoVirtualBackground />
     <VideoFullPlatformSupport />
+    <VideoQualityMms />
+    <VideoSmartVideoCss />
   </div>
 </template>
 

@@ -132,6 +132,14 @@ export default {
     fullPlatformSupport: {
       title: 'Full platform support',
       desc: 'Zhongji Xintuo\'s advanced technology supports multiple platforms Windows/Android/ios/Linux<br><br>so you don\'t need to worry about the incompatibility of the device.'
+    },
+    qualityMms: {
+      title: '5G Video Quality Monitoring Management System',
+      desc: 'Build a video quality assessment framework to monitor video quality in real time, and analyze and diagnose faulty images such as blurry screens, black screens, abnormal color blocks, freezes, delays, and frame rate drops that may occur during video calls;<br><br> Simultaneously generate visual performance metrics statistics.'
+    },
+    smartVideoCss: {
+      title: '<span style="color:#1161EF;">5G</span>Smart Video Customer Service System',
+      desc: 'When the human customer service has a real-time video call with the customer, the screen style of the customer service video is improved by calling the filter SDK, and the YUV image data collected by the camera is passed in through the data input interface (ProcessFrame) of the SDK;<br><br> Then set the filter style parameters through the filter style setting interface (SetFilterParam), and the SDK will process the filter algorithm. After processing, it will be converted into YUV data and output to the caller, and then encoded and transmitted to the customer. <br><br>Filters support a variety of color styles, suitable for scenes with different tonal environments.'
     }
   }
-} 
+}

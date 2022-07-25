@@ -1,0 +1,26 @@
+<template>
+  <VideoCard :title="obj.title" :desc="obj.desc" :box-class="`${cls}_box`">
+    <template #bg>
+      <img src="~~/assets/video/banner8.png" alt="">
+    </template>
+  </VideoCard>
+</template>
+
+<script setup>
+const cls = 'video-face-detection-alignment'
+const { $t } = useNuxtApp()
+const obj = computed(() => $t.value.videoPage.smartVideoCss)
+</script>
+
+<style lang="less">
+.video-face-detection-alignment {
+  &_box {
+    left: 11.9%;
+    right: 54%;
+    h2 {
+      font-style: italic;
+      letter-spacing: .125rem;
+    }
+  }
+}
+</style>
