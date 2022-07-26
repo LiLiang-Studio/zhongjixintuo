@@ -63,7 +63,7 @@ export default {
     },
     {
       label: 'AI',
-      link: '/'
+      link: '/ai'
     },
     {
       label: 'Enterprise',
@@ -169,6 +169,16 @@ export default {
       title: 'Video quality improvement',
       subTitle: 'blur to clear',
       desc: 'Perform image quality repair and color enhancement on old videos with poor quality, <br>improve video resolution and clarity, and allow you to keep memorable videos forever;'
+    }
+  },
+  aiPage: {
+    mediaClassification: {
+      title: 'Image video classification',
+      desc: '"Image classification is an image processing method that distinguishes different types of objects according to the different characteristics reflected in the image information; <br><br>It uses a computer to quantitatively analyze the image, and classify the image or the image in the image. Each pixel or area is classified into one of several categories to replace human visual interpretation."'
+    },
+    AudioAndVideoEnhancement: {
+      title: 'Audio and video enhancement',
+      desc: 'Real-time video calls bring spatial audio technology. With the help of multiple microphones and internal audio processing algorithms, video calls have a more realistic sound field effect. Although the screen is separated, the distance between people will be closer;< br><br>Audio and video technology has become an important means of interpersonal communication. The development of audio and video technology not only benefits from the industrial application of 5G, AI and other technologies, but also relies on rigid market demand.'
     }
   }
 }

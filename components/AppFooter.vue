@@ -18,7 +18,7 @@
             <NuxtLink :to="$getTo('/video')">{{ $t.value.video }}</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/">{{ $t.value.aiApp }}</NuxtLink>
+            <NuxtLink :to="$getTo('/ai')">{{ $t.value.aiApp }}</NuxtLink>
           </li>
           <li>
             <NuxtLink to="/">{{ $t.value.entEffectiveness }}</NuxtLink>
