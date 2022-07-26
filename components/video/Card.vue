@@ -63,7 +63,7 @@ const cls = 'video-card'
     font-family: 'Times New Roman', Times, serif;
   }
   &_desc {
-    color: #323232;
+    color: #616161;
     line-height: 1.4;
   }
   @media screen and (max-width: 1080px) {

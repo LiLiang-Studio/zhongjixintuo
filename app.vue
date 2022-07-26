@@ -21,8 +21,8 @@ useHead({
 }
 
 body {
+  color: #424242;
   background-color: #fff;
-  color: #232323;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 

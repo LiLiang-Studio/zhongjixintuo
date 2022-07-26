@@ -45,7 +45,7 @@ const cls = 'app-header'
 
 <style lang="less">
 .app-header {
-  padding: 20px 11.7%;
+  padding: 20px 10%;
   position: sticky;
   top: 0;
   right: 0;
