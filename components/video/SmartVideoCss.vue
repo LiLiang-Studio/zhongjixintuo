@@ -15,8 +15,6 @@ const obj = computed(() => $t.value.videoPage.smartVideoCss)
 <style lang="less">
 .video-smart-video-css {
   &_box {
-    left: 11.9%;
-    right: 54%;
     h2 {
       font-style: italic;
     }

@@ -1,5 +1,5 @@
 <template>
-  <VideoCard :title="obj.title" :desc="obj.desc" :box-class="`${cls}_box`">
+  <VideoCard is-right :title="obj.title" :desc="obj.desc" :box-class="`${cls}_box`">
     <template #bg>
       <img src="~~/assets/video/banner5.png" alt="banner5">
     </template>
@@ -15,8 +15,7 @@ const obj = computed(() => $t.value.videoPage.cartoonDriver)
 <style lang="less">
 .video-cartoon-driver {
   &_box {
-    right: 11%;
-    left: 61%;
+    left: 60% !important;
   }
 }
 </style>

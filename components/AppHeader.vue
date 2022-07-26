@@ -46,6 +46,13 @@ const cls = 'app-header'
 <style lang="less">
 .app-header {
   padding: 20px 11.7%;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #fff;
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px rgba(0, 0, 0, .14), 0 1px 3px rgba(0, 0, 0, .12);
   a:not(:hover) {
     color: #171717;
   }
@@ -69,7 +76,6 @@ const cls = 'app-header'
     &_item {
       margin: 0 2em;
       position: relative;
-      z-index: 10;
       ul {
         font-size: .9em;
         position: absolute;

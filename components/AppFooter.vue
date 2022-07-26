@@ -35,6 +35,9 @@
         </ul>
       </div>
     </div>
+    <div :class="`${cls}_copyright`">
+      Copyright  {{ new Date().getFullYear() }} - 北京中玑信拓科技有限公司  |  京ICP备2022021806号-1
+    </div>
   </footer>
 </template>
 
@@ -44,7 +47,7 @@ const cls = 'app-footer'
 
 <style lang="less">
 .app-footer {
-  padding: 3rem 11.7% 6rem;
+  padding: 3rem 11.7%;
   background: url("~~/assets/footer_bg.png") no-repeat center center;
   background-size: cover;
   &_inner {
@@ -88,6 +91,12 @@ const cls = 'app-footer'
     dd {
       margin-bottom: 1em;
     }
+  }
+  &_copyright {
+    color: #fff;
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 13px;
   }
 }
 </style>

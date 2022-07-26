@@ -1,5 +1,5 @@
 <template>
-  <VideoCard :title="obj.title" :desc="obj.desc" :box-class="`${cls}_box`">
+  <VideoCard is-right :title="obj.title" :desc="obj.desc" :box-class="`${cls}_box`">
     <template #bg>
       <img src="~~/assets/video/banner12.png" alt="">
     </template>
@@ -15,8 +15,7 @@ const obj = computed(() => $t.value.videoPage.conferenceSystem)
 <style lang="less">
 .video-conference-system {
   &_box {
-    left: 59.8%;
-    right: 11.2%;
+    left: 60% !important;
   }
 }
 </style>

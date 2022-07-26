@@ -19,7 +19,7 @@ const obj = computed(() => $t.value.videoPage.useCase)
 
 <style lang="less">
 .video-use-case {
-  padding: 3rem 11.7%;
+  padding: 3rem 10%;
   &_title {
     text-align: center;
     font-size: 2.4rem;

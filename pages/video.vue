@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page-video">
     <VideoBanner />
     <VideoPortraitBeauty />
     <VideoQualityImprovement />
@@ -16,11 +16,3 @@
     <VideoUseCase />
   </div>
 </template>
-
-<script setup>
-
-</script>
-
-<style lang="less">
-
-</style>

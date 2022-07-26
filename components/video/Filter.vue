@@ -1,5 +1,5 @@
 <template>
-  <VideoCard :title="obj.title" :box-class="`${cls}_box`">
+  <VideoCard is-right :title="obj.title" :box-class="`${cls}_box`">
     <template #bg>
       <img src="~~/assets/video/banner3.png" alt="banner3">
     </template>
@@ -18,10 +18,9 @@ const obj = computed(() => $t.value.videoPage.videoFilter)
 <style lang="less">
 .video-filter {
   &_box {
-    left: 59%;
+    left: 60% !important;
   }
   &_list {
-    width: 330px;
     li {
       display: inline-block;
       padding: .5rem .8rem;

@@ -139,7 +139,7 @@ export default {
     },
     smartVideoCss: {
       title: '<span style="color:#1161EF;">5G</span> Smart Video Customer Service System',
-      desc: 'When the human customer service has a real-time video call with the customer, the screen style of the customer service video is improved by calling the filter SDK, and the YUV image data collected by the camera is passed in through the data input interface (ProcessFrame) of the SDK;<br><br> Then set the filter style parameters through the filter style setting interface (SetFilterParam), and the SDK will process the filter algorithm. After processing, it will be converted into YUV data and output to the caller, and then encoded and transmitted to the customer. <br><br>Filters support a variety of color styles, suitable for scenes with different tonal environments.'
+      desc: 'When the human customer service has a real-time video call with the customer, the screen style of the customer service video is improved by calling the filter SDK, and the YUV image data collected by the camera is passed in through the data input interfaceof the SDK;<br><br> Then set the filter style parameters through the filter style setting interface, and the SDK will process the filter algorithm. After processing, it will be converted into YUV data and output to the caller, and then encoded and transmitted to the customer. <br><br>Filters support a variety of color styles, suitable for scenes with different tonal environments.'
     },
     conferenceSystem: {
       title: 'HD video conference system',

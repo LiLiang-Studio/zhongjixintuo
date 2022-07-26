@@ -8,7 +8,8 @@
 
 <style lang="less">
 .video-banner_box {
-  left: 25.5%;
+  left: 25% !important;
+  right: auto !important;
   h2 {
     font-size: 2rem;
     color: #fff;

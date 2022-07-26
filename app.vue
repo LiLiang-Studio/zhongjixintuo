@@ -9,7 +9,7 @@
 
 <script setup>
 useHead({
-  titleTemplate: titleChunk => titleChunk ? `${titleChunk} - Site Title` : 'Site Title'
+  titleTemplate: titleChunk => titleChunk ? `${titleChunk} - 中玑信托` : '中玑信托'
 })
 </script>
 
@@ -23,6 +23,7 @@ useHead({
 body {
   background-color: #fff;
   color: #232323;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 li {
@@ -38,12 +39,12 @@ a {
 }
 
 html {
-  font-size: 14px;
+  font-size: 13px;
   @media screen and (min-width: 768px) {
-    font-size: 15px;
+    font-size: 14px;
   }
   @media screen and (min-width: 1024px) {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 </style>
