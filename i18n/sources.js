@@ -26,4 +26,3 @@ export { default as iconAiPersons } from '~~/assets/ai/persons.png'
 export { default as imgAiUseCase1 } from '~~/assets/ai/case-1.png'
 export { default as imgAiUseCase2 } from '~~/assets/ai/case-2.png'
 export { default as imgAiUseCase3 } from '~~/assets/ai/case-3.png'
-
