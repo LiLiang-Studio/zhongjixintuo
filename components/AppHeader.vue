@@ -17,24 +17,20 @@
                 </li>
               </ul>
             </template>
-            <a v-else :href="$getTo(_.link)">{{ _.label }}</a>
+            <template v-else>
+              <NuxtLink :to="$getTo(_.link)" />
+              <a :href="$getTo(_.link)">{{ _.label }}</a>
+            </template>
           </li>
         </ul>
       </div>
-      <div :class="`${cls}_right`">
-        <div :class="`${cls}_searchbox`">
-          <input class="input">
-          <span class="icon"></span>
-        </div>
-        <span :class="`${cls}_lang`">
-
-          <a v-if="$isEn.value" @click="$switchLang">中</a>
-          <span v-else>中</span>
-          <span class="fgline">|</span>
-          <span v-if="$isEn.value">EN</span>
-          <a v-else @click="$switchLang">EN</a>
-        </span>
-      </div>
+      <span :class="`${cls}_lang`">
+        <a v-if="$isEn.value" @click="$switchLang">中</a>
+        <span v-else>中</span>
+        <span class="fgline">|</span>
+        <span v-if="$isEn.value">EN</span>
+        <a v-else @click="$switchLang">EN</a>
+      </span>
     </div>
   </header>
 </template>
@@ -77,9 +73,8 @@ const cls = 'app-header'
       margin: 0 2em;
       position: relative;
       ul {
-        font-size: .9em;
         position: absolute;
-        top: 36px;
+        top: 2rem;
         left: 50%;
         transform-origin: 0 0;
         transform: translateX(-50%);
@@ -105,42 +100,21 @@ const cls = 'app-header'
       align-items: center;
     }
     .arrow {
-      margin-left: 8px;
-      font-size: 28px;
+      margin-left: .5rem;
+      font-size: 2rem;
+      position: relative;
+      top: -3px;
       display: inline-block;
       transform: rotate(90deg);
+      font-family: 'Courier New', Courier, monospace;
     }
-  }
-  &_right {
-    display: flex;
-    align-items: center;
-  }
-  &_searchbox {
-    position: relative;
-    margin-right: 1.5rem;
-    .input {
-      width: 220px;
-      height: 26px;
-      border-radius: 26px;
-      padding: 0 46px 0 12px;
-      border: none;
-      outline: none;
-      background-color: #F2F2F2;
-    }
-    .icon {
-      position: absolute;
-      top: 50%;
-      right: 17px;
-      transform: translateY(-50%);
-      width: 17px;
-      height: 17px;
-      background: url("~~/assets/search.png") no-repeat center center;
-      background-size: cover;
+    .router-link-active + a {
+      color: #1857FF;
     }
   }
   &_lang {
     .fgline {
-      margin: 0 7px;
+      margin: 0 6px;
     }
     span:not(.fgline) {
       color: #FF4800;

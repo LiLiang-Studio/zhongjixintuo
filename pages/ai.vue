@@ -1,31 +1,31 @@
 <template>
   <div>
     <!-- banner -->
-    <VideoCard>
+    <UiRowCard>
       <template #bg>
         <img src="~~/assets/ai/banner1.png" alt="">
       </template>
-    </VideoCard>
-    <VideoCard v-bind="obj.imageVideoRecognition">
+    </UiRowCard>
+    <UiRowCard v-bind="obj.imageVideoRecognition">
       <template #bg>
         <img src="~~/assets/ai/banner2.png" alt="">
       </template>
       <UiTagList :items="obj.imageVideoRecognition.items" />
-    </VideoCard>
+    </UiRowCard>
     <!-- 图像视频分类 -->
-    <VideoCard is-right v-bind="obj.imageVideoClassification">
+    <UiRowCard is-right v-bind="obj.imageVideoClassification">
       <template #bg>
         <img src="~~/assets/ai/banner3.png" alt="">
       </template>
-    </VideoCard>
+    </UiRowCard>
     <!-- 音视频增强 -->
-    <VideoCard v-bind="obj.AudioAndVideoEnhancement">
+    <UiRowCard v-bind="obj.AudioAndVideoEnhancement">
       <template #bg>
         <img src="~~/assets/ai/banner4.png" alt="">
       </template>
-    </VideoCard>
+    </UiRowCard>
     <!-- 自然语言理解 -->
-    <VideoCard is-right v-bind="obj.naturalLanguageUnderstanding" :box-class="`${cls}_nau_box`">
+    <UiRowCard is-right v-bind="obj.naturalLanguageUnderstanding" :box-class="`${cls}_nau_box`">
       <template #bg>
         <img src="~~/assets/ai/banner5.png" alt="">
       </template>
@@ -36,9 +36,9 @@
         </li>
       </ul>
       <p v-html="obj.naturalLanguageUnderstanding.desc"></p>
-    </VideoCard>
+    </UiRowCard>
     <!-- 文本机器人 -->
-    <VideoCard v-bind="obj.textRobot" :box-class="`${cls}_text_robot`">
+    <UiRowCard v-bind="obj.textRobot" :box-class="`${cls}_text_robot`">
       <template #bg>
         <img src="~~/assets/ai/banner6.png" alt="">
       </template>
@@ -49,15 +49,15 @@
         </li>
       </ul>
       <p v-html="obj.textRobot.desc"></p>
-    </VideoCard>
+    </UiRowCard>
     <!-- 全平台支持 -->
-    <VideoCard is-right v-bind="videoPage.fullPlatformSupport">
+    <UiRowCard is-right v-bind="videoPage.fullPlatformSupport">
       <template #bg>
         <img src="~~/assets/video/banner9.png" alt="">
       </template>
-    </VideoCard>
+    </UiRowCard>
     <!-- 使用案例 -->
-    <AiUseCase />
+    <UiCaseCardBox v-bind="obj.useCase" />
   </div>
 </template>
 

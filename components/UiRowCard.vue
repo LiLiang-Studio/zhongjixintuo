@@ -26,11 +26,11 @@ defineProps({
   boxStyle: {},
   isRight: Boolean
 })
-const cls = 'video-card'
+const cls = 'ui-row-card'
 </script>
 
 <style lang="less">
-@prefix: video-card;
+@prefix: ui-row-card;
 .@{prefix} {
   position: relative;
   &_bg img {

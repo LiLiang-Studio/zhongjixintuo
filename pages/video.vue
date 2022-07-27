@@ -1,80 +1,81 @@
 <template>
   <div :class="cls">
     <!-- 我们能做些什么？ -->
-    <VideoCard :box-class="`${cls}_banner_box`" :title="obj.bannerTitle">
+    <UiRowCard :box-class="`${cls}_banner_box`" :title="obj.bannerTitle">
       <template #bg>
         <img src="~~/assets/video/banner1.png" alt="">
       </template>
-    </VideoCard>
+    </UiRowCard>
     <!-- 人像美颜 -->
-    <VideoCard v-bind="obj.portraitBeauty">
+    <UiRowCard v-bind="obj.portraitBeauty">
       <template #bg>
         <img src="~~/assets/video/banner2.png" alt="">
       </template>
-    </VideoCard>
+    </UiRowCard>
     <VideoQualityImprovement />
     <!-- 视频滤镜 -->
-    <VideoCard is-right v-bind="obj.videoFilter" :box-style="{left: '60%'}">
+    <UiRowCard is-right v-bind="obj.videoFilter" :box-style="{left: '60%'}">
       <template #bg>
         <img src="~~/assets/video/banner3.png" alt="">
       </template>
       <UiTagList :items="obj.videoFilter.items" />
-    </VideoCard>
+    </UiRowCard>
     <!-- 人脸特效 -->
-    <VideoCard v-bind="obj.faceEffect">
+    <UiRowCard v-bind="obj.faceEffect">
       <template #bg>
         <img src="~~/assets/video/banner4.png" alt="">
       </template>
-    </VideoCard>
+    </UiRowCard>
     <!-- 3D卡通驱动 -->
-    <VideoCard is-right v-bind="obj.cartoonDriver" :box-style="{left: '60%'}">
+    <UiRowCard is-right v-bind="obj.cartoonDriver" :box-style="{left: '60%'}">
       <template #bg>
         <img src="~~/assets/video/banner5.png" alt="">
       </template>
-    </VideoCard>
+    </UiRowCard>
     <!-- 人脸检测对齐 -->
-    <VideoCard v-bind="obj.faceDetectionAlignment">
+    <UiRowCard v-bind="obj.faceDetectionAlignment">
       <template #bg>
         <img src="~~/assets/video/banner6.png" alt="">
       </template>
-    </VideoCard>
+    </UiRowCard>
     <!-- 视频人脸识别 -->
-    <VideoCard is-right v-bind="obj.faceRecognition">
+    <UiRowCard is-right v-bind="obj.faceRecognition">
       <template #bg>
         <img src="~~/assets/video/banner7.png" alt="">
       </template>
-    </VideoCard>
+    </UiRowCard>
     <!-- 视频虚拟背景 -->
-    <VideoCard v-bind="obj.virtualBackground">
+    <UiRowCard v-bind="obj.virtualBackground">
       <template #bg>
         <img src="~~/assets/video/banner8.png" alt="">
       </template>
-    </VideoCard>
+    </UiRowCard>
     <!-- 全平台支持 -->
-    <VideoCard is-right v-bind="obj.fullPlatformSupport">
+    <UiRowCard is-right v-bind="obj.fullPlatformSupport">
       <template #bg>
         <img src="~~/assets/video/banner9.png" alt="">
       </template>
-    </VideoCard>
+    </UiRowCard>
     <!-- 5G视频质量监测管理系统 -->
-    <VideoCard is-right v-bind="obj.qualityMms" :box-class="`${cls}_qmms_box`">
+    <UiRowCard is-right v-bind="obj.qualityMms" :box-class="`${cls}_qmms_box`">
       <template #bg>
         <img src="~~/assets/video/banner10.png" alt="">
       </template>
-    </VideoCard>
+    </UiRowCard>
     <!-- 5G 智能视频客服业务系统 -->
-    <VideoCard v-bind="obj.smartVideoCss">
+    <UiRowCard v-bind="obj.smartVideoCss">
       <template #bg>
         <img src="~~/assets/video/banner8.png" alt="">
       </template>
-    </VideoCard>
+    </UiRowCard>
     <!-- 高清视频会议系统 -->
-    <VideoCard is-right v-bind="obj.conferenceSystem" :box-style="{left: '60%'}">
+    <UiRowCard is-right v-bind="obj.conferenceSystem" :box-style="{left: '60%'}">
       <template #bg>
         <img src="~~/assets/video/banner12.png" alt="">
       </template>
-    </VideoCard>
-    <VideoUseCase />
+    </UiRowCard>
+    <!-- 使用案例 -->
+    <UiCaseCardBox v-bind="obj.useCase" />
   </div>
 </template>
 
@@ -102,6 +103,14 @@ const obj = computed(() => $t.value.videoPage)
   &_qmms_box {
     h2, p {
       color: #fff;
+    }
+  }
+  &_case {
+    padding: 3rem 10%;
+    &_title {
+      text-align: center;
+      font-size: 2.4rem;
+      margin-bottom: 3rem;
     }
   }
 }
