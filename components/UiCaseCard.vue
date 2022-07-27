@@ -18,6 +18,7 @@ defineProps({
 <style lang="less">
 .ui-case-card {
   padding: .6rem;
+  padding-bottom: 1rem;
   border-radius: 6px;
   box-shadow: 0px 12px 73px 0px rgba(239, 239, 239, 0.95);
   &_img {

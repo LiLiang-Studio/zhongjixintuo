@@ -178,7 +178,7 @@ export default {
     },
     AudioAndVideoEnhancement: {
       title: 'Audio and video enhancement',
-      desc: 'Real-time video calls bring spatial audio technology. With the help of multiple microphones and internal audio processing algorithms, video calls have a more realistic sound field effect. Although the screen is separated, the distance between people will be closer;< br><br>Audio and video technology has become an important means of interpersonal communication. The development of audio and video technology not only benefits from the industrial application of 5G, AI and other technologies, but also relies on rigid market demand.'
+      desc: 'Real-time video calls bring spatial audio technology. With the help of multiple microphones and internal audio processing algorithms, video calls have a more realistic sound field effect. Although the screen is separated, the distance between people will be closer;<br><br>Audio and video technology has become an important means of interpersonal communication. The development of audio and video technology not only benefits from the industrial application of 5G, AI and other technologies, but also relies on rigid market demand.'
     },
     imageVideoRecognition: {
       title: 'Image video recognition',

@@ -16,7 +16,8 @@ const cls = 'ui-case-card-box'
 </script>
 
 <style lang="less">
-.ui-case-card-box {
+@prefix: ui-case-card-box;
+.@{prefix} {
   padding: 3rem 10%;
   &_title {
     text-align: center;
@@ -29,7 +30,20 @@ const cls = 'ui-case-card-box'
   &_item {
     flex: 1;
     &:not(:last-child) {
-      margin-right: 3rem;
+      margin-right: 3%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    padding: 3rem 0;
+    .@{prefix} {
+      &_list {
+        flex-wrap: wrap;
+      }
+      &_item {
+        width: 100%;
+        flex: auto;
+        margin: .3rem 0 !important;
+      }
     }
   }
 }
