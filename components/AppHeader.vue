@@ -25,10 +25,10 @@
         </ul>
       </div>
       <span :class="`${cls}_lang`">
-        <a v-if="$isEn.value" @click="$switchLang">中</a>
+        <a v-if="$isEn()" @click="$switchLang">中</a>
         <span v-else>中</span>
         <span class="fgline">|</span>
-        <span v-if="$isEn.value">EN</span>
+        <span v-if="$isEn()">EN</span>
         <a v-else @click="$switchLang">EN</a>
       </span>
     </div>
