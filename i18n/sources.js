@@ -15,3 +15,15 @@ export { default as iconEntEffectiveness } from '~~/assets/ent_effectiveness_ico
 export { default as imgVideoUseCase1 } from '~~/assets/video/case-1.png'
 export { default as imgVideoUseCase2 } from '~~/assets/video/case-2.png'
 export { default as imgVideoUseCase3 } from '~~/assets/video/case-3.png'
+
+export { default as iconAiTranslation } from '~~/assets/ai/translation.png'
+export { default as iconAiService } from '~~/assets/ai/service.png'
+export { default as iconAiSpeaker } from '~~/assets/ai/speaker.png'
+export { default as iconAi24Hours } from '~~/assets/ai/24hours.png'
+export { default as iconAiPos } from '~~/assets/ai/pos.png'
+export { default as iconAiPersons } from '~~/assets/ai/persons.png'
+
+export { default as imgAiUseCase1 } from '~~/assets/ai/case-1.png'
+export { default as imgAiUseCase2 } from '~~/assets/ai/case-2.png'
+export { default as imgAiUseCase3 } from '~~/assets/ai/case-3.png'
+

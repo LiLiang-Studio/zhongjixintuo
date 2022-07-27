@@ -13,7 +13,13 @@
       </template>
     </VideoCard>
     <VideoQualityImprovement />
-    <VideoFilter />
+    <!-- 视频滤镜 -->
+    <VideoCard is-right v-bind="obj.videoFilter" :box-style="{left: '60%'}">
+      <template #bg>
+        <img src="~~/assets/video/banner3.png" alt="">
+      </template>
+      <UiTagList :items="obj.videoFilter.items" />
+    </VideoCard>
     <!-- 人脸特效 -->
     <VideoCard v-bind="obj.faceEffect">
       <template #bg>

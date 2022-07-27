@@ -172,13 +172,74 @@ export default {
     }
   },
   aiPage: {
-    mediaClassification: {
+    imageVideoClassification: {
       title: '图像视频分类',
       desc: '“图像分类，根据各自在图像信息中所反映的不同特征，把不同类别的目标区分开来的图像处理方法；<br><br>它利用计算机对图像进行定量分析，把图像或图像中的每个像元或区域划归为若干个类别中的某一种，以代替人的视觉判读。”'
     },
     AudioAndVideoEnhancement: {
       title: '音视频增强',
       desc: '实时视频通话带来空间音频技术，借助多个麦克风及内部音频处理算法，使得在视频通话时具有更加真实的声场效果，尽管隔着屏幕，但人与人之间的距离将会更近；<br><br>音视频技术已经成为了人际交流的重要手段。音视频技术的发展不仅得益于5G、AI等技术的行业应用，更依托于刚性的市场需求。'
+    },
+    imageVideoRecognition: {
+      title: '图像视频识别',
+      subTitle: '生活从未如此便捷',
+      items: ['图像搜索', '智能生活', '信息采集']
+    },
+    naturalLanguageUnderstanding: {
+      title: '自然语言理解',
+      desc: '自然语言语音理解系统，人和计算机之间用自然语言口语语音对话的通信系统;<br><br>所引用的领域包括机器翻译、机器客服、智能音响、车载语音等等。',
+      items: [
+        {
+          icon: S.iconAiTranslation,
+          title: '机器翻译'
+        },
+        {
+          icon: S.iconAiService,
+          title: '机器客服'
+        },
+        {
+          icon: S.iconAiSpeaker,
+          title: '智能音响'
+        }
+      ]
+    },
+    textRobot: {
+      title: '文本机器人',
+      desc: '满足企业售前获客、售中咨询、售后服务等多种业务场景，提高服务和营销效率，留住每一条商机;<br><br>机器人解决重复性问题，人工客服处理复杂性问题，通过人机协同，提升问题处理效率。',
+      items: [
+        {
+          icon: S.iconAi24Hours,
+          title: '人机协作'
+        },
+        {
+          icon: S.iconAiPersons,
+          title: '机器人值守'
+        },
+        {
+          icon: S.iconAiPos,
+          title: '精准理解'
+        }
+      ]
+    },
+    useCase: {
+      title: '使用案例',
+      items: [
+        {
+          img: S.imgAiUseCase1,
+          title: '智能通信',
+          desc: '将人工智能引入无线通信系统的各个层面，实现无线通信与人工智能技术有机融合。'
+        },
+        {
+          img: S.imgAiUseCase2,
+          title: '医疗',
+          desc: '使用机器学习，设备可以进行自主诊断做简单的体征指标检查，从而减轻医生和护士的工作压力。'
+        },
+        {
+          img: S.imgAiUseCase3,
+          title: '零售',
+          desc: '图像识别、机器学习和自然语言处理等技术等发展使得智能服务机器人能够轻松与顾客打招呼、交流，可以预测订单，提供引导。'
+        }
+      ]
     }
   }
 }
