@@ -9,7 +9,7 @@
 
 <script setup>
 useHead({
-  titleTemplate: titleChunk => titleChunk ? `${titleChunk} - 中玑信托` : '中玑信托'
+  titleTemplate: titleChunk => titleChunk ? `${titleChunk} - 中玑信拓` : '中玑信拓'
 })
 </script>
 

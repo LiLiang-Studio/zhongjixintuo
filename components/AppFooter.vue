@@ -1,42 +1,46 @@
 <template>
   <footer :class="cls">
     <div :class="`${cls}_inner`">
-      <div :class="`${cls}_left`">
-        <div :class="`${cls}_logo`">
-          <img src="~~/assets/footer_logo.png" alt="footer logo">
+      <div :class="`${cls}_logo`">
+        <img src="~~/assets/footer_logo.png" alt="">
+      </div>
+      <div :class="`${cls}_box`">
+        <div :class="`${cls}_left`">
+          <div>
+            <img src="~~/assets/phone.png" alt="">
+            <span>12145121255</span>
+          </div>
+          <div>
+            <img src="~~/assets/position.png" alt="">
+            <span>{{ $t.value.address }}</span>
+          </div>
         </div>
-        <dl :class="`${cls}_info`">
-          <dt>tel.</dt>
-          <dd>12145121255</dd>
-          <dt>add.</dt>
-          <dd>{{ $t.value.address }}</dd>
-        </dl>
+        <div :class="`${cls}_right`">
+          <ul>
+            <li>
+              <NuxtLink :to="$getTo('/video')">{{ $t.value.video }}</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink :to="$getTo('/ai')">{{ $t.value.aiApp }}</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/">{{ $t.value.entEffectiveness }}</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/">{{ $t.value.cooperation }}</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/">{{ $t.value.aboutUs }}</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/">{{ $t.value.TechDoc }}</NuxtLink>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div :class="`${cls}_right`">
-        <ul>
-          <li>
-            <NuxtLink :to="$getTo('/video')">{{ $t.value.video }}</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink :to="$getTo('/ai')">{{ $t.value.aiApp }}</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/">{{ $t.value.entEffectiveness }}</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/">{{ $t.value.cooperation }}</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/">{{ $t.value.aboutUs }}</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/">{{ $t.value.TechDoc }}</NuxtLink>
-          </li>
-        </ul>
+      <div :class="`${cls}_copyright`">
+        Copyright  {{ new Date().getFullYear() }} - 北京中玑信拓科技有限公司  |  京ICP备2022021806号-1
       </div>
-    </div>
-    <div :class="`${cls}_copyright`">
-      Copyright  {{ new Date().getFullYear() }} - 北京中玑信拓科技有限公司  |  京ICP备2022021806号-1
     </div>
   </footer>
 </template>
@@ -47,56 +51,56 @@ const cls = 'app-footer'
 
 <style lang="less">
 .app-footer {
-  padding: 3rem 11.7%;
+  padding: 3rem 10%;
   background: url("~~/assets/footer_bg.png") no-repeat center center;
   background-size: cover;
-  &_inner {
+  color: #fff;
+  &_logo {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    img {
+      height: 2.4rem;
+    }
+  }
+  &_box {
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    padding: 3rem 0;
   }
   &_left {
-    width: 300px;
-    margin-right: 3em;
+    max-width: 300px;
+    margin-right: 3rem;
+    > div {
+      display: flex;
+      align-items: center;
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+    img {
+      height: 20px;
+      margin-right: .5rem;
+    }
   }
   &_right {
-    flex: 1;
-    width: 0;
+    max-width: 300px;
     a, a:visited {
       color: #fff;
-      text-decoration: none;
     }
     li {
-      font-size: 20px;
+      font-size: 1.2rem;
       float: left;
-      width: 33.33%;
       text-align: center;
-      margin-top: 1.5em;
-    }
-  }
-  &_logo {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 30px;
-    background-color: #fff;
-    img {
-      display: block;
-      width: 100%;
-    }
-  }
-  &_info {
-    color: #fff;
-    dt {
-      text-transform: uppercase;
-    }
-    dd {
-      margin-bottom: 1em;
+      margin: .5rem 1rem .5rem 0;
     }
   }
   &_copyright {
     color: #fff;
     text-align: center;
-    margin-top: 4rem;
-    font-size: 13px;
+    margin-top: 1.2rem;
+    font-size: .9rem;
   }
 }
 </style>
