@@ -1,6 +1,6 @@
 <template>
   <div :class="cls">
-    <h2 :class="`${cls}_title`">{{ $t.value.partner.title }}</h2>
+    <h2 :class="`${cls}_title`">{{ title }}</h2>
     <ul :class="`${cls}_list`">
       <li v-for="i in 10" :key="i"></li>
     </ul>
@@ -11,6 +11,9 @@
 </template>
 
 <script setup>
+defineProps({
+  title: String
+})
 const cls = 'home-parter'
 </script>
 

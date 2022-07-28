@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-show="visible">
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
@@ -10,6 +10,10 @@
 <script setup>
 useHead({
   titleTemplate: titleChunk => titleChunk ? `${titleChunk} - 中玑信拓` : '中玑信拓'
+})
+const visible = ref(false)
+onMounted(() => {
+  visible.value = true
 })
 </script>
 

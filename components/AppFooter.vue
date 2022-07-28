@@ -12,28 +12,28 @@
           </div>
           <div>
             <img src="~~/assets/position.png" alt="">
-            <span>{{ $t.value.address }}</span>
+            <span>{{ langPkg.address }}</span>
           </div>
         </div>
         <div :class="`${cls}_right`">
           <ul>
             <li>
-              <NuxtLink :to="$getTo('/video')">{{ $t.value.video }}</NuxtLink>
+              <NuxtLink :to="$getTo('/video')">{{ langPkg.video }}</NuxtLink>
             </li>
             <li>
-              <NuxtLink :to="$getTo('/ai')">{{ $t.value.aiApp }}</NuxtLink>
+              <NuxtLink :to="$getTo('/ai')">{{ langPkg.aiApp }}</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/">{{ $t.value.entEffectiveness }}</NuxtLink>
+              <NuxtLink to="/">{{ langPkg.entEffectiveness }}</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/">{{ $t.value.cooperation }}</NuxtLink>
+              <NuxtLink to="/">{{ langPkg.cooperation }}</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/">{{ $t.value.aboutUs }}</NuxtLink>
+              <NuxtLink to="/">{{ langPkg.aboutUs }}</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/">{{ $t.value.TechDoc }}</NuxtLink>
+              <NuxtLink to="/">{{ langPkg.TechDoc }}</NuxtLink>
             </li>
           </ul>
         </div>
@@ -47,6 +47,7 @@
 
 <script setup>
 const cls = 'app-footer'
+const langPkg = useLangPkg()
 </script>
 
 <style lang="less">

@@ -12,7 +12,7 @@
         <img src="~~/assets/video/banner2.png" alt="">
       </template>
     </UiRowCard>
-    <VideoQualityImprovement />
+    <VideoQualityImprovement v-bind="obj.qualityImprovement" />
     <!-- 视频滤镜 -->
     <UiRowCard is-right v-bind="obj.videoFilter" :box-style="{left: '60%'}">
       <template #bg>
@@ -81,8 +81,8 @@
 
 <script setup>
 const cls = 'page-video'
-const { $t } = useNuxtApp()
-const obj = computed(() => $t.value.videoPage)
+const langPkg = useLangPkg()
+const obj = computed(() => langPkg.value.videoPage)
 </script>
 
 <style lang="less">

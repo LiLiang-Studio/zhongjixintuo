@@ -63,9 +63,9 @@
 
 <script setup>
 const cls = 'page-ai'
-const { $t } = useNuxtApp()
-const obj = computed(() => $t.value.aiPage)
-const videoPage = computed(() => $t.value.videoPage)
+const langPkg = useLangPkg()
+const obj = computed(() => langPkg.value.aiPage)
+const videoPage = computed(() => langPkg.value.videoPage)
 </script>
 
 <style lang="less">

@@ -6,7 +6,7 @@
           <img :class="`${cls}_logo`" src="~~/assets/logo.png" alt="logo">
         </NuxtLink>
         <ul :class="`${cls}_nav`">
-          <li v-for="_ in $t.value.navMenu" :key="_.label" :class="`${cls}_nav_item`">
+          <li v-for="_ in langPkg.navMenu" :key="_.label" :class="`${cls}_nav_item`">
             <template v-if="_.children">
               <span class="label">{{ _.label }}
                 <span class="arrow">&#8250;</span>
@@ -37,6 +37,7 @@
 
 <script setup>
 const cls = 'app-header'
+const langPkg = useLangPkg()
 </script>
 
 <style lang="less">

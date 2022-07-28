@@ -16,5 +16,6 @@ defineProps({ label: String })
   border: 1px solid currentColor;
   border-radius: 2rem;
   text-align: center;
+  background-color: #fff;
 }
 </style>

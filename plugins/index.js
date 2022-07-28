@@ -1,6 +1,3 @@
-import en from "~~/i18n/en"
-import zhCn from "~~/i18n/zh-cn"
-
 export default defineNuxtPlugin((nuxtApp) => {
   const route = useRoute()
   const router = useRouter()
@@ -8,7 +5,6 @@ export default defineNuxtPlugin((nuxtApp) => {
   return {
     provide: {
       isEn,
-      t: computed(() => isEn() ? en : zhCn),
       switchLang: () => {
         isEn()
           ? router.replace({

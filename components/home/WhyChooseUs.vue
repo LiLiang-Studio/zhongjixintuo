@@ -1,10 +1,10 @@
 <template>
   <div :class="cls">
-    <h2 :class="`${cls}_title`">{{ $t.value.whyChooseUs.title }}</h2>
+    <h2 :class="`${cls}_title`">{{ title }}</h2>
     <div :class="`${cls}_inner`">
       <div :class="`${cls}_left`">
         <ul>
-          <li v-for="_ in $t.value.whyChooseUs.items" :key="_.title">
+          <li v-for="_ in items" :key="_.title">
             <img :src="_.icon" alt="">
             <div class="box">
               <h3 class="sub_title">{{ _.title }}</h3>
@@ -22,6 +22,10 @@
 </template>
 
 <script setup>
+defineProps({
+  title: String,
+  items: { type: Array, default: () => [] }
+})
 const cls = 'home-why-choose-us'
 </script>
 

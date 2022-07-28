@@ -1,15 +1,18 @@
 <template>
   <div :class="cls">
-    <h2 class="title">{{ obj.title }}</h2>
-    <h3 class="subtitle">{{ obj.subTitle }}</h3>
-    <p class="desc" v-html="obj.desc"></p>
+    <h2 class="title">{{ title }}</h2>
+    <h3 class="subtitle">{{ subTitle }}</h3>
+    <p class="desc" v-html="desc"></p>
   </div>
 </template>
 
 <script setup>
+defineProps({
+  title: String,
+  subTitle: String,
+  desc: String
+})
 const cls = 'video-quality-improvement'
-const { $t } = useNuxtApp()
-const obj = computed(() => $t.value.videoPage.qualityImprovement)
 </script>
 
 <style lang="less">
