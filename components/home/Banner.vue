@@ -1,6 +1,6 @@
 <template>
   <div :class="cls">
-    <img src="~~/assets/banner1.png" alt="">
+    <img src="~~/assets/home/banner1.png" alt="">
   </div>
 </template>
 
