@@ -2,34 +2,35 @@
   <header :class="cls">
     <div :class="`${cls}_inner`">
       <div :class="`${cls}_left`">
-        <NuxtLink to="/">
+        <NuxtLink :to="getTo('/')">
           <img :class="`${cls}_logo`" src="~~/assets/logo.png" alt="logo">
         </NuxtLink>
-        <ul :class="`${cls}_nav`">
-          <li v-for="_ in langPkg.navMenu" :key="_.label" :class="`${cls}_nav_item`">
-            <template v-if="_.children">
-              <span class="label">{{ _.label }}
-                <span class="arrow">&#8250;</span>
-              </span>
-              <ul>
-                <li v-for="item in _.children" :key="item.label">
-                  <NuxtLink :to="item.link">{{ item.label }}</NuxtLink>
-                </li>
-              </ul>
-            </template>
-            <template v-else>
-              <NuxtLink :to="$getTo(_.link)" />
-              <a :href="$getTo(_.link)">{{ _.label }}</a>
-            </template>
-          </li>
-        </ul>
+        <ClientOnly>
+          <ul :class="`${cls}_nav`">
+            <li v-for="_ in langPkg.navMenu" :key="_.label" :class="`${cls}_nav_item`">
+              <template v-if="_.children">
+                <span class="label">{{ _.label }}
+                  <span class="arrow">&#8250;</span>
+                </span>
+                <ul>
+                  <li v-for="item in _.children" :key="item.label">
+                    <NuxtLink :to="item.link">{{ item.label }}</NuxtLink>
+                  </li>
+                </ul>
+              </template>
+              <template v-else>
+                <NuxtLink :to="getTo(_.link)">{{ _.label }}</NuxtLink>
+              </template>
+            </li>
+          </ul>
+        </ClientOnly>
       </div>
       <span :class="`${cls}_lang`">
-        <a v-if="$isEn()" @click="$switchLang">中</a>
+        <a v-if="isEn" @click="switchLang">中</a>
         <span v-else>中</span>
         <span class="fgline">|</span>
-        <span v-if="$isEn()">EN</span>
-        <a v-else @click="$switchLang">EN</a>
+        <span v-if="isEn">EN</span>
+        <a v-else @click="switchLang">EN</a>
       </span>
     </div>
   </header>
@@ -37,7 +38,7 @@
 
 <script setup>
 const cls = 'app-header'
-const langPkg = useLangPkg()
+const { langPkg, isEn, switchLang, getTo } = useLangPkg()
 </script>
 
 <style lang="less">
@@ -109,8 +110,8 @@ const langPkg = useLangPkg()
       transform: rotate(90deg);
       font-family: 'Courier New', Courier, monospace;
     }
-    .router-link-active + a {
-      color: #1857FF;
+    .router-link-active {
+      color: #1857FF !important;
     }
   }
   &_lang {

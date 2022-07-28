@@ -63,7 +63,7 @@
 
 <script setup>
 const cls = 'page-ai'
-const langPkg = useLangPkg()
+const { langPkg } = useLangPkg()
 const obj = computed(() => langPkg.value.aiPage)
 const videoPage = computed(() => langPkg.value.videoPage)
 </script>

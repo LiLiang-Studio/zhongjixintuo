@@ -15,7 +15,7 @@
 
 <script setup>
 const cls = 'page-home'
-const langPkg = useLangPkg()
+const { langPkg } = useLangPkg()
 </script>
 
 <style lang="less">

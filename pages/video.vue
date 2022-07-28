@@ -81,7 +81,7 @@
 
 <script setup>
 const cls = 'page-video'
-const langPkg = useLangPkg()
+const { langPkg } = useLangPkg()
 const obj = computed(() => langPkg.value.videoPage)
 </script>
 

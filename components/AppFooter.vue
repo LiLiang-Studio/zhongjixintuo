@@ -18,10 +18,10 @@
         <div :class="`${cls}_right`">
           <ul>
             <li>
-              <NuxtLink :to="$getTo('/video')">{{ langPkg.video }}</NuxtLink>
+              <NuxtLink :to="getTo('/video')">{{ langPkg.video }}</NuxtLink>
             </li>
             <li>
-              <NuxtLink :to="$getTo('/ai')">{{ langPkg.aiApp }}</NuxtLink>
+              <NuxtLink :to="getTo('/ai')">{{ langPkg.aiApp }}</NuxtLink>
             </li>
             <li>
               <NuxtLink to="/">{{ langPkg.entEffectiveness }}</NuxtLink>
@@ -47,7 +47,7 @@
 
 <script setup>
 const cls = 'app-footer'
-const langPkg = useLangPkg()
+const { langPkg, getTo } = useLangPkg()
 </script>
 
 <style lang="less">
