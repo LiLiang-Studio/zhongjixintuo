@@ -79,6 +79,7 @@ const { langPkg, isEn, switchLang, getTo } = useLangPkg()
     &_item {
       margin: 0 2em;
       position: relative;
+      font-size: 1.1rem;
       ul {
         position: absolute;
         top: 2rem;
@@ -128,7 +129,7 @@ const { langPkg, isEn, switchLang, getTo } = useLangPkg()
     }
   }
   @media screen and (max-width: 750px) {
-    padding: 10px 1rem;
+    padding: 1rem;
     .@{prefix} {
       &_logo {
         &.full {

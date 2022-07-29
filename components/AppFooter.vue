@@ -54,7 +54,7 @@ const { langPkg, getTo } = useLangPkg()
 @prefix: app-footer;
 .@{prefix} {
   padding: 3rem 10%;
-  background: url("/images/footer_bg.png") no-repeat center center;
+  background: url("/images/footer_bg.jpg") no-repeat center center;
   background-size: cover;
   color: #fff;
   &_logo {

@@ -2,7 +2,7 @@
   <div :class="cls">
     <ui-row-card fixed-layout>
       <template #bg>
-        <img :class="`${cls}_banner`" src="/images/home/banner1.png" alt="">
+        <img :class="`${cls}_banner`" src="/images/home/banner1.jpg" alt="">
       </template>
     </ui-row-card>
     <div :class="`${cls}_main`">
