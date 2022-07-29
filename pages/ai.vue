@@ -3,31 +3,31 @@
     <!-- banner -->
     <UiRowCard fixed-layout>
       <template #bg>
-        <img src="~~/assets/ai/banner1.png" alt="">
+        <img src="/images/ai/banner1.png" alt="">
       </template>
     </UiRowCard>
     <UiRowCard v-bind="obj.imageVideoRecognition">
       <template #bg>
-        <img src="~~/assets/ai/banner2.png" alt="">
+        <img src="/images/ai/banner2.png" alt="">
       </template>
       <UiTagList :items="obj.imageVideoRecognition.items" />
     </UiRowCard>
     <!-- 图像视频分类 -->
     <UiRowCard is-right v-bind="obj.imageVideoClassification">
       <template #bg>
-        <img src="~~/assets/ai/banner3.png" alt="">
+        <img src="/images/ai/banner3.png" alt="">
       </template>
     </UiRowCard>
     <!-- 音视频增强 -->
     <UiRowCard v-bind="obj.AudioAndVideoEnhancement">
       <template #bg>
-        <img src="~~/assets/ai/banner4.png" alt="">
+        <img src="/images/ai/banner4.png" alt="">
       </template>
     </UiRowCard>
     <!-- 自然语言理解 -->
     <UiRowCard is-right v-bind="obj.naturalLanguageUnderstanding" :box-class="`${cls}_nau_box`">
       <template #bg>
-        <img src="~~/assets/ai/banner5.png" alt="">
+        <img src="/images/ai/banner5.png" alt="">
       </template>
       <ul>
         <li v-for="_ in obj.naturalLanguageUnderstanding.items" :key="_.title">
@@ -42,7 +42,7 @@
     <!-- 文本机器人 -->
     <UiRowCard v-bind="obj.textRobot" :box-class="`${cls}_text_robot`">
       <template #bg>
-        <img src="~~/assets/ai/banner6.png" alt="">
+        <img src="/images/ai/banner6.png" alt="">
       </template>
       <ul>
         <li v-for="_ in obj.textRobot.items" :key="_.title">
@@ -57,7 +57,7 @@
     <!-- 全平台支持 -->
     <UiRowCard is-right v-bind="videoPage.fullPlatformSupport">
       <template #bg>
-        <img src="~~/assets/video/banner9.png" alt="">
+        <img src="/images/video/banner9.png" alt="">
       </template>
     </UiRowCard>
     <!-- 使用案例 -->

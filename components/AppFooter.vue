@@ -2,16 +2,16 @@
   <footer :class="cls">
     <div :class="`${cls}_inner`">
       <div :class="`${cls}_logo`">
-        <img src="~~/assets/footer_logo.png" alt="">
+        <img src="/images/footer_logo.png" alt="">
       </div>
       <div :class="`${cls}_box`">
         <div :class="`${cls}_left`">
           <div>
-            <img src="~~/assets/email.png" alt="">
+            <img src="/images/email.png" alt="">
             <span>support@zhongjixintuo.com</span>
           </div>
           <div>
-            <img src="~~/assets/position.png" alt="">
+            <img src="/images/position.png" alt="">
             <span>{{ langPkg.address }}</span>
           </div>
         </div>
@@ -54,7 +54,7 @@ const { langPkg, getTo } = useLangPkg()
 @prefix: app-footer;
 .@{prefix} {
   padding: 3rem 10%;
-  background: url("~~/assets/footer_bg.png") no-repeat center center;
+  background: url("/images/footer_bg.png") no-repeat center center;
   background-size: cover;
   color: #fff;
   &_logo {

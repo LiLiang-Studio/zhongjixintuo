@@ -1,6 +1,6 @@
 <template>
   <div :class="['to-top', { visible }]" @click="toTop">
-    <img src="~~/assets/to_top.png" alt="">
+    <img src="/images/to_top.png" alt="">
   </div>
 </template>
 

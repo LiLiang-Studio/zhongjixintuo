@@ -3,7 +3,7 @@
     <div :class="`${cls}_inner`">
       <div :class="`${cls}_left`">
         <NuxtLink :to="getTo('/')">
-          <img :class="`${cls}_logo`" src="~~/assets/logo.png" alt="logo">
+          <img :class="`${cls}_logo`" src="/images/logo.png" alt="logo">
         </NuxtLink>
         <ClientOnly>
           <ul :class="`${cls}_nav`">
