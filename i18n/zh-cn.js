@@ -67,20 +67,21 @@ export default {
     },
     {
       label: '企业',
-      children: [
-        {
-          label: '互联网客服解决方案',
-          link: '/'
-        },
-        {
-          label: '项目管理解决方案',
-          link: '/'
-        },
-        {
-          label: '销售管理解决方案',
-          link: '/'
-        }
-      ]
+      link: '/'
+      // children: [
+      //   {
+      //     label: '互联网客服解决方案',
+      //     link: '/'
+      //   },
+      //   {
+      //     label: '项目管理解决方案',
+      //     link: '/'
+      //   },
+      //   {
+      //     label: '销售管理解决方案',
+      //     link: '/'
+      //   }
+      // ]
     },
     {
       label: '关于我们',

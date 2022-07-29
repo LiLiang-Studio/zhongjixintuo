@@ -67,23 +67,24 @@ export default {
     },
     {
       label: 'Enterprise',
-      children: [
-        {
-          label: 'Internet customer service solutions',
-          link: '/'
-        },
-        {
-          label: 'Project Management Solutions',
-          link: '/'
-        },
-        {
-          label: 'Sales Management Solutions',
-          link: '/'
-        }
-      ]
+      link: '/'
+      // children: [
+      //   {
+      //     label: 'Internet customer service solutions',
+      //     link: '/'
+      //   },
+      //   {
+      //     label: 'Project Management Solutions',
+      //     link: '/'
+      //   },
+      //   {
+      //     label: 'Sales Management Solutions',
+      //     link: '/'
+      //   }
+      // ]
     },
     {
-      label: 'About',
+      label: 'About Us',
       link: '/'
     }
   ],
