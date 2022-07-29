@@ -1,6 +1,6 @@
 <template>
   <div :class="cls">
-    <ui-row-card>
+    <ui-row-card fixed-layout>
       <template #bg>
         <img :class="`${cls}_banner`" src="~~/assets/home/banner1.png" alt="">
       </template>

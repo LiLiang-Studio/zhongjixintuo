@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- banner -->
-    <UiRowCard>
+    <UiRowCard fixed-layout>
       <template #bg>
         <img src="~~/assets/ai/banner1.png" alt="">
       </template>
