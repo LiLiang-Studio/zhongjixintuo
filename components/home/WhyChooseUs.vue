@@ -14,8 +14,8 @@
         </ul>
       </div>
       <div :class="`${cls}_right`">
-        <img class="bg" src="/images/home/3d.png" alt="3d">
-        <img class="logo" src="/images/home/logo1.png" alt="">
+        <img class="bg" src="/images/home/3d.png" alt="">
+        <img class="logo" src="/images/logo1.png" alt="">
       </div>
     </div>
   </div>

@@ -3,7 +3,8 @@
     <div :class="`${cls}_inner`">
       <div :class="`${cls}_left`">
         <NuxtLink :to="getTo('/')">
-          <img :class="`${cls}_logo`" src="/images/logo.png" alt="logo">
+          <img :class="`${cls}_logo full`" src="/images/logo.png" alt="">
+          <img :class="`${cls}_logo small`" src="/images/logo1.png" alt="">
         </NuxtLink>
         <ClientOnly>
           <ul :class="`${cls}_nav`">
@@ -42,7 +43,8 @@ const { langPkg, isEn, switchLang, getTo } = useLangPkg()
 </script>
 
 <style lang="less">
-.app-header {
+@prefix: app-header;
+.@{prefix} {
   padding: 20px 10%;
   position: sticky;
   top: 0;
@@ -66,11 +68,14 @@ const { langPkg, isEn, switchLang, getTo } = useLangPkg()
   }
   &_logo {
     height: 2rem;
+    &.small {
+      display: none;
+    }
   }
   &_nav {
     display: flex;
     align-items: center;
-    margin-left: 1em;
+    margin-left: 1rem;
     &_item {
       margin: 0 2em;
       position: relative;
@@ -120,6 +125,23 @@ const { langPkg, isEn, switchLang, getTo } = useLangPkg()
     }
     span:not(.fgline) {
       color: #FF4800;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    padding: 10px 1rem;
+    .@{prefix} {
+      &_logo {
+        &.full {
+          display: none;
+        }
+        &.small {
+          display: block;
+          height: 1.3rem;
+        }
+      }
+      &_nav_item {
+        margin: 0 .8rem;
+      }
     }
   }
 }
