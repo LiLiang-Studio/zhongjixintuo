@@ -25,7 +25,7 @@ onUnmounted(() => {
 .to-top {
   position: fixed;
   bottom: 2rem;
-  right: 2rem;
+  right: 1rem;
   background-color: #fff;
   padding: .5rem;
   border-radius: 2rem;

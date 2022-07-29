@@ -33,7 +33,7 @@ const cls = 'home-why-choose-us'
 .home-why-choose-us {
   padding: 3rem 0;
   &_title {
-    font-size: 32px;
+    font-size: 2rem;
     margin-bottom: 1em;
   }
   &_inner {
@@ -56,11 +56,12 @@ const cls = 'home-why-choose-us'
       }
     }
     .sub_title {
-      font-size: 20px;
+      font-size: 1.4rem;
     }
     .desc {
-      font-size: 14px;
+      font-size: 1rem;
       margin-top: 1em;
+      color: #616161;
     }
   }
   &_right {

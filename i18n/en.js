@@ -83,7 +83,7 @@ export default {
       ]
     },
     {
-      label: 'About Us',
+      label: 'About',
       link: '/'
     }
   ],

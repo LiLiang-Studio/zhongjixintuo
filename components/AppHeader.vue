@@ -110,7 +110,7 @@ const { langPkg, isEn, switchLang, getTo } = useLangPkg()
       margin-left: .5rem;
       font-size: 2rem;
       position: relative;
-      top: -3px;
+      top: -2px;
       display: inline-block;
       transform: rotate(90deg);
       font-family: 'Courier New', Courier, monospace;
