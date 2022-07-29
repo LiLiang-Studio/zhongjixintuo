@@ -31,7 +31,9 @@
       </template>
       <ul>
         <li v-for="_ in obj.naturalLanguageUnderstanding.items" :key="_.title">
-          <img :src="_.icon" alt="">
+          <div class="img">
+            <img :src="_.icon" alt="">
+          </div>
           <div>{{ _.title }}</div>
         </li>
       </ul>
@@ -44,7 +46,9 @@
       </template>
       <ul>
         <li v-for="_ in obj.textRobot.items" :key="_.title">
-          <img :src="_.icon" alt="">
+          <div class="img">
+            <img :src="_.icon" alt="">
+          </div>
           <div>{{ _.title }}</div>
         </li>
       </ul>
@@ -82,6 +86,22 @@ const videoPage = computed(() => langPkg.value.videoPage)
       font-size: .9rem;
       img {
         height: 3rem;
+      }
+    }
+    @media screen and (max-width: 750px) {
+      .img {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 4rem;
+        padding: .2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #9e9e9e;
+        img {
+          height: 2.5rem;
+          object-fit: contain;
+        }
       }
     }
   }

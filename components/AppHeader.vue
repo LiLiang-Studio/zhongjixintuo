@@ -116,7 +116,7 @@ const { langPkg, isEn, switchLang, getTo } = useLangPkg()
   }
   &_lang {
     .fgline {
-      margin: 0 6px;
+      margin: 0 3px;
     }
     span:not(.fgline) {
       color: #FF4800;

@@ -1,7 +1,7 @@
 <template>
   <div :class="cls">
     <!-- 我们能做些什么？ -->
-    <UiRowCard :box-class="`${cls}_banner_box`" :title="obj.bannerTitle">
+    <UiRowCard fixed-layout :box-class="`${cls}_banner_box`" :title="obj.bannerTitle">
       <template #bg>
         <img src="~~/assets/video/banner1.png" alt="">
       </template>

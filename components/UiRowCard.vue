@@ -1,5 +1,5 @@
 <template>
-  <div :class="cls">
+  <div :class="[cls, { 'is-fixed': fixedLayout }]">
     <div :class="`${cls}_bg`">
       <slot name="bg" />
     </div>
@@ -24,7 +24,8 @@ defineProps({
   desc: String,
   boxClass: String,
   boxStyle: {},
-  isRight: Boolean
+  isRight: Boolean,
+  fixedLayout: Boolean
 })
 const cls = 'ui-row-card'
 </script>
@@ -50,10 +51,11 @@ const cls = 'ui-row-card'
   }
   &_content {
     margin-top: 2rem;
+    color: #616161;
   }
   &_title {
     font-size: 2.4rem;
-    line-height: 1;
+    line-height: 1.2;
     text-transform: capitalize;
   }
   &_subtitle {
@@ -65,7 +67,6 @@ const cls = 'ui-row-card'
     font-family: 'Times New Roman', Times, serif;
   }
   &_desc {
-    color: #616161;
     line-height: 1.4;
   }
   @media screen and (max-width: 1080px) {
@@ -85,6 +86,28 @@ const cls = 'ui-row-card'
     }
     .@{prefix}_content {
       margin-top: 1.2rem;
+    }
+  }
+  &:not(.is-fixed) {
+    @media screen and (max-width: 750px) {
+      margin: 1rem;
+      border: 1px solid rgba(0, 0, 0, .12);
+      border-radius: 6px;
+      overflow: hidden;
+      // box-shadow: 0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px rgba(0, 0, 0, .14), 0 1px 3px rgba(0, 0, 0, .12);
+      .@{prefix} {
+        &_box {
+          position: static;
+          transform: none;
+          padding: 1rem;
+        }
+        &_title {
+          color: #424242;
+        }
+        &_content * {
+          color: #616161;
+        }
+      }
     }
   }
 }

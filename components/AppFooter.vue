@@ -7,8 +7,8 @@
       <div :class="`${cls}_box`">
         <div :class="`${cls}_left`">
           <div>
-            <img src="~~/assets/phone.png" alt="">
-            <span>12145121255</span>
+            <img src="~~/assets/email.png" alt="">
+            <span>support@zhongjixintuo.com</span>
           </div>
           <div>
             <img src="~~/assets/position.png" alt="">
@@ -51,7 +51,8 @@ const { langPkg, getTo } = useLangPkg()
 </script>
 
 <style lang="less">
-.app-footer {
+@prefix: app-footer;
+.@{prefix} {
   padding: 3rem 10%;
   background: url("~~/assets/footer_bg.png") no-repeat center center;
   background-size: cover;
@@ -69,6 +70,18 @@ const { langPkg, getTo } = useLangPkg()
     display: flex;
     align-items: center;
     padding: 3rem 0;
+    @media screen and (max-width: 600px) {
+      flex-wrap: wrap;
+      padding: 1rem 0;
+      .@{prefix} {
+        &_left {
+          max-width: none;
+          margin-right: 0;
+          margin-top: 2rem;
+          order: 1;
+        }
+      }
+    }
   }
   &_left {
     max-width: 300px;
@@ -77,24 +90,26 @@ const { langPkg, getTo } = useLangPkg()
       display: flex;
       align-items: center;
       &:not(:last-child) {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
       }
     }
     img {
-      height: 20px;
+      width: 1.5rem;
       margin-right: .5rem;
     }
   }
   &_right {
-    max-width: 300px;
     a, a:visited {
       color: #fff;
+    }
+    ul {
+      overflow: hidden;
     }
     li {
       font-size: 1.2rem;
       float: left;
       text-align: center;
-      margin: .5rem 1rem .5rem 0;
+      margin: .5rem 2rem .5rem 0;
     }
   }
   &_copyright {

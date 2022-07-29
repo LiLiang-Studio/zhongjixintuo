@@ -33,7 +33,7 @@ const cls = 'ui-case-card-box'
       margin-right: 3%;
     }
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 750px) {
     padding: 3rem 0;
     .@{prefix} {
       &_list {
@@ -42,7 +42,7 @@ const cls = 'ui-case-card-box'
       &_item {
         width: 100%;
         flex: auto;
-        margin: .3rem 0 !important;
+        margin: .5rem 0 !important;
       }
     }
   }
