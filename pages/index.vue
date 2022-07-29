@@ -22,6 +22,9 @@ const { langPkg } = useLangPkg()
 .page-home {
   &_main {
     padding: 0 10%;
+    @media screen and (max-width: 750px) {
+      padding: 0 1rem;
+    }
   }
 }
 </style>

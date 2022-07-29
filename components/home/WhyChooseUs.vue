@@ -31,7 +31,7 @@ const cls = 'home-why-choose-us'
 
 <style lang="less">
 .home-why-choose-us {
-  padding: 50px 0;
+  padding: 3rem 0;
   &_title {
     font-size: 32px;
     margin-bottom: 1em;
@@ -40,15 +40,16 @@ const cls = 'home-why-choose-us'
     display: flex;
     align-items: center;
   }
-  &_left, &_right {
-    width: 50%;
-  }
   &_left {
     margin-right: 1em;
+    flex: 1;
+    width: 0;
     li {
       display: flex;
       align-items: center;
-      margin-bottom: 3em;
+      &:not(:last-child) {
+        margin-bottom: 3em;
+      }
       img {
         width: 60px;
         margin-right: 20px;
@@ -64,6 +65,7 @@ const cls = 'home-why-choose-us'
   }
   &_right {
     position: relative;
+    width: 40%;
     .bg {
       width: 100%;
       display: block;
@@ -74,6 +76,9 @@ const cls = 'home-why-choose-us'
       top: 0;
       left: 50%;
       transform: translate(-50%, -50%);
+    }
+    @media screen and (max-width: 750px) {
+      display: none;
     }
   }
 }

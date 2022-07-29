@@ -26,18 +26,21 @@ const cls = 'home-Business-introduction'
 </script>
 
 <style lang="less">
-.home-Business-introduction {
-  padding: 50px 0;
+@prefix: home-Business-introduction;
+.@{prefix} {
+  padding: 3rem 0;
   &_title {
     text-align: center;
-    font-size: 32px;
+    font-size: 2rem;
     margin-bottom: 1em;
   }
   &_list {
     li {
       display: flex;
       align-items: center;
-      margin-bottom: 40px;
+      &:not(:last-child) {
+        margin-bottom: 4rem;
+      }
       > div {
         width: 50%;
       }
@@ -45,6 +48,18 @@ const cls = 'home-Business-introduction'
         order: 1;
         margin-right: 0;
         margin-left: 50px;
+      }
+      @media screen and (max-width: 750px) {
+        display: block;
+        border-radius: 6px;
+        border: 1px solid rgba(0, 0, 0, .12);
+        > div {
+          width: 100%;
+          margin-left: 0 !important;
+        }
+        .content {
+          padding: 1rem;
+        }
       }
     }
     .sub_title {

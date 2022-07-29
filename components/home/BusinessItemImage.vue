@@ -19,7 +19,8 @@ const cls = 'home-business-item-image'
 </script>
 
 <style lang="less">
-.home-business-item-image {
+@prefix: home-business-item-image;
+.@{prefix} {
   position: relative;
   &_box {
     position: absolute;
@@ -41,6 +42,13 @@ const cls = 'home-business-item-image'
     left: 0;
     width: 25%;
     transform: translateY(-30%);
+  }
+  @media screen and (max-width: 750px) {
+    .@{prefix} {
+      &_bg {
+        visibility: hidden;
+      }
+    }
   }
 }
 </style>
