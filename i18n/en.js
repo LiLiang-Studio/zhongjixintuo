@@ -312,6 +312,19 @@ export default {
           desc: '80% of the repetitive and similar problems of enterprises can be solved by intelligent robots, and the remaining manpower can be used for more refined value services.'
         }
       ]
+    },
+    bigDataAppSystem: {
+      title: 'big data application system',
+      items: [
+        'high performance',
+        'Accelerate data insights',
+        'read-write separation',
+        'Low operation and maintenance cost'
+      ]
+    },
+    callCenter: {
+      title: 'Smart Call Center',
+      desc: 'The operation is stable, safe and reliable, helping enterprises to quickly build a customer contact platform that integrates telephone, online communication, and audio and video calls. <br><br>Provide a solid, stable, integrated and unified communication base for enterprise business, and is committed to improving the digital and intelligent competitiveness of enterprise services and marketing.'
     }
   }
 }

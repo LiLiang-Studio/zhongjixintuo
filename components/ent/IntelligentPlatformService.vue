@@ -22,7 +22,7 @@ const cls = 'intelligent-platform-service'
 <style lang="less">
 @prefix: intelligent-platform-service;
 .@{prefix} {
-  padding: 0 10% 3rem;
+  padding-bottom: 3rem;
   &_title {
     font-size: 2rem;
     text-align: center;
@@ -50,8 +50,6 @@ const cls = 'intelligent-platform-service'
     color: #616161;
   }
   @media screen and (max-width: 1024px) {
-    padding-left: 1rem;
-    padding-right: 1rem;
     .@{prefix}_list {
       li {
         margin: 0 .5rem 1rem;

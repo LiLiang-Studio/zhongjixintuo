@@ -22,7 +22,7 @@ const cls = 'ent-service-center'
 <style lang="less">
 @prefix: ent-service-center;
 .@{prefix} {
-  padding: 3rem 10% 2rem;
+  padding: 3rem 0 2rem;
   &_title {
     font-size: 2rem;
     text-align: center;
@@ -34,8 +34,8 @@ const cls = 'ent-service-center'
     flex-wrap: wrap;
     li {
       padding: 1rem;
-      margin: 0 1rem 2rem;
-      width: calc(25% - 2em);
+      margin: 0 .5rem 1rem;
+      width: calc(25% - 1rem);
       border-radius: 6px;
       text-align: center;
       border: 1px solid rgba(0, 0, 0, .12);
@@ -53,17 +53,14 @@ const cls = 'ent-service-center'
     color: #616161;
     line-height: 1.6;
   }
-  @media screen and (max-width: 1024px) {
-    padding-left: 1rem;
-    padding-right: 1rem;
+  @media screen and (max-width: 750px) {
     .@{prefix}_list {
       li {
-        margin: 0 .5rem 1rem;
-        width: calc(25% - 1em);
+        width: calc(50% - 1rem);
       }
     }
   }
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 480px) {
     .@{prefix}_list {
       li {
         width: 100%;
