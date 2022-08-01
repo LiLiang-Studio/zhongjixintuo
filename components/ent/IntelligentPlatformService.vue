@@ -22,7 +22,6 @@ const cls = 'intelligent-platform-service'
 <style lang="less">
 @prefix: intelligent-platform-service;
 .@{prefix} {
-  padding-bottom: 3rem;
   &_title {
     font-size: 2rem;
     text-align: center;

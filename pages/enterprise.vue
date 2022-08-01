@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :class="cls">
     <UiRowCard v-bind="obj.banner">
       <template #bg>
         <img src="/images/enterprise/banner.jpg" alt="">
@@ -23,6 +23,9 @@
       </template>
     </UiRowCard>
     <EntDataAnalysis v-bind="obj.dataAnalysis" />
+    <div :class="`${cls}_box`">
+      <EntFuncBoxList v-bind="obj.supportService" item-class="support-service-item" />
+    </div>
   </div>
 </template>
 
@@ -40,6 +43,9 @@ const obj = computed(() => langPkg.value.enterprisePage)
     @media screen and (max-width: 1024px) {
       padding: 0 1rem;
     }
+  }
+  .support-service-item {
+    width: calc(33.33% - 1rem);
   }
 }
 </style>

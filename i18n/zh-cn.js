@@ -409,6 +409,37 @@ export default {
           desc: '对海量文本的内容进行相似内容聚类，进行常见问题整理'
         }
       ]
+    },
+    supportService: {
+      title: '提供全方位多应用系统支撑服务',
+      items: [
+        {
+          icon: S.iconEntBusinessSupport,
+          title: '业务支撑系统',
+          desc: '面向市场营销和客户服务等企业前端的应用支撑平台，业务和财务等内部运营的重要环节。'
+        },
+        {
+          icon: S.iconEntManagementSupport,
+          title: '管理支撑系统',
+          desc: '面向不同用户和角色，提供统一接入和一站式使用体验。'
+        },
+        '',
+        {
+          icon: S.iconEntDataApply,
+          title: '企业数据应用',
+          desc: '面向企业数据的应用、以支撑数据共享和分析为目标的支撑系统域。主要包括运营数据存储。'
+        },
+        {
+          icon: S.iconEntOperationSupport,
+          title: '运营支撑系统',
+          desc: '实现对产品和销售品的全网、统一、共享、高效管理。'
+        },
+        {
+          icon: S.iconEntItGovernance,
+          title: 'IT管控系统',
+          desc: '针对业务流转的关键环节实现业务交付过程的实时监控。'
+        }
+      ]
     }
   }
 }

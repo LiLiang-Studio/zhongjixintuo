@@ -25,7 +25,7 @@ const cls = 'ent-func-box'
   padding: 1rem;
   border-radius: 6px;
   .icon {
-    height: 2rem;
+    height: 1.6rem;
   }
   .title {
     margin: .3rem 0 1rem;

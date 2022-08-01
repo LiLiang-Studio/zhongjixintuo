@@ -409,6 +409,36 @@ export default {
           desc: 'Similar content clustering for the content of massive texts, sorting out common problems'
         }
       ]
+    },
+    supportService: {
+      title: 'Provide a full range of multi-application system support services',
+      items: [
+        {
+          icon: S.iconEntBusinessSupport,
+          title: 'business support system',
+          desc: 'It is an application support platform for the front-end of enterprises such as marketing and customer service, and an important part of internal operations such as business and finance.'
+        },
+        {
+          icon: S.iconEntManagementSupport,
+          title: 'management support system',
+          desc: 'Provide unified access and one-stop experience for different users and roles.'
+        },
+        {
+          icon: S.iconEntDataApply,
+          title: 'Enterprise Data Application',
+          desc: 'The application of enterprise data, the support system domain aiming at supporting data sharing and analysis. It mainly includes operational data storage.'
+        },
+        {
+          icon: S.iconEntOperationSupport,
+          title: 'Operation Support System',
+          desc: 'Realize the whole network, unified, shared and efficient management of products and sales.'
+        },
+        {
+          icon: S.iconEntItGovernance,
+          title: 'IT control system',
+          desc: 'Real-time monitoring of the business delivery process is realized for the key links of business flow.'
+        }
+      ]
     }
   }
 }

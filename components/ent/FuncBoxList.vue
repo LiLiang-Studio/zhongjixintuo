@@ -2,7 +2,10 @@
   <div :class="cls">
     <h2 :class="`${cls}_title`">{{ title }}</h2>
     <ul :class="`${cls}_list`">
-      <EntFuncBox v-for="_ in items" :key="_.title" :class="itemClass" v-bind="_" />
+      <template v-for="_ in items" :key="_.title">
+        <EntFuncBox v-if="_" :class="itemClass" v-bind="_" />
+        <div v-else :class="`${cls}_br`"></div>
+      </template>
     </ul>
   </div>
 </template>
@@ -18,7 +21,7 @@ const cls = 'ent-func-box-list'
 
 <style lang="less">
 .ent-func-box-list {
-  padding-bottom: 3rem;
+  padding: 3rem 0;
   &_title {
     text-align: center;
     font-size: 2rem;
@@ -27,6 +30,10 @@ const cls = 'ent-func-box-list'
   &_list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+  }
+  &_br {
+    width: 100%;
   }
 }
 </style>
