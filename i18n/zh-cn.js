@@ -67,7 +67,7 @@ export default {
     },
     {
       label: '企业',
-      link: '/'
+      link: '/enterprise'
       // children: [
       //   {
       //     label: '互联网客服解决方案',
@@ -239,6 +239,57 @@ export default {
           img: S.imgAiUseCase3,
           title: '零售',
           desc: '图像识别、机器学习和自然语言处理等技术等发展使得智能服务机器人能够轻松与顾客打招呼、交流，可以预测订单，提供引导。'
+        }
+      ]
+    }
+  },
+  enterprisePage: {
+    banner: {
+      title: '呼叫中心',
+      desc: '全面满足企业联络需求，<br>帮助企业为客户提供更优质的服务。'
+    },
+    serviceCenter: {
+      title: '新一代客服系统平台',
+      items: [
+        {
+          icon: S.iconEntConnect,
+          title: '统一接入',
+          desc: '电信网、企业网、互联网三网接入，统一企业服务品牌意识，树立企业品牌形象。'
+        },
+        {
+          icon: S.iconEntMedia,
+          title: '全媒体',
+          desc: '媒体扩充方便：通过简单的扩展就能支持语音|视频|微信| Webchat等多种媒体渠道的接入。'
+        },
+        {
+          icon: S.iconEntSeat,
+          title: '坐席话机',
+          desc: '系统可以支持接入硬话机、PC软件话机、web电话、常规手机号码、固话号码作为坐席的终端电话。'
+        },
+        {
+          icon: S.iconEntIntelligent,
+          title: '智能化',
+          desc: '智能应用集成能力：包括TTS、ASR、人机对话系统、智能IVR系统等。'
+        },
+        {
+          icon: S.iconEntCloud,
+          title: '部署能力',
+          desc: '云部署能力:系统处理能力可以通过简单的增减cpu、内存的虚拟化配置进行性能扩展和收缩。'
+        },
+        {
+          icon: S.iconEntExtend,
+          title: '系统扩展性',
+          desc: '系统预留5G视频客服的扩展能力，预留智能外呼扩展能力（用于营销、回访、调查等业务）。'
+        },
+        {
+          icon: S.iconEntUpdate,
+          title: '产品可迭代',
+          desc: 'CRM产品具有一定的可配置性，能够在系统内快速定义新的工单和工单处理流程。'
+        },
+        {
+          icon: S.iconEntSafety,
+          title: '高可靠',
+          desc: '灾备能力：支持异地双机热备技术，防止单点故障。'
         }
       ]
     }

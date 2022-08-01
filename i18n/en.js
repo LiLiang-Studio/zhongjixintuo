@@ -67,7 +67,7 @@ export default {
     },
     {
       label: 'Enterprise',
-      link: '/'
+      link: '/enterprise'
       // children: [
       //   {
       //     label: 'Internet customer service solutions',
@@ -239,6 +239,57 @@ export default {
           img: S.imgAiUseCase3,
           title: 'retail',
           desc: 'Advances in technologies such as image recognition, machine learning, and natural language processing have enabled intelligent service robots to easily greet and communicate with customers, predict orders, and provide guidance.'
+        }
+      ]
+    }
+  },
+  enterprisePage: {
+    banner: {
+      title: 'Call Center',
+      desc: 'Fully meet the needs of corporate communication, <br>help companies to provide customers with better services.'
+    },
+    serviceCenter: {
+      title: 'A new generation of customer service system platform',
+      items: [
+        {
+          icon: S.iconEntConnect,
+          title: 'Unified access',
+          desc: 'Telecom network, enterprise network and Internet access to three networks, unify enterprise service brand awareness, and establish enterprise brand image.'
+        },
+        {
+          icon: S.iconEntMedia,
+          title: 'all media',
+          desc: 'Convenient media expansion: through simple expansion, it can support access to various media channels such as voice | video | WeChat | Webchat.'
+        },
+        {
+          icon: S.iconEntSeat,
+          title: 'Agent phone',
+          desc: 'The system can support access to hard phones, PC softphones, web phones, conventional mobile phone numbers, and landline numbers as terminal phones for agents.'
+        },
+        {
+          icon: S.iconEntIntelligent,
+          title: 'Intelligent',
+          desc: 'Intelligent application integration capabilities: including TTS, ASR, human-machine dialogue system, intelligent IVR system, etc.'
+        },
+        {
+          icon: S.iconEntCloud,
+          title: 'Deployment capability',
+          desc: 'Cloud deployment capability: The system processing capability can be expanded and contracted by simply increasing or decreasing the virtualized configuration of CPU and memory.'
+        },
+        {
+          icon: S.iconEntExtend,
+          title: 'system scalability',
+          desc: 'The system reserves the expansion capability of 5G video customer service, and reserves the expansion capability of intelligent outbound calls (for marketing, return visits, surveys, etc.).'
+        },
+        {
+          icon: S.iconEntUpdate,
+          title: 'product iterable',
+          desc: 'CRM products are configurable to a certain extent, and new work orders and work order processing processes can be quickly defined within the system.'
+        },
+        {
+          icon: S.iconEntSafety,
+          title: 'High reliability',
+          desc: 'Disaster recovery capability: Support remote dual-machine hot backup technology to prevent single point of failure.'
         }
       ]
     }
