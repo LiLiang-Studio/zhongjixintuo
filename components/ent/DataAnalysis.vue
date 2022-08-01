@@ -16,13 +16,14 @@ defineProps({
   title: String,
   items: { type: Array, default: () => [] }
 })
-const cls = 'intelligent-platform-service'
+const cls = 'data-analysis'
 </script>
 
 <style lang="less">
-@prefix: intelligent-platform-service;
+@prefix: data-analysis;
 .@{prefix} {
-  padding-bottom: 3rem;
+  padding: 3rem 10%;
+  background-color: #F5FAFF;
   &_title {
     font-size: 2rem;
     text-align: center;
@@ -48,6 +49,9 @@ const cls = 'intelligent-platform-service'
   .desc {
     line-height: 1.6;
     color: #616161;
+  }
+  @media screen and (max-width: 1024px) {
+    padding: 3rem 1rem;
   }
   @media screen and (max-width: 450px) {
     .@{prefix}_list {

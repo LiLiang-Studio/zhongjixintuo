@@ -329,6 +329,86 @@ export default {
     gaeBms: {
       title: 'Government and Enterprise Business Management System',
       desc: 'A software that can provide real-time, relevant, accurate and complete data for managers to make decisions.'
+    },
+    customerManage: {
+      title: 'Let enterprises better manage customers and improve enterprise efficiency',
+      items: [
+        {
+          icon: S.iconEntContact,
+          title: 'Contact Management Center',
+          desc: 'Multimedia contact information, pop-up screen for incoming calls'
+        },
+        {
+          icon: S.iconEntCustomer,
+          title: 'Customer Data Center',
+          desc: 'Customer data collection, binding, customer service history information'
+        },
+        {
+          icon: S.iconEntWorkorder,
+          title: 'Work Order Center',
+          desc: 'Work order creation, work order processing flow'
+        },
+        {
+          icon: S.iconEntSms,
+          title: 'SMS sending management',
+          desc: 'Real-time tracking, efficient and convenient, to ensure service timeliness'
+        },
+        {
+          icon: S.iconEntSettings,
+          title: 'Configuration Center',
+          desc: 'Standardize business management, realize work order template, customer template, report configurable processing, and quickly customize new business'
+        },
+        {
+          icon: S.iconEntOutcall,
+          title: 'Preview outbound call center',
+          desc: 'Outbound call scenarios, tasks, lists, and then contact management'
+        },
+        {
+          icon: S.iconEntPermission,
+          title: 'User rights',
+          desc: 'Permission settings for menus, enterprise user classification management'
+        },
+        {
+          icon: S.iconEntKnowledge,
+          title: 'Knowledge Center',
+          desc: 'Knowledge base management, query'
+        }
+      ]
+    },
+    dataAnalysis: {
+      title: 'One-stop platform that empowers companies to improve lead conversion rates',
+      items: [
+        {
+          img: S.imgEntSpeechAnalysis,
+          title: 'speech analysis',
+          desc: 'Silent Model - "Customer Service Unfamiliar with Business/Speech Speed Model -" Customer Service Disrespecting Customers/Speaking Model - "Customer Service Impatient/Emotion Model -" Irritating Customers'
+        },
+        {
+          img: S.imgEntIncomingCall,
+          title: 'Classification of call reasons',
+          desc: 'Classify call recordings, query, handle business, complaints and dozens of sub-categories, analyze massive recordings, and discover potential business problems'
+        },
+        {
+          img: S.imgEntHotPointAnalysis,
+          title: 'Hot Trend Analysis',
+          desc: 'Display hot words worthy of attention in massive calls, and tap business opportunities or crises'
+        },
+        {
+          img: S.imgEntInformation,
+          title: 'Information extraction',
+          desc: 'Perform structured analysis and extract structured information from long-form corporate documents'
+        },
+        {
+          img: S.imgEntCommentAnalysis,
+          title: 'Comment analysis',
+          desc: 'Analyze user reviews of businesses or products'
+        },
+        {
+          img: S.imgEntRootClustering,
+          title: 'root clustering',
+          desc: 'Similar content clustering for the content of massive texts, sorting out common problems'
+        }
+      ]
     }
   }
 }

@@ -9,6 +9,7 @@
       <EntServiceCenter v-bind="obj.serviceCenter" />
       <EntCallCenter v-bind="obj.callCenter" />
       <EntIntelligentPlatformService v-bind="obj.intelligentPlatformServiceValue" />
+      <EntFuncBoxList v-bind="obj.customerManage" />
     </div>
     <UiRowCard :title="obj.bigDataAppSystem.title">
       <template #bg>
@@ -21,6 +22,7 @@
         <img src="/images/enterprise/gae_bms.png" alt="">
       </template>
     </UiRowCard>
+    <EntDataAnalysis v-bind="obj.dataAnalysis" />
   </div>
 </template>
 

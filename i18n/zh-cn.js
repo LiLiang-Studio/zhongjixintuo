@@ -329,6 +329,86 @@ export default {
     gaeBms: {
       title: '政企业务管理系统',
       desc: '能够提供实时、相关、准确、完整的数据，为管理者提供决策依据的一种软件。'
+    },
+    customerManage: {
+      title: '让企业更好的管理客户  提升企业效能',
+      items: [
+        {
+          icon: S.iconEntContact,
+          title: '联络管理中心',
+          desc: '多媒体联络信息，来电弹屏'
+        },
+        {
+          icon: S.iconEntCustomer,
+          title: '客户资料中心',
+          desc: '客户资料收集，绑定，客户服务历史信息'
+        },
+        {
+          icon: S.iconEntWorkorder,
+          title: '工单中心',
+          desc: '工单创建，工单处理流转'
+        },
+        {
+          icon: S.iconEntSms,
+          title: '短信发送管理',
+          desc: '实时跟踪，高效便捷，保证服务时效性'
+        },
+        {
+          icon: S.iconEntSettings,
+          title: '配置中心',
+          desc: '规范业务管理，实现工单模板，客户模板，报表可配置化处理，快速自定义新业务'
+        },
+        {
+          icon: S.iconEntOutcall,
+          title: '预览外呼中心',
+          desc: '外呼场景，任务，名单，再联络管理'
+        },
+        {
+          icon: S.iconEntPermission,
+          title: '用户权限',
+          desc: '对菜单进行权限设置，企业用户分类管理'
+        },
+        {
+          icon: S.iconEntKnowledge,
+          title: '知识中心',
+          desc: '知识库管理，查询'
+        }
+      ]
+    },
+    dataAnalysis: {
+      title: '一站式平台，赋能企业提高线索转化率',
+      items: [
+        {
+          img: S.imgEntSpeechAnalysis,
+          title: '语音分析',
+          desc: '静音模型 -》客服不熟悉业务/语速模型 -》客服不尊重客户/抢话模型 -》客服没有耐心/情绪模型 -》激怒客户'
+        },
+        {
+          img: S.imgEntIncomingCall,
+          title: '来电原因分类',
+          desc: '对通话录音归类，查询、办理业务、投诉及数十种子分类，将海量录音分析后，挖掘业务潜在问题'
+        },
+        {
+          img: S.imgEntHotPointAnalysis,
+          title: '热点趋势分析',
+          desc: '展示海量通话中值得关注的热点词，挖掘商机或危机'
+        },
+        {
+          img: S.imgEntInformation,
+          title: '信息提取',
+          desc: '从企业机构长篇幅文件中，进行结构化分析，提取结构化信息'
+        },
+        {
+          img: S.imgEntCommentAnalysis,
+          title: '评论分析',
+          desc: '对企业或产品的用户评论进行分析'
+        },
+        {
+          img: S.imgEntRootClustering,
+          title: '根源聚类',
+          desc: '对海量文本的内容进行相似内容聚类，进行常见问题整理'
+        }
+      ]
     }
   }
 }
