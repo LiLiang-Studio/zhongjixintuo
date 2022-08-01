@@ -292,6 +292,26 @@ export default {
           desc: 'Disaster recovery capability: Support remote dual-machine hot backup technology to prevent single point of failure.'
         }
       ]
+    },
+    intelligentPlatformServiceValue: {
+      title: 'Intelligent platform service value',
+      items: [
+        {
+          img: S.imgEntRobot,
+          title: 'Robotic Navigation Saves Labor Costs',
+          desc: '80% of the repetitive and similar problems of enterprises can be solved by intelligent robots, and the remaining manpower can be used for more refined value services.'
+        },
+        {
+          img: S.imgEntIntelligentQuality,
+          title: 'Intelligent quality inspection establishes a unified standard',
+          desc: 'Intelligent quality inspection, establish a quality inspection model that passes the standard, and reduce errors caused by manual quality inspection due to different quality inspectors and different degrees of fatigue.'
+        },
+        {
+          img: S.imgEntHotPoint,
+          title: 'Hot value analysis',
+          desc: '80% of the repetitive and similar problems of enterprises can be solved by intelligent robots, and the remaining manpower can be used for more refined value services.'
+        }
+      ]
     }
   }
 }

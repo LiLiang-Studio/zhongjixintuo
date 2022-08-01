@@ -35,3 +35,7 @@ export const iconEntMedia = '/images/enterprise/media.png'
 export const iconEntSafety = '/images/enterprise/safety.png'
 export const iconEntSeat = '/images/enterprise/seat.png'
 export const iconEntUpdate = '/images/enterprise/update.png'
+
+export const imgEntHotPoint = '/images/enterprise/hot_point.jpg'
+export const imgEntIntelligentQuality = '/images/enterprise/intelligent_quality.jpg'
+export const imgEntRobot = '/images/enterprise/robot.jpg'

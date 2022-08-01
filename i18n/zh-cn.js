@@ -292,6 +292,26 @@ export default {
           desc: '灾备能力：支持异地双机热备技术，防止单点故障。'
         }
       ]
+    },
+    intelligentPlatformServiceValue: {
+      title: '智能化平台服务价值',
+      items: [
+        {
+          img: S.imgEntRobot,
+          title: '机器人导航节省人力成本',
+          desc: '企业80%重复、相似的问题可以通过智能机器人解决，剩余的人力可做更精细化的价值服务。'
+        },
+        {
+          img: S.imgEntIntelligentQuality,
+          title: '智能质检建立统一标准',
+          desc: '智能质检，建立通过标准的质检模型，减少人工质检因质检人员不同，疲劳程度不同而造成的误差。'
+        },
+        {
+          img: S.imgEntHotPoint,
+          title: '热点价值分析',
+          desc: '企业80%重复、相似的问题可以通过智能机器人解决，剩余的人力可做更精细化的价值服务。'
+        }
+      ]
     }
   }
 }

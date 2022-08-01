@@ -6,6 +6,7 @@
       </template>
     </UiRowCard>
     <EntServiceCenter v-bind="obj.serviceCenter" />
+    <EntIntelligentPlatformService v-bind="obj.intelligentPlatformServiceValue" />
   </div>
 </template>
 
