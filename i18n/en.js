@@ -325,6 +325,10 @@ export default {
     callCenter: {
       title: 'Smart Call Center',
       desc: 'The operation is stable, safe and reliable, helping enterprises to quickly build a customer contact platform that integrates telephone, online communication, and audio and video calls. <br><br>Provide a solid, stable, integrated and unified communication base for enterprise business, and is committed to improving the digital and intelligent competitiveness of enterprise services and marketing.'
+    },
+    gaeBms: {
+      title: 'Government and Enterprise Business Management System',
+      desc: 'A software that can provide real-time, relevant, accurate and complete data for managers to make decisions.'
     }
   }
 }

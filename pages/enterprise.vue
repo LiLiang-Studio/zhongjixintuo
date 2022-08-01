@@ -16,6 +16,11 @@
       </template>
       <UiTagList :items="obj.bigDataAppSystem.items" />
     </UiRowCard>
+    <UiRowCard v-bind="obj.gaeBms">
+      <template #bg>
+        <img src="/images/enterprise/gae_bms.png" alt="">
+      </template>
+    </UiRowCard>
   </div>
 </template>
 
