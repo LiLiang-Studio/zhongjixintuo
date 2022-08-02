@@ -547,6 +547,30 @@ export default {
           desc: 'Business opportunity lead report, project progress report, capital report, income report'
         }
       ]
+    },
+    unitedTechnologyInnovation: {
+      title: 'Realize joint technological innovation',
+      desc: 'Supported by cloud computing, big data, artificial intelligence and other technologies. <br><br>Build big data processing, service, application, standard specification and security monitoring system. <br><br>Realize massive data processing, service, query retrieval, analysis and mining, and provide strong support for the deepening application of data value.',
+      items: [
+        [
+          {
+            title: 'AI Capability Platform',
+            desc: 'AI "ability", engine core competence<br>AI "learning", semi-supervised self-service training'
+          },
+          {
+            title: 'data intelligence',
+            desc: 'Intelligent Analysis:<br>AI "Spirit", Precise User Profile<br>Precision Marketing:<br>AI "Sell", Precise Marketing'
+          }
+        ],
+        {
+          title: 'Tool intelligence',
+          desc: 'Intelligent quality inspection: <br>AI "listen", automatic quality inspection analysis<br><br>Intelligent outbound call:<br>AI "speak", robot customer service<br><br>Intelligent assistance:<br>AI " Watch", real-time agent assistant<br><br>Intelligent training:<br>AI "practice", human-machine intelligence training'
+        },
+        {
+          title: 'AI data center',
+          desc: 'AI "Intelligent"<br>Intelligent Data BI Platform<br><br>Intelligent Knowledge Base<br>AI "Smart"<br>Intelligent Knowledge Service Platform'
+        }
+      ]
     }
   }
 }
