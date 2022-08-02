@@ -16,7 +16,7 @@
         <p class="desc" v-html="obj.about.desc"></p>
       </div>
     </div>
-    <div :class="`${cls}_form`">
+    <!-- <div :class="`${cls}_form`">
       <div class="inner">
         <h2 class="title">{{ obj.consultForm.title }}</h2>
         <div class="fgline"></div>
@@ -54,7 +54,7 @@
           </div>
         </form>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
