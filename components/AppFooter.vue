@@ -24,7 +24,7 @@
               <NuxtLink :to="getTo('/ai')">{{ langPkg.aiApp }}</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/">{{ langPkg.entEffectiveness }}</NuxtLink>
+              <NuxtLink :to="getTo('/enterprise')">{{ langPkg.entEffectiveness }}</NuxtLink>
             </li>
             <li>
               <NuxtLink to="/">{{ langPkg.cooperation }}</NuxtLink>
