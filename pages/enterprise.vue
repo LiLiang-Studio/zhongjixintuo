@@ -30,6 +30,7 @@
     <div :class="`${cls}_box`">
       <EntEms v-bind="obj.ems" />
     </div>
+    <EntBmpProcessNodeTracking v-bind="obj.bmpProcessNodeTracking" />
     <div :class="`${cls}_box`">
       <EntFuncBoxList v-bind="obj.advantagesOfTechnicalSolutions" item-class="advantages-of-technical-solutions-item" />
       <EntSsr v-bind="obj.ssr" />

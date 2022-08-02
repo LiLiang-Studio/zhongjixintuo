@@ -522,6 +522,31 @@ export default {
           desc: 'Security Alert/Backup and Recovery'
         }
       ]
+    },
+    bmpProcessNodeTracking: {
+      title: 'Business Integrated Management Platform Full-process Node Tracking',
+      items: [
+        {
+          title: 'Contract Center',
+          desc: 'Business opportunity management, stage management, contract related information, collection plan, follow-up process, attachment management, early warning management'
+        },
+        {
+          title: 'Customer, Supplier Kanban',
+          desc: 'Supplier basic information management, historical cooperation projects, evaluation information, review information, supplier qualification management'
+        },
+        {
+          title: 'Project process management',
+          desc: 'Project information management, milestone process management, acceptance management, maintenance renewal management'
+        },
+        {
+          title: 'Business, Procurement Process',
+          desc: 'Sales plan review, information change, payment process management, invoice management, fund management'
+        },
+        {
+          title: 'Report monitoring',
+          desc: 'Business opportunity lead report, project progress report, capital report, income report'
+        }
+      ]
     }
   }
 }
