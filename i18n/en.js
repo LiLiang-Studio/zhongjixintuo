@@ -22,7 +22,7 @@ export default {
       {
         icon: S.iconTeam,
         title: 'trusted team',
-        desc: 'The company has more than 50 back-end developers, fully supported;'
+        desc: 'The company has a total of more than 50 developers, with full support;'
       },
       {
         icon: S.iconService,
@@ -85,7 +85,7 @@ export default {
     },
     {
       label: 'About Us',
-      link: '/'
+      link: '/about'
     }
   ],
   partner: {
@@ -571,6 +571,66 @@ export default {
           desc: 'AI "Intelligent"<br>Intelligent Data BI Platform<br><br>Intelligent Knowledge Base<br>AI "Smart"<br>Intelligent Knowledge Service Platform'
         }
       ]
+    }
+  },
+  aboutPage: {
+    banner: {
+      title: 'about us',
+      desc: 'With technology as the core, we provide you with efficient and safe digital products!'
+    },
+    about: {
+      title: 'Beijing Zhongji Xintuo Co., Ltd.',
+      desc: `Zhongji Xintuo has been focusing on the technology of "R&D, construction, audio and video, AI application and enterprise efficiency, providing enterprises with efficient and safe digital products;
+        <br><br>Videos include (quality improvement, scene replacement, portrait beauty, portrait special effects, face recognition, customer service video technology), etc.; AI applications include: (text robots, image and video recognition/classification, natural language understanding, Audio and video enhancement), etc.; enterprise efficiency includes (intelligent call platform, big data application, government and enterprise management system), etc.;
+        <br><br>And all these technologies can be run on the whole platform. At present, we have close cooperation with enterprises in many fields. Choose us to make you feel more at ease; 24-hour technical support, the first time Solve your intractable problems!`
+    },
+    consultForm: {
+      title: 'Welcome major enterprises to come to consult',
+      enterpriseField: {
+        label: 'Enterprise field',
+        placeholder: 'Click the drop-down menu to select the field of your business',
+        options: [
+          'Medical beauty',
+          'live streaming',
+          'short video',
+          'Government and enterprise',
+          'finance',
+          'Insurance',
+          'car',
+          'educate',
+          'Recruitment',
+          'medical',
+          'manufacture'
+        ]
+      },
+      contactDetails: {
+        label: 'contact details'
+      },
+      consultationDirection: {
+        label: 'Consultation direction',
+        placeholder: 'Click the drop-down menu to select the technology you want to know about',
+        options: [
+          'Image Processing',
+          'glamorous filter',
+          'face recognition',
+          'smart robot',
+          'Call Center',
+          'online service',
+          'Government and Enterprise Management',
+          'AI application'
+        ]
+      },
+      yourQuestion: {
+        label: 'your question',
+        placeholder: 'Please briefly describe the question you want to consult'
+      },
+      submitBtn: 'Submit'
+    },
+    submitSuccessfully: {
+      dialogTitle: 'Dear Customer Hello:',
+      title: 'Thank you for your trust in Zhongji Xintuo',
+      subTitle: 'We will contact you within 24 hours',
+      closeBtn: 'closure'
     }
   }
 }

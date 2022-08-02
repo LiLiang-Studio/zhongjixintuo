@@ -30,7 +30,7 @@
               <NuxtLink to="/">{{ langPkg.cooperation }}</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/">{{ langPkg.aboutUs }}</NuxtLink>
+              <NuxtLink :to="getTo('/about')">{{ langPkg.aboutUs }}</NuxtLink>
             </li>
             <li>
               <NuxtLink to="/">{{ langPkg.TechDoc }}</NuxtLink>
