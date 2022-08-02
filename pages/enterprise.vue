@@ -32,6 +32,7 @@
     </div>
     <div :class="`${cls}_box`">
       <EntFuncBoxList v-bind="obj.advantagesOfTechnicalSolutions" item-class="advantages-of-technical-solutions-item" />
+      <EntSsr v-bind="obj.ssr" />
     </div>
   </div>
 </template>

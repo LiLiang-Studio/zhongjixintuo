@@ -493,6 +493,35 @@ export default {
           desc: 'Open source style development organization, high code quality, 100% source code delivery'
         }
       ]
+    },
+    ssr: {
+      title: 'System Security and Reliability',
+      items: [
+        {
+          title: 'Contract Center',
+          desc: 'Authorization and access control log and audit management based on Apache Shiro'
+        },
+        {
+          title: 'Application system access control',
+          desc: 'User identity authentication/user authority control'
+        },
+        {
+          title: 'Application Department Data Encryption',
+          desc: 'Data transmission encryption/data storage encryption/key management'
+        },
+        {
+          title: 'Data application security',
+          desc: 'Data message encryption/data message authentication/data verification'
+        },
+        {
+          title: 'System reliability',
+          desc: 'Strong system compatibility / high system stability, good scalability of the system / excellent maintainability of the system'
+        },
+        {
+          title: 'Safe use of the application system',
+          desc: 'Security Alert/Backup and Recovery'
+        }
+      ]
     }
   }
 }
