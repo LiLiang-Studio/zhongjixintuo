@@ -17,14 +17,21 @@
       </template>
       <UiTagList :items="obj.bigDataAppSystem.items" />
     </UiRowCard>
+    <EntDataAnalysis v-bind="obj.dataAnalysis" />
+    <div :class="`${cls}_box`">
+      <EntFuncBoxList v-bind="obj.supportService" item-class="support-service-item" />
+    </div>
+    <EntAdvantage v-bind="obj.advantage" />
     <UiRowCard v-bind="obj.gaeBms">
       <template #bg>
         <img src="/images/enterprise/gae_bms.png" alt="">
       </template>
     </UiRowCard>
-    <EntDataAnalysis v-bind="obj.dataAnalysis" />
     <div :class="`${cls}_box`">
-      <EntFuncBoxList v-bind="obj.supportService" item-class="support-service-item" />
+      <EntEms v-bind="obj.ems" />
+    </div>
+    <div :class="`${cls}_box`">
+      <EntFuncBoxList v-bind="obj.advantagesOfTechnicalSolutions" item-class="advantages-of-technical-solutions-item" />
     </div>
   </div>
 </template>
@@ -44,8 +51,13 @@ const obj = computed(() => langPkg.value.enterprisePage)
       padding: 0 1rem;
     }
   }
-  .support-service-item {
+  .support-service-item, .advantages-of-technical-solutions-item {
     width: calc(33.33% - 1rem);
+  }
+  .advantages-of-technical-solutions-item {
+    p {
+      text-align: left;
+    }
   }
 }
 </style>

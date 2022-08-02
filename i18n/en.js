@@ -439,6 +439,60 @@ export default {
           desc: 'Real-time monitoring of the business delivery process is realized for the key links of business flow.'
         }
       ]
+    },
+    advantage: {
+      title: 'Our core strengths',
+      items: [
+        {
+          title: '① one stop',
+          desc: 'Fully meet the different needs of a variety of roles'
+        },
+        {
+          title: '② Safe and reliable',
+          desc: 'Security assurance at different levels of data tables, fields, data records, services, etc.'
+        },
+        {
+          title: '③ Scalable',
+          desc: 'It can be connected to various PASS layer services, various data resources, scalable data operation processes, standard systems and knowledge bases, etc.'
+        },
+        {
+          title: '④ Rich application',
+          desc: 'Cloud search, comprehensive query, electronic archives, control and early warning, labeling system, relational graph analysis, big data self-service analysis platform'
+        }
+      ]
+    },
+    ems: {
+      title: 'Enterprise management system',
+      desc: 'It refers to a software that can reflect most of the functions of enterprise management (including decision-making, planning, organization, leadership, monitoring, analysis, etc.), can provide real-time, relevant, accurate and complete data, and provide managers with a basis for decision-making.'
+    },
+    advantagesOfTechnicalSolutions: {
+      title: 'Zhongji Xintuo|Technical Solution Advantages',
+      items: [
+        {
+          title: 'Advantage one',
+          desc: 'Rapid customized development based on mature prototypes, rich in prototype cases, advanced development methods, and 100% in line with user needs'
+        },
+        {
+          title: 'Advantage two',
+          desc: 'Extremely agile development process, fast pace of development, clear output, fast feedback and delivery; fast trial and error, fast change'
+        },
+        {
+          title: 'Advantage three',
+          desc: 'The latest Internet development technology stack, mainstream front-end and back-end technologies, using mainstream databases and middleware'
+        },
+        {
+          title: 'Advantage four',
+          desc: 'Embracing mainstream and mature technical standards, with reasonable architecture levels, clear system structure and strong scalability'
+        },
+        {
+          title: 'Advantage five',
+          desc: 'Good at thinking from the perspective of users, pursuing user experience, superb front-end technology, and excellent product experience'
+        },
+        {
+          title: 'Advantage six',
+          desc: 'Open source style development organization, high code quality, 100% source code delivery'
+        }
+      ]
     }
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <li :class="cls">
-    <img class="icon" :src="icon" alt="">
+    <img v-if="icon" class="icon" :src="icon" alt="">
     <h3 class="title">{{ title }}</h3>
     <p class="desc">{{ desc }}</p>
   </li>
