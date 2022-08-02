@@ -76,15 +76,15 @@ const cls = 'ent-united-technology-tnnovation'
     }
   }
   .box {
-    border: 1px solid #417CFF;
+    border: 1px dashed #417CFF;
     padding: 0 .5rem;
     border-radius: 6px;
     text-align: center;
     line-height: 1.8;
   }
   .title {
-    padding: .5rem 0;
-    border-bottom: 1px solid #417CFF;
+    padding: .3rem 0;
+    border-bottom: 1px dashed #417CFF;
     color: #417CFF;
     font-size: 1.1rem;
     font-weight: normal;
