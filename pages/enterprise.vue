@@ -10,7 +10,9 @@
       <!-- 新一代客服系统平台 -->
       <EntServiceCenter v-bind="obj.serviceCenter" />
       <!-- 智能呼叫中心 -->
-      <EntCallCenter v-bind="obj.callCenter" />
+      <UiBoxOne v-bind="obj.callCenter">
+        <img src="/images/enterprise/call_center.png" alt="">
+      </UiBoxOne>
       <!-- 智能化平台服务价值 -->
       <EntIntelligentPlatformService v-bind="obj.intelligentPlatformServiceValue" />
       <!-- 让企业更好的管理客户  提升企业效能 -->
@@ -43,7 +45,9 @@
     </UiRowCard>
     <div :class="`${cls}_box`">
       <!-- 企业管理系统 -->
-      <EntEms v-bind="obj.ems" />
+      <UiBoxOne v-bind="obj.ems">
+        <img src="/images/enterprise/gebs.png" alt="">
+      </UiBoxOne>
     </div>
     <!-- 业务综合管理平台  全流程节点跟踪 -->
     <EntBmpProcessNodeTracking v-bind="obj.bmpProcessNodeTracking" />

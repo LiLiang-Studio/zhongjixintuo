@@ -2,7 +2,7 @@
   <div :class="cls">
     <div :class="`${cls}_inner`">
       <div :class="`${cls}_left`">
-        <img src="/images/enterprise/call_center.png" alt="">
+        <slot />
       </div>
       <div :class="`${cls}_right`">
         <div>
@@ -15,21 +15,17 @@
 </template>
 
 <script setup>
-defineProps({
-  title: String,
-  desc: String
-})
-const cls = 'ent-call-center'
+defineProps({ title: String, desc: String })
+const cls = 'ui-box-one'
 </script>
 
 <style lang="less">
-@prefix: ent-call-center;
+@prefix: ui-box-one;
 .@{prefix} {
   padding: 3rem 0;
   &_inner {
     display: flex;
     background-color: #417CFF;
-    color: #fff;
   }
   &_left {
     flex: 1;
@@ -42,7 +38,7 @@ const cls = 'ent-call-center'
     border-bottom-right-radius: 12rem;
     img {
       max-width: 100%;
-      max-height: 90%;
+      max-height: 80%;
     }
   }
   &_right {
@@ -51,6 +47,7 @@ const cls = 'ent-call-center'
     align-items: center;
     justify-content: center;
     padding: 1rem;
+    color: #fff;
   }
   &_title {
     margin-bottom: 2rem;
