@@ -16,10 +16,8 @@
     </div>
     <!-- 智能化平台服务价值 -->
     <UiBoxTwo v-bind="obj.intelligentPlatformServiceValue" />
-    <div :class="`${cls}_box`">
-      <!-- 让企业更好的管理客户  提升企业效能 -->
-      <EntFuncBoxList v-bind="obj.customerManage" />
-    </div>
+    <!-- 让企业更好的管理客户  提升企业效能 -->
+    <UiBoxThree v-bind="obj.customerManage" />
     <!-- 大数据应用系统 -->
     <UiRowCard :title="obj.bigDataAppSystem.title">
       <template #bg>
@@ -33,16 +31,14 @@
     </div>
     <!-- 一站式平台，赋能企业提高线索转化率 -->
     <UiBoxTwo v-bind="obj.dataAnalysis" style="background: #F5FAFF;padding-top: 3rem;padding-bottom: 3rem;" />
-    <div :class="`${cls}_box`">
-      <!-- 提供全方位多应用系统支撑服务 -->
-      <EntFuncBoxList v-bind="obj.supportService" item-class="support-service-item" />
-    </div>
+    <!-- 提供全方位多应用系统支撑服务 -->
+    <UiBoxThree v-bind="obj.supportService" item-class="support-service-item" />
     <!-- 我们的核心优势 -->
     <EntAdvantage v-bind="obj.advantage" />
     <!-- 政企业务管理系统 -->
     <UiRowCard v-bind="obj.gaeBms">
       <template #bg>
-        <img src="/images/enterprise/gae_bms.png" alt="">
+        <img src="/images/enterprise/gae_bms.jpg" alt="">
       </template>
     </UiRowCard>
     <div :class="`${cls}_box`">
@@ -53,9 +49,9 @@
     </div>
     <!-- 业务综合管理平台  全流程节点跟踪 -->
     <EntBmpProcessNodeTracking v-bind="obj.bmpProcessNodeTracking" />
+    <!-- 中玑信拓|技术方案优势 -->
+    <UiBoxThree v-bind="obj.advantagesOfTechnicalSolutions" item-class="advantages-of-technical-solutions-item" />
     <div :class="`${cls}_box`">
-      <!-- 中玑信拓|技术方案优势 -->
-      <EntFuncBoxList v-bind="obj.advantagesOfTechnicalSolutions" item-class="advantages-of-technical-solutions-item" />
       <!-- 系统安全性与可靠性 -->
       <EntSsr v-bind="obj.ssr" />
     </div>

@@ -39,6 +39,8 @@ const cls = 'ui-box-two'
     margin: 0 .5rem 1rem;
     width: calc(33.33% - 1rem);
     &_img {
+      border-radius: 1rem;
+      overflow: hidden;
       img {
         width: 100%;
       }
