@@ -13,8 +13,10 @@
       <UiBoxOne v-bind="obj.callCenter">
         <img src="/images/enterprise/call_center.png" alt="">
       </UiBoxOne>
-      <!-- 智能化平台服务价值 -->
-      <EntIntelligentPlatformService v-bind="obj.intelligentPlatformServiceValue" />
+    </div>
+    <!-- 智能化平台服务价值 -->
+    <UiBoxTwo v-bind="obj.intelligentPlatformServiceValue" />
+    <div :class="`${cls}_box`">
       <!-- 让企业更好的管理客户  提升企业效能 -->
       <EntFuncBoxList v-bind="obj.customerManage" />
     </div>
@@ -30,7 +32,7 @@
       <EntUnitedTechnologyInnovation v-bind="obj.unitedTechnologyInnovation" />
     </div>
     <!-- 一站式平台，赋能企业提高线索转化率 -->
-    <EntDataAnalysis v-bind="obj.dataAnalysis" />
+    <UiBoxTwo v-bind="obj.dataAnalysis" style="background: #F5FAFF;padding-top: 3rem;padding-bottom: 3rem;" />
     <div :class="`${cls}_box`">
       <!-- 提供全方位多应用系统支撑服务 -->
       <EntFuncBoxList v-bind="obj.supportService" item-class="support-service-item" />

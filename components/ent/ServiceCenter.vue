@@ -22,7 +22,7 @@ const cls = 'ent-service-center'
 <style lang="less">
 @prefix: ent-service-center;
 .@{prefix} {
-  padding: 3rem 0 2rem;
+  padding-top: 3rem;
   &_title {
     font-size: 2rem;
     text-align: center;
