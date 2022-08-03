@@ -293,26 +293,6 @@ export default {
         }
       ]
     },
-    intelligentPlatformServiceValue: {
-      title: 'Intelligent platform service value',
-      items: [
-        {
-          img: S.imgEntRobot,
-          title: 'Robotic Navigation Saves Labor Costs',
-          desc: '80% of the repetitive and similar problems of enterprises can be solved by intelligent robots, and the remaining manpower can be used for more refined value services.'
-        },
-        {
-          img: S.imgEntIntelligentQuality,
-          title: 'Intelligent quality inspection establishes a unified standard',
-          desc: 'Intelligent quality inspection, establish a quality inspection model that passes the standard, and reduce errors caused by manual quality inspection due to different quality inspectors and different degrees of fatigue.'
-        },
-        {
-          img: S.imgEntHotPoint,
-          title: 'Hot value analysis',
-          desc: '80% of the repetitive and similar problems of enterprises can be solved by intelligent robots, and the remaining manpower can be used for more refined value services.'
-        }
-      ]
-    },
     bigDataAppSystem: {
       title: 'big data application system',
       items: [
@@ -322,58 +302,9 @@ export default {
         'Low operation and maintenance cost'
       ]
     },
-    callCenter: {
-      title: 'Smart Call Center',
-      desc: 'The operation is stable, safe and reliable, helping enterprises to quickly build a customer contact platform that integrates telephone, online communication, and audio and video calls. <br><br>Provide a solid, stable, integrated and unified communication base for enterprise business, and is committed to improving the digital and intelligent competitiveness of enterprise services and marketing.'
-    },
     gaeBms: {
       title: 'Government and Enterprise Business Management System',
       desc: 'A software that can provide real-time, relevant, accurate and complete data for managers to make decisions.'
-    },
-    customerManage: {
-      title: 'Let enterprises better manage customers and improve enterprise efficiency',
-      items: [
-        {
-          icon: S.iconEntContact,
-          title: 'Contact Management Center',
-          desc: 'Multimedia contact information, pop-up screen for incoming calls'
-        },
-        {
-          icon: S.iconEntCustomer,
-          title: 'Customer Data Center',
-          desc: 'Customer data collection, binding, customer service history information'
-        },
-        {
-          icon: S.iconEntWorkorder,
-          title: 'Work Order Center',
-          desc: 'Work order creation, work order processing flow'
-        },
-        {
-          icon: S.iconEntSms,
-          title: 'SMS sending management',
-          desc: 'Real-time tracking, efficient and convenient, to ensure service timeliness'
-        },
-        {
-          icon: S.iconEntSettings,
-          title: 'Configuration Center',
-          desc: 'Standardize business management, realize work order template, customer template, report configurable processing, and quickly customize new business'
-        },
-        {
-          icon: S.iconEntOutcall,
-          title: 'Preview outbound call center',
-          desc: 'Outbound call scenarios, tasks, lists, and then contact management'
-        },
-        {
-          icon: S.iconEntPermission,
-          title: 'User rights',
-          desc: 'Permission settings for menus, enterprise user classification management'
-        },
-        {
-          icon: S.iconEntKnowledge,
-          title: 'Knowledge Center',
-          desc: 'Knowledge base management, query'
-        }
-      ]
     },
     dataAnalysis: {
       title: 'One-stop platform that empowers companies to improve lead conversion rates',
@@ -410,141 +341,40 @@ export default {
         }
       ]
     },
-    supportService: {
-      title: 'Provide a full range of multi-application system support services',
+    objectManage: {
+      title: 'Get twice the result with half the effort, put it in place, and make government and enterprise work easier!',
       items: [
         {
-          icon: S.iconEntBusinessSupport,
-          title: 'business support system',
-          desc: 'It is an application support platform for the front-end of enterprises such as marketing and customer service, and an important part of internal operations such as business and finance.'
+          title: 'Monitoring management',
+          desc: 'Relationship between customers, projects, contracts, business opportunities, finance, and partners, visualized display, and early warning of abnormal situations;'
         },
         {
-          icon: S.iconEntManagementSupport,
-          title: 'management support system',
-          desc: 'Provide unified access and one-stop experience for different users and roles.'
+          title: 'Opportunity Management',
+          desc: 'Multi-channel business opportunity information collection, timely evaluation and follow-up, and maximizing business opportunities.'
         },
         {
-          icon: S.iconEntDataApply,
-          title: 'Enterprise Data Application',
-          desc: 'The application of enterprise data, the support system domain aiming at supporting data sharing and analysis. It mainly includes operational data storage.'
+          title: 'customer management',
+          desc: 'Customer resource management, carry out customer relationship maintenance, demand deep exploration, and business development according to customer types.'
         },
         {
-          icon: S.iconEntOperationSupport,
-          title: 'Operation Support System',
-          desc: 'Realize the whole network, unified, shared and efficient management of products and sales.'
+          title: 'contract management',
+          desc: 'Pay attention to process management, key links and cost planning and actual progress management, and provide early warning and reminders for overdue and abnormal situations.'
         },
         {
-          icon: S.iconEntItGovernance,
-          title: 'IT control system',
-          desc: 'Real-time monitoring of the business delivery process is realized for the key links of business flow.'
-        }
-      ]
-    },
-    advantage: {
-      title: 'Our core strengths',
-      items: [
-        {
-          title: '① one stop',
-          desc: 'Fully meet the different needs of a variety of roles'
+          title: 'project management',
+          desc: 'Update project dynamics in a timely manner, record resource usage, operation and maintenance, etc. in the project implementation process to comprehensively evaluate the project.'
         },
         {
-          title: '② Safe and reliable',
-          desc: 'Security assurance at different levels of data tables, fields, data records, services, etc.'
+          title: 'Resource management',
+          desc: 'Through scientific registration and management, we can understand the advantages and disadvantages of each enterprise, and promote the implementation of business cooperation.'
         },
         {
-          title: '③ Scalable',
-          desc: 'It can be connected to various PASS layer services, various data resources, scalable data operation processes, standard systems and knowledge bases, etc.'
+          title: 'System Management',
+          desc: 'Reasonable setting of system permissions, sub-permission management, and application of custom sub-modules have been added, deleted, checked, and modified.'
         },
         {
-          title: '④ Rich application',
-          desc: 'Cloud search, comprehensive query, electronic archives, control and early warning, labeling system, relational graph analysis, big data self-service analysis platform'
-        }
-      ]
-    },
-    ems: {
-      title: 'Enterprise management system',
-      desc: 'It refers to a software that can reflect most of the functions of enterprise management (including decision-making, planning, organization, leadership, monitoring, analysis, etc.), can provide real-time, relevant, accurate and complete data, and provide managers with a basis for decision-making.'
-    },
-    advantagesOfTechnicalSolutions: {
-      title: 'Zhongji Xintuo|Technical Solution Advantages',
-      items: [
-        {
-          title: 'Advantage one',
-          desc: 'Rapid customized development based on mature prototypes, rich in prototype cases, advanced development methods, and 100% in line with user needs'
-        },
-        {
-          title: 'Advantage two',
-          desc: 'Extremely agile development process, fast pace of development, clear output, fast feedback and delivery; fast trial and error, fast change'
-        },
-        {
-          title: 'Advantage three',
-          desc: 'The latest Internet development technology stack, mainstream front-end and back-end technologies, using mainstream databases and middleware'
-        },
-        {
-          title: 'Advantage four',
-          desc: 'Embracing mainstream and mature technical standards, with reasonable architecture levels, clear system structure and strong scalability'
-        },
-        {
-          title: 'Advantage five',
-          desc: 'Good at thinking from the perspective of users, pursuing user experience, superb front-end technology, and excellent product experience'
-        },
-        {
-          title: 'Advantage six',
-          desc: 'Open source style development organization, high code quality, 100% source code delivery'
-        }
-      ]
-    },
-    ssr: {
-      title: 'System Security and Reliability',
-      items: [
-        {
-          title: 'Contract Center',
-          desc: 'Authorization and access control log and audit management based on Apache Shiro'
-        },
-        {
-          title: 'Application system access control',
-          desc: 'User identity authentication/user authority control'
-        },
-        {
-          title: 'Application Department Data Encryption',
-          desc: 'Data transmission encryption/data storage encryption/key management'
-        },
-        {
-          title: 'Data application security',
-          desc: 'Data message encryption/data message authentication/data verification'
-        },
-        {
-          title: 'System reliability',
-          desc: 'Strong system compatibility / high system stability, good scalability of the system / excellent maintainability of the system'
-        },
-        {
-          title: 'Safe use of the application system',
-          desc: 'Security Alert/Backup and Recovery'
-        }
-      ]
-    },
-    bmpProcessNodeTracking: {
-      title: 'Business Integrated Management Platform Full-process Node Tracking',
-      items: [
-        {
-          title: 'Contract Center',
-          desc: 'Business opportunity management, stage management, contract related information, collection plan, follow-up process, attachment management, early warning management'
-        },
-        {
-          title: 'Customer, Supplier Kanban',
-          desc: 'Supplier basic information management, historical cooperation projects, evaluation information, review information, supplier qualification management'
-        },
-        {
-          title: 'Project process management',
-          desc: 'Project information management, milestone process management, acceptance management, maintenance renewal management'
-        },
-        {
-          title: 'Business, Procurement Process',
-          desc: 'Sales plan review, information change, payment process management, invoice management, fund management'
-        },
-        {
-          title: 'Report monitoring',
-          desc: 'Business opportunity lead report, project progress report, capital report, income report'
+          title: 'Financial Management',
+          desc: 'The government and enterprise business income and expenditure are displayed in the form of statements, and the overall understanding of the government and enterprise financial operation data, statistical performance assessment, and income forecast.'
         }
       ]
     },
@@ -570,6 +400,21 @@ export default {
           title: 'AI data center',
           desc: 'AI "Intelligent"<br>Intelligent Data BI Platform<br><br>Intelligent Knowledge Base<br>AI "Smart"<br>Intelligent Knowledge Service Platform'
         }
+      ]
+    },
+    iss: {
+      title: 'Intelligent Service System Improves Enterprise Efficiency',
+      items: [
+        '80% of the repeated and similar problems of enterprises can be solved through the intelligent call platform, and the remaining manpower can be used for more refined value services;',
+        'Intelligent quality inspection, establish a quality inspection model that passes the standard, and reduce errors caused by different quality inspection personnel and different fatigue levels in manual quality inspection;',
+        'The system automatically calculates hot consulting issues for enterprises, and customers focus on them, so as to reallocate resources and improve the overall efficiency of services;'
+      ]
+    },
+    gaeSystemSummary: {
+      title: 'To achieve "everything has feedback, every piece has implementation"',
+      items: [
+        'Zhongji Xintuo specially builds a collaborative office platform for enterprises, providing enterprises with core solutions such as unified entrance, social communication, collaborative office, and business collaboration;;',
+        'Help enterprises build digital and intelligent multi-terminal work portals, improve collaborative office efficiency, reduce operating costs, empower employees and teams, and stimulate organizational vitality.'
       ]
     }
   },

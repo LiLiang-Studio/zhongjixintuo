@@ -1,60 +1,48 @@
 <template>
   <div :class="cls">
-    <!-- 呼叫中心 -->
+    <!-- 呼叫中心 banner -->
     <UiRowCard v-bind="obj.banner">
       <template #bg>
         <img src="/images/enterprise/banner.jpg" alt="">
       </template>
     </UiRowCard>
+    <!-- 智能服务系统  提升企业效能 -->
+    <UiBoxFour v-bind="obj.iss" show-dot>
+      <template #img>
+        <img src="/images/enterprise/call_platform_intelligent_service.png" alt="">
+      </template>
+    </UiBoxFour>
     <div :class="`${cls}_box`">
       <!-- 新一代客服系统平台 -->
       <EntServiceCenter v-bind="obj.serviceCenter" />
-      <!-- 智能呼叫中心 -->
-      <UiBoxOne v-bind="obj.callCenter">
-        <img src="/images/enterprise/call_center.png" alt="">
-      </UiBoxOne>
     </div>
-    <!-- 智能化平台服务价值 -->
-    <UiBoxTwo v-bind="obj.intelligentPlatformServiceValue" />
-    <!-- 让企业更好的管理客户  提升企业效能 -->
-    <UiBoxThree v-bind="obj.customerManage" />
-    <!-- 大数据应用系统 -->
+
+    <!-- 大数据应用系统 banner -->
     <UiRowCard :title="obj.bigDataAppSystem.title">
       <template #bg>
         <img src="/images/enterprise/big_data_app_system.jpg" alt="">
       </template>
       <UiTagList :items="obj.bigDataAppSystem.items" />
     </UiRowCard>
-    <div :class="`${cls}_box`">
-      <!-- 实现联合技术创新 -->
-      <EntUnitedTechnologyInnovation v-bind="obj.unitedTechnologyInnovation" />
-    </div>
+    <!-- 实现联合技术创新 -->
+    <EntUnitedTechnologyInnovation v-bind="obj.unitedTechnologyInnovation" />
     <!-- 一站式平台，赋能企业提高线索转化率 -->
     <UiBoxTwo v-bind="obj.dataAnalysis" style="background: #F5FAFF;padding-top: 3rem;padding-bottom: 3rem;" />
-    <!-- 提供全方位多应用系统支撑服务 -->
-    <UiBoxThree v-bind="obj.supportService" item-class="support-service-item" />
-    <!-- 我们的核心优势 -->
-    <EntAdvantage v-bind="obj.advantage" />
-    <!-- 政企业务管理系统 -->
+
+    <!-- 政企业务管理系统 banner -->
     <UiRowCard v-bind="obj.gaeBms">
       <template #bg>
         <img src="/images/enterprise/gae_bms.jpg" alt="">
       </template>
     </UiRowCard>
-    <div :class="`${cls}_box`">
-      <!-- 企业管理系统 -->
-      <UiBoxOne v-bind="obj.ems">
-        <img src="/images/enterprise/gebs.png" alt="">
-      </UiBoxOne>
-    </div>
-    <!-- 业务综合管理平台  全流程节点跟踪 -->
-    <EntBmpProcessNodeTracking v-bind="obj.bmpProcessNodeTracking" />
-    <!-- 中玑信拓|技术方案优势 -->
-    <UiBoxThree v-bind="obj.advantagesOfTechnicalSolutions" item-class="advantages-of-technical-solutions-item" />
-    <div :class="`${cls}_box`">
-      <!-- 系统安全性与可靠性 -->
-      <EntSsr v-bind="obj.ssr" />
-    </div>
+    <!-- 做到“事事有反馈，件件有落实” -->
+    <UiBoxFour v-bind="obj.gaeSystemSummary">
+      <template #img>
+        <img src="/images/enterprise/government_and_enterprise_system.png" alt="">
+      </template>
+    </UiBoxFour>
+    <!-- 事半功倍、落实到位，政企工作更轻松！ -->
+    <UiBoxThree v-bind="obj.objectManage" />
   </div>
 </template>
 
@@ -71,14 +59,6 @@ const obj = computed(() => langPkg.value.enterprisePage)
     padding: 0 10%;
     @media screen and (max-width: 1024px) {
       padding: 0 1rem;
-    }
-  }
-  .support-service-item, .advantages-of-technical-solutions-item {
-    width: calc(33.33% - 1rem);
-  }
-  .advantages-of-technical-solutions-item {
-    p {
-      text-align: left;
     }
   }
 }
