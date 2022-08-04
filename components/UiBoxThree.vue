@@ -43,7 +43,6 @@ const cls = 'ui-box-three'
   &_item {
     background-color: #417CFF;
     color: #fff;
-    text-align: center;
     margin: 0 .5rem 1rem;
     width: calc(25% - 1rem);
     padding: 1rem;
@@ -54,6 +53,7 @@ const cls = 'ui-box-three'
     &_title {
       margin: .3rem 0 1rem;
       font-size: 1.1rem;
+      text-align: center;
     }
   }
   @media screen and (max-width: 1024px) {
