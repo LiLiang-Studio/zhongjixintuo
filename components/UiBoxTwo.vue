@@ -24,16 +24,19 @@ const cls = 'ui-box-two'
 <style lang="less">
 @prefix: ui-box-two;
 .@{prefix} {
-  padding: 0 10%;
+  padding: 3rem 0;
   &_title {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 3rem;
+    padding: 0 1rem;
   }
   &_list {
     display: flex;
     align-items: stretch;
     flex-wrap: wrap;
+    background: #F5FAFF;
+    padding: 2rem 10%;
   }
   &_item {
     margin: 0 .5rem 1rem;
@@ -56,8 +59,12 @@ const cls = 'ui-box-two'
     }
   }
   @media screen and (max-width: 1024px) {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    .@{prefix} {
+      &_list {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    }
   }
   @media screen and (max-width: 450px) {
     .@{prefix} {

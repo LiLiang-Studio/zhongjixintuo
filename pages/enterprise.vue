@@ -27,7 +27,7 @@
     <!-- 实现联合技术创新 -->
     <EntUnitedTechnologyInnovation v-bind="obj.unitedTechnologyInnovation" />
     <!-- 一站式平台，赋能企业提高线索转化率 -->
-    <UiBoxTwo v-bind="obj.dataAnalysis" style="background: #F5FAFF;padding-top: 3rem;padding-bottom: 3rem;" />
+    <UiBoxTwo v-bind="obj.dataAnalysis" />
 
     <!-- 政企业务管理系统 banner -->
     <UiRowCard v-bind="obj.gaeBms">
