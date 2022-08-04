@@ -60,5 +60,17 @@ const cls = 'ui-box-three'
     padding-left: 1rem;
     padding-right: 1rem;
   }
+  @media screen and (max-width: 750px) {
+    .@{prefix}_item {
+      width: calc(50% - 1rem);
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .@{prefix}_item {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
 }
 </style>
