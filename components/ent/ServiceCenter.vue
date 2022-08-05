@@ -22,7 +22,7 @@ const cls = 'ent-service-center'
 <style lang="less">
 @prefix: ent-service-center;
 .@{prefix} {
-  padding: 3rem 0;
+  padding: 3rem 10%;
   &_title {
     font-size: 2rem;
     text-align: center;
@@ -52,6 +52,10 @@ const cls = 'ent-service-center'
     text-align: left;
     color: #616161;
     line-height: 1.6;
+  }
+  @media screen and (max-width: 1024px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   @media screen and (max-width: 750px) {
     .@{prefix}_list {

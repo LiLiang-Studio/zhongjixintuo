@@ -12,10 +12,8 @@
         <img src="/images/enterprise/call_platform_intelligent_service.png" alt="">
       </template>
     </UiBoxFour>
-    <div :class="`${cls}_box`">
-      <!-- 新一代客服系统平台 -->
-      <EntServiceCenter v-bind="obj.serviceCenter" />
-    </div>
+    <!-- 新一代客服系统平台 -->
+    <EntServiceCenter v-bind="obj.serviceCenter" />
 
     <!-- 大数据应用系统 banner -->
     <UiRowCard :title="obj.bigDataAppSystem.title">
@@ -51,15 +49,3 @@ const cls = 'page-enterprise'
 const { langPkg } = useLangPkg()
 const obj = computed(() => langPkg.value.enterprisePage)
 </script>
-
-<style lang="less">
-@prefix: page-enterprise;
-.@{prefix} {
-  &_box {
-    padding: 0 10%;
-    @media screen and (max-width: 1024px) {
-      padding: 0 1rem;
-    }
-  }
-}
-</style>
