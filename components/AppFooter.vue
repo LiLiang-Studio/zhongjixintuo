@@ -12,30 +12,17 @@
           </div>
           <div>
             <img src="/images/position.png" alt="">
-            <span>{{ langPkg.address }}</span>
+            <span>{{ obj.address }}</span>
           </div>
         </div>
         <div :class="`${cls}_right`">
-          <ul>
-            <li>
-              <NuxtLink :to="getTo('/video')">{{ langPkg.video }}</NuxtLink>
-            </li>
-            <li>
-              <NuxtLink :to="getTo('/ai')">{{ langPkg.aiApp }}</NuxtLink>
-            </li>
-            <li>
-              <NuxtLink :to="getTo('/enterprise')">{{ langPkg.entEffectiveness }}</NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/">{{ langPkg.cooperation }}</NuxtLink>
-            </li>
-            <li>
-              <NuxtLink :to="getTo('/about')">{{ langPkg.aboutUs }}</NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/">{{ langPkg.TechDoc }}</NuxtLink>
-            </li>
-          </ul>
+          <ClientOnly>
+            <ul>
+              <li v-for="_ in obj.menu" :key="_.label">
+                <NuxtLink :to="getTo(_.link)">{{ _.label }}</NuxtLink>
+              </li>
+            </ul>
+          </ClientOnly>
         </div>
       </div>
       <div :class="`${cls}_copyright`">
@@ -48,6 +35,7 @@
 <script setup>
 const cls = 'app-footer'
 const { langPkg, getTo } = useLangPkg()
+const obj = computed(() => langPkg.value.appFooter)
 </script>
 
 <style lang="less">

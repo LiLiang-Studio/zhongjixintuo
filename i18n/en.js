@@ -346,26 +346,26 @@ const homePage = {
   }
 }
 
+const menu = [
+  { label: 'Video', link: '/video' },
+  { label: 'AI', link: '/ai' },
+  { label: 'Enterprise', link: '/enterprise' },
+  { label: 'About Us', link: '/about' }
+]
+
+const appHeader = { menu }
+
+const appFooter = {
+  menu,
+  address: 'Room 1213-2, Unit 1, Floor 12, Building 2, No. 87, Building Materials City West Road, Changping District, Beijing'
+}
+
 export default {
+  appHeader,
+  appFooter,
   videoPage,
   aiPage,
   enterprisePage,
   aboutPage,
-  homePage,
-  video: 'Video',
-  ai: 'AI',
-  enterprise: 'Enterprise',
-  company: 'Company',
-  aiApp: 'AI Apply',
-  entEffectiveness: 'Enterprise Effectiveness',
-  cooperation: 'Cooperation',
-  aboutUs: 'About us',
-  TechDoc: 'Technical Documentation',
-  address: 'Room 1213-2, Unit 1, Floor 12, Building 2, No. 87, Building Materials City West Road, Changping District, Beijing',
-  navMenu: [
-    { label: 'Video', link: '/video' },
-    { label: 'AI', link: '/ai' },
-    { label: 'Enterprise', link: '/enterprise' },
-    { label: 'About Us', link: '/about' }
-  ]
+  homePage
 }

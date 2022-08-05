@@ -346,26 +346,26 @@ const homePage = {
   }
 }
 
+const menu = [
+  { label: '视频', link: '/video' },
+  { label: 'AI', link: '/ai' },
+  { label: '企业', link: '/enterprise' },
+  { label: '关于我们', link: '/about' }
+]
+
+const appHeader = { menu }
+
+const appFooter = {
+  menu,
+  address: '北京市昌平区建材城西路87号2号楼12层1单元1213-2室'
+}
+
 export default {
+  appHeader,
+  appFooter,
   videoPage,
   aiPage,
   enterprisePage,
   aboutPage,
-  homePage,
-  video: '视频',
-  ai: 'AI',
-  enterprise: '企业',
-  company: '公司',
-  aiApp: 'AI应用',
-  entEffectiveness: '企业效能',
-  cooperation: '合作',
-  aboutUs: '关于我们',
-  TechDoc: '技术文档',
-  address: '北京市昌平区建材城西路87号2号楼12层1单元1213-2室',
-  navMenu: [
-    { label: '视频', link: '/video' },
-    { label: 'AI', link: '/ai' },
-    { label: '企业', link: '/enterprise' },
-    { label: '关于我们', link: '/about' }
-  ]
+  homePage
 }

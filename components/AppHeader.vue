@@ -8,7 +8,7 @@
         </NuxtLink>
         <ClientOnly>
           <ul :class="`${cls}_nav`">
-            <li v-for="_ in langPkg.navMenu" :key="_.label" :class="`${cls}_nav_item`">
+            <li v-for="_ in obj.menu" :key="_.label" :class="`${cls}_nav_item`">
               <template v-if="_.children">
                 <span class="label">{{ _.label }}
                   <span class="arrow">&#8250;</span>
@@ -40,6 +40,7 @@
 <script setup>
 const cls = 'app-header'
 const { langPkg, isEn, switchLang, getTo } = useLangPkg()
+const obj = computed(() => langPkg.value.appHeader)
 </script>
 
 <style lang="less">
