@@ -6,9 +6,9 @@
       </template>
     </ui-row-card>
     <div :class="`${cls}_main`">
-      <home-business-introduction v-bind="langPkg.businessIntroduction" />
-      <home-partner v-bind="langPkg.partner" />
-      <home-why-choose-us v-bind="langPkg.whyChooseUs" />
+      <home-business-introduction v-bind="obj.businessIntroduction" />
+      <home-partner v-bind="obj.partner" />
+      <home-why-choose-us v-bind="obj.whyChooseUs" />
     </div>
   </div>
 </template>
@@ -16,6 +16,7 @@
 <script setup>
 const cls = 'page-home'
 const { langPkg } = useLangPkg()
+const obj = computed(() => langPkg.value.homePage)
 </script>
 
 <style lang="less">
