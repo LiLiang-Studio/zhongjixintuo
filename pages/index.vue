@@ -7,7 +7,7 @@
     </ui-row-card>
     <div :class="`${cls}_main`">
       <home-business-introduction v-bind="obj.businessIntroduction" />
-      <home-partner v-bind="obj.partner" />
+      <!-- <home-partner v-bind="obj.partner" /> -->
       <home-why-choose-us v-bind="obj.whyChooseUs" />
     </div>
   </div>
