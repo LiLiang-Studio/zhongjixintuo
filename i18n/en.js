@@ -5,7 +5,7 @@ const videoPage = {
   portraitBeauty: {
     title: 'Portrait beauty',
     subTitle: 'Medical Beauty Portrait Retouching',
-    desc: 'Through this technology, based on face detection, 68 feature points in key positions such as eyes, eyebrows, and corners of the mouth are accurately detected. Smooth, etc.;<br><br>Allows each part of the face to be finely adjusted, and the effect of applying makeup quickly can be achieved through beauty adjustment;'
+    desc: 'This technology is based on face detection, extracting 68 feature points for key positions such as eyes, eyebrows, mouth corners, etc. for accurate detection, whitening, skin resurfacing and other technical means to make people look more beautiful;<br><br> It can make detailed adjustments to various organs of the face, and then achieve the effect of quick makeup application through beauty adjustment;'
   },
   videoFilter: {
     title: 'Video filter',
@@ -13,11 +13,11 @@ const videoPage = {
   },
   faceEffect: {
     title: 'Face effect',
-    desc: 'Through the tracking of the face and head position;<br><br>Through interactive sticker rendering, video special effects such as animation face change, scene change, spoofing and ugliness are realized.'
+    desc: 'The face and head position can be tracked;<br><br>Through interactive sticker rendering, video effects such as animated face change, scene change, and spoofing are realized.'
   },
   cartoonDriver: {
     title: '3D cartoon driver',
-    desc: 'Use high-precision face key points and facial expressions to drive cartoon faces in real time; customize cartoon images; <br><br>Provide intimate and easy-to-use cartoon customization tools.'
+    desc: 'Use high-precision face key points to detect facial expressions to drive cartoon faces in real time, which can be customized to design cartoon images; <br><br>Provide intimate and easy-to-use cartoon customization tools.'
   },
   faceDetectionAlignment: {
     title: 'Face detection alignment',
@@ -48,7 +48,7 @@ const videoPage = {
     desc: 'It has high-definition and stable audio and video effects and clear and smooth data sharing and collaboration. Support mobile phone, computer, tablet, smart large screen, third-party conference terminal and other terminal access;<br><br>Provide customers with cloud conference solutions with full scene coverage, easy to use, rapid deployment, and integration of software and hardware .'
   },
   useCase: {
-    title: 'Use Cases',
+    title: 'what can we do?',
     items: [
       {
         img: S.imgVideoUseCase1,
@@ -64,6 +64,11 @@ const videoPage = {
         img: S.imgVideoUseCase3,
         title: 'Live platform',
         desc: 'In addition to the most basic beauty effects, you can also replace the live broadcast background wall in real time and add various atmospheric effects.'
+      },
+      {
+        img: S.imgVideoUseCase4,
+        title: 'Custom Development',
+        desc: 'Customized scene models, functional algorithms and other services can be implemented according to customer business needs.'
       }
     ]
   },
@@ -77,7 +82,7 @@ const videoPage = {
 const aiPage = {
   imageVideoClassification: {
     title: 'Image video classification',
-    desc: '"Image classification is an image processing method that distinguishes different types of objects according to the different characteristics reflected in the image information; <br><br>It uses a computer to quantitatively analyze the image, and classify the image or the image in the image. Each pixel or area is classified into one of several categories to replace human visual interpretation."'
+    desc: 'The so-called image segmentation refers to dividing the image into several disjoint regions according to features such as grayscale, color, spatial texture, geometric shape, etc.; <br><br>Make these features show consistency or similarity in the same region , and showed significant differences between different regions.'
   },
   AudioAndVideoEnhancement: {
     title: 'Audio and video enhancement',
@@ -107,7 +112,7 @@ const aiPage = {
     ]
   },
   useCase: {
-    title: 'Use Cases',
+    title: 'what can we do?',
     items: [
       {
         img: S.imgAiUseCase1,
@@ -123,6 +128,11 @@ const aiPage = {
         img: S.imgAiUseCase3,
         title: 'retail',
         desc: 'Advances in technologies such as image recognition, machine learning, and natural language processing have enabled intelligent service robots to easily greet and communicate with customers, predict orders, and provide guidance.'
+      },
+      {
+        img: S.imgAiUseCase4,
+        title: 'Custom Development',
+        desc: 'Customers put forward specific requirements to carry out demand analysis, back-end development, front-end, ui, testing, implementation of landing projects, etc.'
       }
     ]
   }
