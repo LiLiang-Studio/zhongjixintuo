@@ -29,7 +29,7 @@ const videoPage = {
   },
   virtualBackground: {
     title: 'Video virtual background',
-    desc: 'Separate the human agent from the background image through edge recognition, and replace it with optional background. <br><br>Background refers to something that is still in the scene.'
+    desc: 'According to customer needs, the video background can be customized to achieve flexible switching of various virtual backgrounds.'
   },
   fullPlatformSupport: {
     title: 'Full platform support',

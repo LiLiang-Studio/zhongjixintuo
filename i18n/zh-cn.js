@@ -29,7 +29,7 @@ const videoPage = {
   },
   virtualBackground: {
     title: '视频虚拟背景',
-    desc: '通过边缘识别将人工座席人员从背景画面分离出来，并可选背景进行替换。<br><br>背景指在场景中静止不动的景物。'
+    desc: '可根据客户需求，对视频背景进行自定义设置，实现多种虚拟背景灵活切换。'
   },
   fullPlatformSupport: {
     title: '全平台支持',
