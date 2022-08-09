@@ -12,7 +12,7 @@
         <img src="/images/video/banner2.jpg" alt="">
       </template>
     </UiRowCard>
-    <!-- <VideoQualityImprovement v-bind="obj.qualityImprovement" /> -->
+    <VideoQualityImprovement v-bind="obj.qualityImprovement" />
     <!-- 视频滤镜 -->
     <UiRowCard is-right v-bind="obj.videoFilter" :box-style="{left: '60%'}">
       <template #bg>

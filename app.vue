@@ -1,5 +1,8 @@
 <template>
   <div v-show="visible">
+    <Head>
+      <Link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    </Head>
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
