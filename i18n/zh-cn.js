@@ -270,9 +270,31 @@ const enterprisePage = {
   },
   unitedTechnologyInnovation: {
     title: '实现联合技术创新',
+    subTitle: '以云计算、大数据、人工智能等技术为支撑。',
     appName: '大数据应用系统',
-    desc: '以云计算、大数据、人工智能等技术为支撑。<br><br>构建大数据处理、服务、应用、标准规范、安全监控体系。<br><br>实现海量数据的处理、服务、查询检索以及分析挖掘，为数据价值的深化应用提供强有力的支撑。',
-    items: ['业务<br>系统', '管理<br>系统', '企业<br>数据', '运营<br>系统', '管控<br>系统']
+    desc: '构建大数据处理、服务、应用、标准规范、安全监控体系。<br><br>实现海量数据的处理、服务、查询检索以及分析挖掘，为数据价值的深化应用提供强有力的支撑。',
+    items: [
+      {
+        icon: S.iconEntIcon1,
+        title: '业务系统'
+      },
+      {
+        icon: S.iconEntIcon2,
+        title: '管理系统'
+      },
+      {
+        icon: S.iconEntIcon3,
+        title: '企业数据'
+      },
+      {
+        icon: S.iconEntIcon4,
+        title: '管控系统'
+      },
+      {
+        icon: S.iconEntIcon5,
+        title: '运营系统'
+      }
+    ]
   },
   iss: {
     title: '智能服务系统  提升企业效能',

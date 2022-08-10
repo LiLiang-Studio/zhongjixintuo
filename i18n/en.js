@@ -270,9 +270,31 @@ const enterprisePage = {
   },
   unitedTechnologyInnovation: {
     title: 'Realize joint technological innovation',
+    subTitle: 'Supported by cloud computing, big data, artificial intelligence and other technologies.',
     appName: 'big data application system',
-    desc: 'Supported by cloud computing, big data, artificial intelligence and other technologies. <br><br>Build big data processing, service, application, standard specification and security monitoring system. <br><br>Realize massive data processing, service, query retrieval and analysis mining, providing strong support for the deepening application of data value.',
-    items: ['business<br>system', 'management<br>system', 'Enterprise<br>data', 'Operating<br>system', 'control<br>system']
+    desc: 'Build big data processing, service, application, standard specification and security monitoring system. <br><br>Realize massive data processing, service, query retrieval and analysis mining, providing strong support for the deepening application of data value.',
+    items: [
+      {
+        icon: S.iconEntIcon1,
+        title: 'business system'
+      },
+      {
+        icon: S.iconEntIcon2,
+        title: 'management system'
+      },
+      {
+        icon: S.iconEntIcon3,
+        title: 'Enterprise data'
+      },
+      {
+        icon: S.iconEntIcon4,
+        title: 'control system'
+      },
+      {
+        icon: S.iconEntIcon5,
+        title: 'Operating system'
+      }
+    ]
   },
   iss: {
     title: 'Intelligent Service System Improves Enterprise Efficiency',
