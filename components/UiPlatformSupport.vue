@@ -5,15 +5,19 @@
     <ul :class="`${cls}_list`">
       <li>
         <img src="/images/ai/windows.png" alt="">
+        <div>Windows</div>
       </li>
       <li>
         <img src="/images/ai/ios.png" alt="">
+        <div>IOS</div>
       </li>
       <li>
         <img src="/images/ai/android.png" alt="">
+        <div>Android</div>
       </li>
       <li>
         <img src="/images/ai/linux.png" alt="">
+        <div>Linux</div>
       </li>
     </ul>
   </div>

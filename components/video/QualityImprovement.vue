@@ -22,8 +22,9 @@ const cls = 'video-quality-improvement'
 
 <style lang="less">
 .video-quality-improvement {
-  margin: 3rem 10%;
+  padding: 3rem 10%;
   text-align: center;
+  background: #f8f8f8;
   .titlebox {
     margin-bottom: 3rem;
   }
@@ -61,8 +62,8 @@ const cls = 'video-quality-improvement'
     }
   }
   @media screen and (max-width: 750px) {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 </style>
