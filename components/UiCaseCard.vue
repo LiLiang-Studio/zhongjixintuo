@@ -21,7 +21,6 @@ defineProps({
   padding-bottom: 1rem;
   border-radius: 6px;
   background-color: #fff;
-  box-shadow: 0px 12px 73px 0px rgba(239, 239, 239, 0.95);
   &_img {
     display: block;
     width: 100%;

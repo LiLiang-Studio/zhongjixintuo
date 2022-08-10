@@ -90,7 +90,7 @@ const aiPage = {
   },
   imageVideoRecognition: {
     title: '图像视频识别',
-    subTitle: '生活从未如此便捷',
+    subTitle: '智能时代引领未来',
     items: ['图像搜索', '智能生活', '信息采集']
   },
   naturalLanguageUnderstanding: {

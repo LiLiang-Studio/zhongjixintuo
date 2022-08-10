@@ -90,7 +90,7 @@ const aiPage = {
   },
   imageVideoRecognition: {
     title: 'Image video recognition',
-    subTitle: 'Life has never been easier',
+    subTitle: 'Intelligent era leads the future',
     items: ['image search', 'smart life', 'Information Collection']
   },
   naturalLanguageUnderstanding: {

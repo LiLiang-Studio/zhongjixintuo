@@ -19,10 +19,12 @@ const cls = 'ui-case-card-box'
 @prefix: ui-case-card-box;
 .@{prefix} {
   padding: 3rem 10%;
+  background: #3F7AF2;
   &_title {
     text-align: center;
     font-size: 2.4rem;
     margin-bottom: 3rem;
+    color: #fff;
   }
   &_list {
     display: flex;
