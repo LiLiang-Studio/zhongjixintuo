@@ -43,9 +43,10 @@ const cls = 'ent-united-technology-tnnovation'
   }
   &_title {
     font-size: 2.4rem;
+    margin-bottom: .3rem;
   }
   &_subTitle {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: normal;
   }
   &_list {
