@@ -1,11 +1,11 @@
 <template>
   <div :class="cls">
     <!-- 呼叫中心 banner -->
-    <UiRowCard v-bind="obj.banner">
+    <UiRow v-bind="obj.banner">
       <template #bg>
         <img src="/images/enterprise/banner.jpg" alt="">
       </template>
-    </UiRowCard>
+    </UiRow>
     <!-- 智能服务系统  提升企业效能 -->
     <UiBoxFour v-bind="obj.iss" show-dot>
       <template #img>
@@ -16,23 +16,23 @@
     <EntServiceCenter v-bind="obj.serviceCenter" />
 
     <!-- 大数据应用系统 banner -->
-    <UiRowCard :title="obj.bigDataAppSystem.title">
+    <UiRow :title="obj.bigDataAppSystem.title">
       <template #bg>
         <img src="/images/enterprise/big_data_app_system.jpg" alt="">
       </template>
       <UiTagList :items="obj.bigDataAppSystem.items" />
-    </UiRowCard>
+    </UiRow>
     <!-- 实现联合技术创新 -->
     <EntUnitedTechnologyInnovation v-bind="obj.unitedTechnologyInnovation" />
     <!-- 一站式平台，赋能企业提高线索转化率 -->
     <UiBoxTwo v-bind="obj.dataAnalysis" />
 
     <!-- 政企业务管理系统 banner -->
-    <UiRowCard v-bind="obj.gaeBms">
+    <UiRow v-bind="obj.gaeBms">
       <template #bg>
         <img src="/images/enterprise/gae_bms.jpg" alt="">
       </template>
-    </UiRowCard>
+    </UiRow>
     <!-- 做到“事事有反馈，件件有落实” -->
     <UiBoxFour v-bind="obj.gaeSystemSummary">
       <template #img>
