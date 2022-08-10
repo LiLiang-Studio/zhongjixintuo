@@ -2,12 +2,6 @@
   <div :class="cls">
     <div :class="`${cls}_banner`">
       <img class="img" src="/images/about/banner.jpg" alt="">
-      <div class="box">
-        <div>
-          <h2 class="title">{{ obj.banner.title }}</h2>
-          <p class="desc">{{ obj.banner.desc }}</p>
-        </div>
-      </div>
     </div>
     <div :class="`${cls}_about`">
       <img class="img" src="/images/about/about.jpg" alt="">
@@ -31,28 +25,6 @@ const obj = computed(() => langPkg.value.aboutPage)
     position: relative;
     .img {
       width: 100%;
-      max-height: 40rem;
-      object-fit: cover;
-    }
-    .box {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      text-align: center;
-    }
-    .title {
-      font-size: 2.8rem;
-      margin-bottom: 1rem;
-      font-weight: normal;
-    }
-    .desc {
-      font-size: 1.3rem;
     }
   }
   &_about {
@@ -62,7 +34,6 @@ const obj = computed(() => langPkg.value.aboutPage)
     .img {
       flex: 1;
       width: 0;
-      max-width: 30rem;
       object-fit: cover;
     }
     .box {
