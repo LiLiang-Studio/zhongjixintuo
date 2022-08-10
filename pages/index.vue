@@ -1,10 +1,6 @@
 <template>
   <div :class="cls">
-    <ui-row-card fixed-layout>
-      <template #bg>
-        <img :class="`${cls}_banner`" src="/images/home/banner1.jpg" alt="">
-      </template>
-    </ui-row-card>
+    <img src="/images/home/banner1.jpg" style="width:100%;">
     <div :class="`${cls}_main`">
       <home-business-introduction v-bind="obj.businessIntroduction" />
       <!-- <home-partner v-bind="obj.partner" /> -->

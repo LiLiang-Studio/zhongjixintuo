@@ -1,8 +1,6 @@
 <template>
   <div :class="cls">
-    <div :class="`${cls}_banner`">
-      <img class="img" src="/images/about/banner.jpg" alt="">
-    </div>
+    <img src="/images/about/banner.jpg" style="width:100%;">
     <div :class="`${cls}_about`">
       <img class="img" src="/images/about/about.jpg" alt="">
       <div class="box">
@@ -21,12 +19,6 @@ const obj = computed(() => langPkg.value.aboutPage)
 
 <style lang="less">
 .page-about {
-  &_banner {
-    position: relative;
-    .img {
-      width: 100%;
-    }
-  }
   &_about {
     padding: 3rem 10%;
     display: flex;

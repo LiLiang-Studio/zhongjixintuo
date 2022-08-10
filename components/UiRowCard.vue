@@ -1,8 +1,5 @@
 <template>
   <div :class="[cls, { 'is-fixed': fixedLayout }]">
-    <div :class="`${cls}_bg`">
-      <slot name="bg" />
-    </div>
     <div :class="[`${cls}_box`, { isRight }, boxClass]" :style="boxStyle">
       <div :class="`${cls}_titlebox`">
         <h2 v-if="title" :class="`${cls}_title`" v-html="title"></h2>
@@ -13,6 +10,9 @@
           <p :class="`${cls}_desc`" v-html="desc"></p>
         </slot>
       </div>
+    </div>
+    <div :class="`${cls}_bg`">
+      <slot name="bg" />
     </div>
   </div>
 </template>
@@ -33,21 +33,29 @@ const cls = 'ui-row-card'
 <style lang="less">
 @prefix: ui-row-card;
 .@{prefix} {
-  position: relative;
+  padding: 4rem 10%;
+  display: flex;
+  align-items: center;
+  &:nth-child(odd) {
+    background-color: #F8F8F8;
+    .@{prefix} {
+      &_box {
+        order: 1;
+        margin-right: 0;
+        margin-left: 3rem;
+      }
+    }
+  }
   &_bg img {
     width: 100%;
-    display: block;
+  }
+  &_bg {
+    width: 35%;
   }
   &_box {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 55%;
-    left: 10%;
-    &.isRight {
-      left: 55%;
-      right: 10%;
-    }
+    flex: 1;
+    width: 0;
+    margin-right: 3rem;
   }
   &_content {
     margin-top: 2rem;
@@ -69,44 +77,23 @@ const cls = 'ui-row-card'
   &_desc {
     line-height: 1.4;
   }
-  @media screen and (max-width: 1080px) {
-    .@{prefix}_title {
-      font-size: 2rem;
-    }
-    .@{prefix}_content {
-      margin-top: 1.6rem;
-    }
+  @media screen and (max-width: 1024px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
-  @media screen and (max-width: 930px) {
-    .@{prefix}_title {
-      font-size: 1.6rem;
-    }
-    .@{prefix}_subtitle {
-      font-size: 1.2rem;
-    }
-    .@{prefix}_content {
-      margin-top: 1.2rem;
-    }
-  }
-  &:not(.is-fixed) {
-    @media screen and (max-width: 750px) {
-      margin: 1rem;
-      border: 1px solid rgba(0, 0, 0, .12);
-      border-radius: 6px;
-      overflow: hidden;
-      // box-shadow: 0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px rgba(0, 0, 0, .14), 0 1px 3px rgba(0, 0, 0, .12);
-      .@{prefix} {
-        &_box {
-          position: static;
-          transform: none;
-          padding: 1rem;
-        }
-        &_title {
-          color: #424242;
-        }
-        &_content * {
-          color: #616161;
-        }
+  @media screen and (max-width: 600px) {
+    flex-wrap: wrap;
+    .@{prefix} {
+      &_bg, &_box {
+        width: 100%;
+      }
+      &_bg {
+        margin-bottom: 1rem;
+      }
+      &_box {
+        padding: 1rem;
+        order: 1;
+        margin: 0 !important;
       }
     }
   }

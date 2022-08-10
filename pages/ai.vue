@@ -1,33 +1,29 @@
 <template>
   <div>
     <!-- banner -->
-    <UiRowCard fixed-layout>
-      <template #bg>
-        <img src="/images/ai/banner1.jpg" alt="">
-      </template>
-    </UiRowCard>
+    <img src="/images/ai/banner1.jpg" style="width:100%;">
     <UiRowCard v-bind="obj.imageVideoRecognition">
       <template #bg>
-        <img src="/images/ai/banner2.jpg" alt="">
+        <img src="/images/ai/1.png" alt="">
       </template>
       <UiTagList :items="obj.imageVideoRecognition.items" />
     </UiRowCard>
     <!-- 图像视频分类 -->
     <UiRowCard is-right v-bind="obj.imageVideoClassification">
       <template #bg>
-        <img src="/images/ai/banner3.jpg" alt="">
+        <img src="/images/ai/2.png" alt="">
       </template>
     </UiRowCard>
     <!-- 音视频增强 -->
     <UiRowCard v-bind="obj.AudioAndVideoEnhancement">
       <template #bg>
-        <img src="/images/ai/banner4.jpg" alt="">
+        <img src="/images/ai/3.png" alt="">
       </template>
     </UiRowCard>
     <!-- 自然语言理解 -->
     <UiRowCard is-right v-bind="obj.naturalLanguageUnderstanding" :box-class="`${cls}_nau_box`">
       <template #bg>
-        <img src="/images/ai/banner5.jpg" alt="">
+        <img src="/images/ai/4.png" alt="">
       </template>
       <ul>
         <li v-for="_ in obj.naturalLanguageUnderstanding.items" :key="_.title">
@@ -42,7 +38,7 @@
     <!-- 文本机器人 -->
     <UiRowCard v-bind="obj.textRobot" :box-class="`${cls}_text_robot`">
       <template #bg>
-        <img src="/images/ai/banner6.jpg" alt="">
+        <img src="/images/ai/5.png" alt="">
       </template>
       <ul>
         <li v-for="_ in obj.textRobot.items" :key="_.title">
@@ -75,9 +71,6 @@ const videoPage = computed(() => langPkg.value.videoPage)
 <style lang="less">
 .page-ai {
   &_nau_box {
-    * {
-      color: #fff;
-    }
     ul {
       display: flex;
       justify-content: space-around;
@@ -97,7 +90,6 @@ const videoPage = computed(() => langPkg.value.videoPage)
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #9e9e9e;
         img {
           height: 2.5rem;
           object-fit: contain;
@@ -106,16 +98,12 @@ const videoPage = computed(() => langPkg.value.videoPage)
     }
   }
   &_text_robot {
-    p {
-      color: #616161;
-    }
     ul {
       display: flex;
       justify-content: space-around;
       text-align: center;
       margin: 2rem 0;
       font-size: .9rem;
-      color: #616161;
       img {
         height: 3rem;
       }
