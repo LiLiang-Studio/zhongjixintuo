@@ -33,7 +33,7 @@ const videoPage = {
   },
   fullPlatformSupport: {
     title: 'Full platform support',
-    desc: 'Zhongji Xintuo\'s advanced technology supports multiple platforms Windows/Android/ios/Linux<br><br>so you don\'t need to worry about the incompatibility of the device.'
+    desc: 'Zhongji Xintuo\'s advanced technology supports multiple platforms Windows/Android/ios/Linux<br>so you don\'t need to worry about the incompatibility of the device.'
   },
   qualityMms: {
     title: '5G Video Quality Monitoring Management System',

@@ -51,11 +51,7 @@
       <p v-html="obj.textRobot.desc"></p>
     </UiRowCard>
     <!-- 全平台支持 -->
-    <UiRowCard is-right v-bind="videoPage.fullPlatformSupport">
-      <template #bg>
-        <img src="/images/video/banner9.jpg" alt="">
-      </template>
-    </UiRowCard>
+    <UiPlatformSupport v-bind="videoPage.fullPlatformSupport" />
     <!-- 使用案例 -->
     <UiCaseCardBox v-bind="obj.useCase" />
   </div>

@@ -33,7 +33,7 @@ const videoPage = {
   },
   fullPlatformSupport: {
     title: '全平台支持',
-    desc: '中玑信拓的先进技术支持多个平台 Windows/Android/ios/Linux<br><br>让您无需为设备设备不兼容而烦恼。'
+    desc: '中玑信拓的先进技术支持多个平台 Windows/Android/ios/Linux<br>让您无需为设备设备不兼容而烦恼。'
   },
   qualityMms: {
     title: '5G 视频质量监测管理系统',
