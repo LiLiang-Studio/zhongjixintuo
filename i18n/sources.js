@@ -6,6 +6,7 @@ export const businessIntroductionItemBg1 = '/images/home/business_introduction_b
 export const businessIntroductionItemBg2 = '/images/home/business_introduction_bg2.png'
 export const businessIntroductionItemBg3 = '/images/home/business_introduction_bg3.png'
 
+export const videoEnhancement = '/videos/blur_to_clear.mp4'
 export const iconVideoEnhancement = '/images/home/video_enhancement_icon.png'
 export const imgAiApp = '/images/home/ai_apply.png'
 export const iconAiApp = '/images/home/ai_apply_icon.png'

@@ -353,6 +353,7 @@ const homePage = {
       {
         icon: S.iconVideoEnhancement,
         background: S.businessIntroductionItemBg1,
+        video: S.videoEnhancement,
         title: '视频增强',
         desc: '可迅速提升视频质量，美颜模块的主要功能是实现帮助视频中去除人脸上的斑、痘、毛孔、黑头等瑕疵;<br><br>使皮肤呈现出平整、光滑、红润、白皙等有质感的效果。'
       },

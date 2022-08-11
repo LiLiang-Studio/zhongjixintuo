@@ -352,6 +352,7 @@ const homePage = {
     items: [
       {
         icon: S.iconVideoEnhancement,
+        video: S.videoEnhancement,
         background: S.businessIntroductionItemBg1,
         title: 'Video enhancement',
         desc: 'It can quickly improve the video quality. The main function of the beauty module is to help remove spots, acne, pores, blackheads and other blemishes on the face in the video;<br><br>Make the skin appear smooth, smooth, rosy, fair and other textured. Effect.'

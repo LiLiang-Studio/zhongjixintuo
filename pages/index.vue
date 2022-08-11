@@ -18,10 +18,9 @@ const obj = computed(() => langPkg.value.homePage)
 <style lang="less">
 .page-home {
   &_main {
-    padding: 0 10%;
-    @media screen and (max-width: 750px) {
-      padding: 0 1rem;
-    }
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
   }
 }
 </style>

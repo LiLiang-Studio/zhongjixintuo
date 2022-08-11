@@ -1,18 +1,20 @@
 <template>
-  <div :class="[cls, { 'is-fixed': fixedLayout }]">
-    <div :class="[`${cls}_box`, { isRight }, boxClass]" :style="boxStyle">
-      <div :class="`${cls}_titlebox`">
-        <h2 v-if="title" :class="`${cls}_title`" v-html="title"></h2>
-        <h3 v-if="subTitle" :class="`${cls}_subtitle`">{{ subTitle }}</h3>
+  <div :class="cls">
+    <div :class="`${cls}_inner`">
+      <div :class="[`${cls}_box`, { isRight }, boxClass]" :style="boxStyle">
+        <div :class="`${cls}_titlebox`">
+          <h2 v-if="title" :class="`${cls}_title`" v-html="title"></h2>
+          <h3 v-if="subTitle" :class="`${cls}_subtitle`">{{ subTitle }}</h3>
+        </div>
+        <div v-if="$slots.default || desc" :class="`${cls}_content`">
+          <slot>
+            <p :class="`${cls}_desc`" v-html="desc"></p>
+          </slot>
+        </div>
       </div>
-      <div v-if="$slots.default || desc" :class="`${cls}_content`">
-        <slot>
-          <p :class="`${cls}_desc`" v-html="desc"></p>
-        </slot>
+      <div :class="`${cls}_bg`">
+        <slot name="bg" />
       </div>
-    </div>
-    <div :class="`${cls}_bg`">
-      <slot name="bg" />
     </div>
   </div>
 </template>
@@ -33,9 +35,7 @@ const cls = 'ui-row-card'
 <style lang="less">
 @prefix: ui-row-card;
 .@{prefix} {
-  padding: 4rem 10%;
-  display: flex;
-  align-items: center;
+  padding: 4rem 1rem;
   &:nth-child(odd) {
     background-color: #F8F8F8;
     .@{prefix} {
@@ -45,6 +45,13 @@ const cls = 'ui-row-card'
         margin-left: 3rem;
       }
     }
+  }
+  &_inner {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
   }
   &_bg img {
     width: 100%;
@@ -75,14 +82,9 @@ const cls = 'ui-row-card'
     font-family: 'Times New Roman', Times, serif;
   }
   &_desc {
-    line-height: 1.4;
-  }
-  @media screen and (max-width: 1024px) {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    line-height: 1.6;
   }
   @media screen and (max-width: 600px) {
-    flex-wrap: wrap;
     .@{prefix} {
       &_bg, &_box {
         width: 100%;

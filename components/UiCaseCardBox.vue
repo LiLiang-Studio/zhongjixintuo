@@ -1,8 +1,10 @@
 <template>
   <div :class="cls">
-    <h2 :class="`${cls}_title`">{{ title }}</h2>
-    <div :class="`${cls}_list`">
-      <UiCaseCard v-for="_ in items" :key="_.title" :class="`${cls}_item`" v-bind="_" />
+    <div :class="`${cls}_inner`">
+      <h2 :class="`${cls}_title`">{{ title }}</h2>
+      <div :class="`${cls}_list`">
+        <UiCaseCard v-for="_ in items" :key="_.title" :class="`${cls}_item`" v-bind="_" />
+      </div>
     </div>
   </div>
 </template>
@@ -18,8 +20,12 @@ const cls = 'ui-case-card-box'
 <style lang="less">
 @prefix: ui-case-card-box;
 .@{prefix} {
-  padding: 3rem 10%;
+  padding: 3rem .5rem;
   background: #3F7AF2;
+  &_inner {
+    max-width: 1200px;
+    margin: auto;
+  }
   &_title {
     text-align: center;
     font-size: 2.4rem;
@@ -28,26 +34,17 @@ const cls = 'ui-case-card-box'
   }
   &_list {
     display: flex;
+    flex-wrap: wrap;
   }
   &_item {
     flex: 1;
-    &:not(:last-child) {
-      margin-right: 3%;
-    }
-  }
-  @media screen and (max-width: 1024px) {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    margin: .5rem;
   }
   @media screen and (max-width: 750px) {
     .@{prefix} {
-      &_list {
-        flex-wrap: wrap;
-      }
       &_item {
-        width: 100%;
+        width: calc(50% - 1rem);
         flex: auto;
-        margin: .5rem 0 !important;
       }
     }
   }

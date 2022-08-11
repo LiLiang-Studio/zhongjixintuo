@@ -2,7 +2,10 @@
   <div :class="cls">
     <img :class="`${cls}_bg`" :src="background">
     <div :class="`${cls}_box`">
-      <img :class="`${cls}_image`" :src="image">
+      <div v-if="video" :class="`${cls}_video`">
+        <video :src="video" controls></video>
+      </div>
+      <img v-else :class="`${cls}_image`" :src="image">
       <img :class="`${cls}_icon`" :src="icon">
     </div>
   </div>
@@ -13,7 +16,7 @@ defineProps({
   icon: String,
   background: String,
   image: String,
-  isVideo: Boolean
+  video: String
 })
 const cls = 'home-business-item-image'
 </script>
@@ -31,6 +34,14 @@ const cls = 'home-business-item-image'
     padding: 0 1em;
     display: flex;
     align-items: center;
+  }
+  &_video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    video {
+      width: 85%;
+    }
   }
   &_image, &_bg {
     display: block;

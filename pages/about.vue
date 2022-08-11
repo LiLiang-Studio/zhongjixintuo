@@ -20,17 +20,14 @@ const obj = computed(() => langPkg.value.aboutPage)
 <style lang="less">
 .page-about {
   &_about {
-    padding: 3rem 10%;
-    display: flex;
-    align-items: stretch;
+    max-width: 1200px;
+    margin: auto;
+    padding: 3rem 1rem;
+    overflow: hidden;
     .img {
-      flex: 1;
-      width: 0;
-      object-fit: cover;
-    }
-    .box {
-      width: 50%;
-      margin-left: 3rem;
+      float: left;
+      width: 40%;
+      margin-right: 3%;
     }
     .title {
       font-size: 2.4rem;
@@ -39,16 +36,6 @@ const obj = computed(() => langPkg.value.aboutPage)
     .desc {
       line-height: 1.6;
       font-size: 1.1rem;
-    }
-    @media screen and (max-width: 750px) {
-      padding: 3rem 1rem;
-      .img {
-        display: none;
-      }
-      .box {
-        margin-left: 0;
-        width: 100%;
-      }
     }
   }
 }
