@@ -2,9 +2,7 @@
   <div :class="cls">
     <img :class="`${cls}_bg`" :src="background">
     <div :class="`${cls}_box`">
-      <div v-if="video" :class="`${cls}_video`">
-        <video :src="video" controls></video>
-      </div>
+      <iframe v-if="video" ref="myVideo" :src='video' scrolling='no' border='0' frameborder='no' framespacing='0' allowfullscreen='true'></iframe>
       <img v-else :class="`${cls}_image`" :src="image">
       <img :class="`${cls}_icon`" :src="icon">
     </div>
@@ -19,6 +17,22 @@ defineProps({
   video: String
 })
 const cls = 'home-business-item-image'
+const myVideo = ref()
+const onWinResize = async () => {
+  await nextTick()
+  /** @type {HTMLIFrameElement} */
+  const iframe = myVideo.value
+  if (iframe) {
+    iframe.style.height = (iframe.offsetWidth * 1080 / 1920) + 'px'
+  }
+}
+onMounted(() => {
+  setTimeout(onWinResize, 100)
+  window.addEventListener('resize', onWinResize)
+})
+onUnmounted(() => {
+  window.addEventListener('resize', onWinResize)
+})
 </script>
 
 <style lang="less">
@@ -34,14 +48,11 @@ const cls = 'home-business-item-image'
     padding: 0 1em;
     display: flex;
     align-items: center;
-  }
-  &_video {
-    display: flex;
-    align-items: center;
     justify-content: center;
-    video {
-      width: 85%;
-    }
+  }
+  iframe {
+    width: 520px;
+    max-width: 85%;
   }
   &_image, &_bg {
     display: block;

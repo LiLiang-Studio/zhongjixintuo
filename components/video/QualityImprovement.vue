@@ -6,7 +6,7 @@
         <h3 class="subtitle">{{ subTitle }}</h3>
       </div>
       <div class="video">
-        <video preload="metadata" controls src="/videos/blur_to_clear.mp4"></video>
+        <iframe ref="myVideo" src='//player.bilibili.com/player.html?bvid=BV1Ed4y1K7cq&cid=800149506&page=1&share_source=copy_web' scrolling='no' border='0' frameborder='no' framespacing='0' allowfullscreen='true'></iframe>
       </div>
       <p class="desc" v-html="desc"></p>
     </div>
@@ -20,6 +20,23 @@ defineProps({
   desc: String
 })
 const cls = 'video-quality-improvement'
+const myVideo = ref()
+const onWinResize = async () => {
+  await nextTick()
+  /** @type {HTMLIFrameElement} */
+  const iframe = myVideo.value
+  if (iframe) {
+    iframe.style.height = (iframe.offsetWidth * 1080 / 1920) + 'px'
+  }
+}
+onMounted(() => {
+  setTimeout(onWinResize, 100)
+  onWinResize()
+  window.addEventListener('resize', onWinResize)
+})
+onUnmounted(() => {
+  window.addEventListener('resize', onWinResize)
+})
 </script>
 
 <style lang="less">
@@ -51,9 +68,9 @@ const cls = 'video-quality-improvement'
     margin-top: 2rem;
     font-size: 1.2rem;
   }
-  video {
+  iframe {
     width: 100%;
-    max-width: 1000px;
+    max-width: 520px;
   }
 }
 </style>
