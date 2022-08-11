@@ -46,7 +46,7 @@ const obj = computed(() => langPkg.value.appHeader)
 <style lang="less">
 @prefix: app-header;
 .@{prefix} {
-  padding: 20px 10%;
+  padding: 1rem;
   position: sticky;
   top: 0;
   right: 0;
@@ -60,6 +60,8 @@ const obj = computed(() => langPkg.value.appHeader)
   &_inner {
     display: flex;
     align-items: center;
+    max-width: 1200px;
+    margin: auto;
   }
   &_left {
     flex: 1;
@@ -130,7 +132,6 @@ const obj = computed(() => langPkg.value.appHeader)
     }
   }
   @media screen and (max-width: 750px) {
-    padding: 1rem;
     .@{prefix} {
       &_logo {
         &.full {

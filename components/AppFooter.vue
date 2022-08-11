@@ -41,10 +41,14 @@ const obj = computed(() => langPkg.value.appFooter)
 <style lang="less">
 @prefix: app-footer;
 .@{prefix} {
-  padding: 3rem 10%;
+  padding: 3rem 1rem;
   background: url("/images/footer_bg.jpg") no-repeat center center;
   background-size: cover;
   color: #fff;
+  &_inner {
+    max-width: 1200px;
+    margin: auto;
+  }
   &_logo {
     text-align: center;
     margin-bottom: 1.5rem;
