@@ -34,7 +34,7 @@ const cls = 'ui-box-two'
     padding: 0 1rem;
   }
   &_inner {
-    padding: 2rem 1rem;
+    padding: 2rem .5rem;
     background: #F5FAFF;
   }
   &_list {
@@ -68,8 +68,6 @@ const cls = 'ui-box-two'
     .@{prefix} {
       &_item {
         width: 100%;
-        margin-left: 0;
-        margin-right: 0;
         margin-bottom: 2rem;
       }
     }

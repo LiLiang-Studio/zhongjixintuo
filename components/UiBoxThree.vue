@@ -36,7 +36,7 @@ const cls = 'ui-box-three'
     padding: 0 1rem;
   }
   &_inner {
-    padding: 0 1rem;
+    padding: 0 .5rem;
   }
   &_list {
     display: flex;
@@ -64,10 +64,6 @@ const cls = 'ui-box-three'
       text-align: center;
     }
   }
-  @media screen and (max-width: 1024px) {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
   @media screen and (max-width: 750px) {
     .@{prefix}_item {
       width: calc(50% - 1rem);
@@ -76,8 +72,6 @@ const cls = 'ui-box-three'
   @media screen and (max-width: 480px) {
     .@{prefix}_item {
       width: 100%;
-      margin-left: 0;
-      margin-right: 0;
     }
   }
 }
