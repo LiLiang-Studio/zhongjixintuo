@@ -1,13 +1,15 @@
 <template>
   <div :class="cls">
-    <h2 :class="`${cls}_title`">{{ title }}</h2>
-    <div :class="`${cls}_box`">
-      <div :class="`${cls}_img`">
-        <slot name="img" />
+    <div :class="`${cls}_inner`">
+      <h2 :class="`${cls}_title`">{{ title }}</h2>
+      <div :class="`${cls}_box`">
+        <div :class="`${cls}_img`">
+          <slot name="img" />
+        </div>
+        <ul :class="`${cls}_list`">
+          <li v-for="_ in items" :key="_" :class="[`${cls}_item`, { 'show-dot': showDot }]">{{ _ }}</li>
+        </ul>
       </div>
-      <ul :class="`${cls}_list`">
-        <li v-for="_ in items" :key="_" :class="[`${cls}_item`, { 'show-dot': showDot }]">{{ _ }}</li>
-      </ul>
     </div>
   </div>
 </template>
@@ -24,7 +26,11 @@ const cls = 'ui-box-four'
 <style lang="less">
 @prefix: ui-box-four;
 .@{prefix} {
-  padding: 3rem 10% 0;
+  padding: 3rem 1rem 0;
+  &_inner {
+    max-width: 1200px;
+    margin: auto;
+  }
   &_title {
     font-size: 2rem;
     margin-bottom: 3rem;
@@ -35,7 +41,7 @@ const cls = 'ui-box-four'
     align-items: center;
   }
   &_img {
-    width: 36%;
+    width: 35%;
     margin-right: 3rem;
     img {
       width: 100%;
@@ -63,10 +69,6 @@ const cls = 'ui-box-four'
         background: #1E64FF;
       }
     }
-  }
-  @media screen and (max-width: 1024px) {
-    padding-left: 1rem;
-    padding-right: 1rem;
   }
   @media screen and (max-width: 500px) {
     .@{prefix} {

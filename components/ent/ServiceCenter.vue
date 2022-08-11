@@ -1,13 +1,15 @@
 <template>
   <div :class="cls">
-    <h2 :class="`${cls}_title`">{{ title }}</h2>
-    <ul :class="`${cls}_list`">
-      <li v-for="_ in items" :key="_.title">
-        <img class="icon" :src="_.icon" alt="">
-        <h3 class="title">{{ _.title }}</h3>
-        <p class="desc">{{ _.desc }}</p>
-      </li>
-    </ul>
+    <div :class="`${cls}_inner`">
+      <h2 :class="`${cls}_title`">{{ title }}</h2>
+      <ul :class="`${cls}_list`">
+        <li v-for="_ in items" :key="_.title">
+          <img class="icon" :src="_.icon" alt="">
+          <h3 class="title">{{ _.title }}</h3>
+          <p class="desc">{{ _.desc }}</p>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -22,7 +24,11 @@ const cls = 'ent-service-center'
 <style lang="less">
 @prefix: ent-service-center;
 .@{prefix} {
-  padding: 3rem 10%;
+  padding: 3rem .5rem;
+  &_inner {
+    max-width: 1200px;
+    margin: auto;
+  }
   &_title {
     font-size: 2rem;
     text-align: center;
@@ -52,10 +58,6 @@ const cls = 'ent-service-center'
     text-align: left;
     color: #616161;
     line-height: 1.6;
-  }
-  @media screen and (max-width: 1024px) {
-    padding-left: 1rem;
-    padding-right: 1rem;
   }
   @media screen and (max-width: 750px) {
     .@{prefix}_list {

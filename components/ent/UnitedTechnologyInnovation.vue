@@ -1,20 +1,22 @@
 <template>
   <div :class="cls">
-    <div :class="`${cls}_box`">
-      <div :class="`${cls}_titleBox`">
-        <h2 :class="`${cls}_title`">{{ title }}</h2>
-        <h3 :class="`${cls}_subTitle`">{{ subTitle }}</h3>
+    <div :class="`${cls}_inner`">
+      <div :class="`${cls}_box`">
+        <div :class="`${cls}_titleBox`">
+          <h2 :class="`${cls}_title`">{{ title }}</h2>
+          <h3 :class="`${cls}_subTitle`">{{ subTitle }}</h3>
+        </div>
+        <ul :class="`${cls}_list`">
+          <li v-for="_ in items" :key="_.title">
+            <img :src="_.icon" alt="">
+            <div>{{ _.title }}</div>
+          </li>
+        </ul>
       </div>
-      <ul :class="`${cls}_list`">
-        <li v-for="_ in items" :key="_.title">
-          <img :src="_.icon" alt="">
-          <div>{{ _.title }}</div>
-        </li>
-      </ul>
-    </div>
-    <div :class="`${cls}_flexbox`">
-      <p :class="`${cls}_desc`" v-html="desc"></p>
-      <img :class="`${cls}_img`" src="/images/enterprise/big_data.jpg" alt="">
+      <div :class="`${cls}_flexbox`">
+        <p :class="`${cls}_desc`" v-html="desc"></p>
+        <img :class="`${cls}_img`" src="/images/enterprise/big_data.jpg" alt="">
+      </div>
     </div>
   </div>
 </template>
@@ -33,7 +35,11 @@ const cls = 'ent-united-technology-tnnovation'
 <style lang="less">
 @prefix: ent-united-technology-tnnovation;
 .@{prefix} {
-  padding: 3rem 10% 0;
+  padding: 3rem 1rem 0;
+  &_inner {
+    max-width: 1200px;
+    margin: auto;
+  }
   &_box {
     text-align: center;
     margin-bottom: 3rem;
@@ -70,10 +76,6 @@ const cls = 'ent-united-technology-tnnovation'
   }
   &_img {
     width: 35%;
-  }
-  @media screen and (max-width: 1024px) {
-    padding-left: 1rem;
-    padding-right: 1rem;
   }
   @media screen and (max-width: 500px) {
     .@{prefix} {
