@@ -52,6 +52,7 @@ const cls = 'ui-row'
   &_content {
     margin-top: 2rem;
     color: #616161;
+    font-size: 1.1rem;
   }
   &_title {
     font-size: 2.4rem;
@@ -69,43 +70,17 @@ const cls = 'ui-row'
   &_desc {
     line-height: 1.4;
   }
-  @media screen and (max-width: 1080px) {
-    .@{prefix}_title {
-      font-size: 2rem;
-    }
-    .@{prefix}_content {
-      margin-top: 1.6rem;
-    }
-  }
-  @media screen and (max-width: 930px) {
-    .@{prefix}_title {
-      font-size: 1.6rem;
-    }
-    .@{prefix}_subtitle {
-      font-size: 1.2rem;
-    }
-    .@{prefix}_content {
-      margin-top: 1.2rem;
-    }
-  }
   &:not(.is-fixed) {
     @media screen and (max-width: 750px) {
       margin: 1rem;
       border: 1px solid rgba(0, 0, 0, .12);
       border-radius: 6px;
       overflow: hidden;
-      // box-shadow: 0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px rgba(0, 0, 0, .14), 0 1px 3px rgba(0, 0, 0, .12);
       .@{prefix} {
         &_box {
           position: static;
           transform: none;
           padding: 1rem;
-        }
-        &_title {
-          color: #424242;
-        }
-        &_content * {
-          color: #616161;
         }
       }
     }
