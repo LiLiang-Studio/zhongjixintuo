@@ -62,7 +62,6 @@ const obj = computed(() => langPkg.value.appFooter)
     align-items: center;
     justify-content: space-between;
     padding: 3rem 0;
-    max-width: 1000px;
     @media screen and (max-width: 600px) {
       flex-wrap: wrap;
       padding: 1rem 0;
