@@ -42,8 +42,7 @@ const obj = computed(() => langPkg.value.appFooter)
 @prefix: app-footer;
 .@{prefix} {
   padding: 3rem 1rem;
-  background: url("/images/footer_bg.jpg") no-repeat center center;
-  background-size: cover;
+  background: #2f363c;
   color: #fff;
   &_inner {
     max-width: 1200px;
@@ -61,7 +60,9 @@ const obj = computed(() => langPkg.value.appFooter)
     border-bottom: 1px solid rgba(255, 255, 255, .3);
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 3rem 0;
+    max-width: 1000px;
     @media screen and (max-width: 600px) {
       flex-wrap: wrap;
       padding: 1rem 0;
