@@ -6,7 +6,7 @@ export const businessIntroductionItemBg1 = '/images/home/business_introduction_b
 export const businessIntroductionItemBg2 = '/images/home/business_introduction_bg2.png'
 export const businessIntroductionItemBg3 = '/images/home/business_introduction_bg3.png'
 
-export const videoEnhancement = '//player.bilibili.com/player.html?bvid=BV1Ed4y1K7cq&cid=800149506&page=1&share_source=copy_web'
+export const videoEnhancement = '//player.bilibili.com/player.html?aid=984454064&bvid=BV1zt4y1g7gU&cid=800959361&page=1'
 export const iconVideoEnhancement = '/images/home/video_enhancement_icon.png'
 export const imgAiApp = '/images/home/ai_apply.png'
 export const iconAiApp = '/images/home/ai_apply_icon.png'

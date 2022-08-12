@@ -7,9 +7,14 @@
         <img src="/images/video/1.png" alt="">
       </template>
     </UiRowCard>
-    <VideoQualityImprovement v-bind="obj.qualityImprovement" />
+    <!-- 视频质量提升 -->
+    <UiRowCard v-bind="obj.qualityImprovement">
+      <template #bg>
+        <iframe ref="myVideo" src='//player.bilibili.com/player.html?bvid=BV1Ed4y1K7cq&cid=800149506&page=1&share_source=copy_web' scrolling='no' border='0' frameborder='no' framespacing='0' allowfullscreen='true'></iframe>
+      </template>
+    </UiRowCard>
     <!-- 视频滤镜 -->
-    <UiRowCard is-right v-bind="obj.videoFilter">
+    <UiRowCard v-bind="obj.videoFilter">
       <template #bg>
         <img src="/images/video/2.png" alt="">
       </template>
@@ -22,7 +27,7 @@
       </template>
     </UiRowCard>
     <!-- 3D卡通驱动 -->
-    <UiRowCard is-right v-bind="obj.cartoonDriver">
+    <UiRowCard v-bind="obj.cartoonDriver">
       <template #bg>
         <img src="/images/video/4.png" alt="">
       </template>
@@ -34,7 +39,7 @@
       </template>
     </UiRowCard>
     <!-- 视频人脸识别 -->
-    <UiRowCard is-right v-bind="obj.faceRecognition">
+    <UiRowCard v-bind="obj.faceRecognition">
       <template #bg>
         <img src="/images/video/6.png" alt="">
       </template>
@@ -48,7 +53,7 @@
     <!-- 全平台支持 -->
     <UiPlatformSupport style="background:#fff;" v-bind="obj.fullPlatformSupport" />
     <!-- 5G视频质量监测管理系统 -->
-    <UiRowCard is-right v-bind="obj.qualityMms">
+    <UiRowCard v-bind="obj.qualityMms">
       <template #bg>
         <img src="/images/video/8.png" alt="">
       </template>
@@ -60,7 +65,7 @@
       </template>
     </UiRowCard>
     <!-- 高清视频会议系统 -->
-    <UiRowCard is-right v-bind="obj.conferenceSystem">
+    <UiRowCard v-bind="obj.conferenceSystem">
       <template #bg>
         <img src="/images/video/10.png" alt="">
       </template>
@@ -74,4 +79,22 @@
 const cls = 'page-video'
 const { langPkg } = useLangPkg()
 const obj = computed(() => langPkg.value.videoPage)
+
+const myVideo = ref()
+const onWinResize = async () => {
+  await nextTick()
+  /** @type {HTMLIFrameElement} */
+  const iframe = myVideo.value
+  if (iframe) {
+    iframe.style.height = (iframe.offsetWidth * 1080 / 1920) + 'px'
+  }
+}
+onMounted(() => {
+  setTimeout(onWinResize, 100)
+  onWinResize()
+  window.addEventListener('resize', onWinResize)
+})
+onUnmounted(() => {
+  window.addEventListener('resize', onWinResize)
+})
 </script>

@@ -1,7 +1,7 @@
 <template>
   <div :class="cls">
     <div :class="`${cls}_inner`">
-      <div :class="[`${cls}_box`, { isRight }, boxClass]" :style="boxStyle">
+      <div :class="[`${cls}_box`, boxClass]" :style="boxStyle">
         <div :class="`${cls}_titlebox`">
           <h2 v-if="title" :class="`${cls}_title`" v-html="title"></h2>
           <h3 v-if="subTitle" :class="`${cls}_subtitle`">{{ subTitle }}</h3>
@@ -25,9 +25,7 @@ defineProps({
   subTitle: String,
   desc: String,
   boxClass: String,
-  boxStyle: {},
-  isRight: Boolean,
-  fixedLayout: Boolean
+  boxStyle: {}
 })
 const cls = 'ui-row-card'
 </script>
@@ -58,6 +56,11 @@ const cls = 'ui-row-card'
   }
   &_bg {
     width: 35%;
+    text-align: center;
+    iframe {
+      width: 100%;
+      max-width: 520px;
+    }
   }
   &_box {
     flex: 1;
@@ -88,9 +91,6 @@ const cls = 'ui-row-card'
     .@{prefix} {
       &_bg, &_box {
         width: 100%;
-      }
-      &_bg {
-        margin-bottom: 1rem;
       }
       &_box {
         padding: 1rem;
