@@ -355,7 +355,7 @@ const homePage = {
         background: S.businessIntroductionItemBg1,
         video: S.videoEnhancement,
         title: '视频增强',
-        desc: '可迅速提升视频质量，美颜模块的主要功能是实现帮助视频中去除人脸上的斑、痘、毛孔、黑头等瑕疵;<br><br>使皮肤呈现出平整、光滑、红润、白皙等有质感的效果。'
+        desc: '中玑信拓视频技术可迅速提升视频质量、为视频添加美颜滤镜、3D卡通虚拟形象、视频人脸特效、视频虚拟背景替换等；<br><br>可实现视频画面实时捕捉跟踪、精准抠图、实时渲染、精确度较高，可根据需求进行定制开发；'
       },
       {
         icon: S.iconAiApp,
