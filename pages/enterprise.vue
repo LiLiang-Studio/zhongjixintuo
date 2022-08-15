@@ -48,4 +48,6 @@
 const cls = 'page-enterprise'
 const { langPkg } = useLangPkg()
 const obj = computed(() => langPkg.value.enterprisePage)
+
+useHead({ title: '企业' })
 </script>

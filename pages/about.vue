@@ -15,6 +15,8 @@
 const cls = 'page-about'
 const { langPkg } = useLangPkg()
 const obj = computed(() => langPkg.value.aboutPage)
+
+useHead({ title: '关于我们' })
 </script>
 
 <style lang="less">

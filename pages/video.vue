@@ -80,6 +80,8 @@ const cls = 'page-video'
 const { langPkg } = useLangPkg()
 const obj = computed(() => langPkg.value.videoPage)
 
+useHead({ title: '视频' })
+
 const myVideo = ref()
 const onWinResize = async () => {
   await nextTick()

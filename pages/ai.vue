@@ -62,6 +62,8 @@ const cls = 'page-ai'
 const { langPkg } = useLangPkg()
 const obj = computed(() => langPkg.value.aiPage)
 const videoPage = computed(() => langPkg.value.videoPage)
+
+useHead({ title: 'AI' })
 </script>
 
 <style lang="less">

@@ -13,6 +13,8 @@
 const cls = 'page-home'
 const { langPkg } = useLangPkg()
 const obj = computed(() => langPkg.value.homePage)
+
+useHead({ title: '首页' })
 </script>
 
 <style lang="less">
