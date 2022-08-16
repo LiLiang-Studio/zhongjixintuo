@@ -3,7 +3,11 @@
     <div :class="`${cls}_inner`">
       <h2 :class="`${cls}_title`">{{ title }}</h2>
       <div :class="`${cls}_list`">
-        <UiCaseCard v-for="_ in items" :key="_.title" :class="`${cls}_item`" v-bind="_" />
+        <div v-for="_ in items" :key="_.title" :class="`${cls}_item`">
+          <img class="img" :src="_.img" alt="">
+          <h3 class="title">{{ _.title }}</h3>
+          <p class="`desc">{{ _.desc }}</p>
+        </div>
       </div>
     </div>
   </div>
@@ -39,6 +43,21 @@ const cls = 'ui-case-card-box'
   &_item {
     flex: 1;
     margin: .5rem;
+    padding: .6rem;
+    padding-bottom: 1rem;
+    border-radius: 6px;
+    background-color: #fff;
+    .img {
+      display: block;
+      width: 100%;
+    }
+    .title {
+      font-size: 1.2rem;
+      margin: 1rem 0;
+    }
+    .desc {
+      color: #616161;
+    }
   }
   @media screen and (max-width: 750px) {
     .@{prefix} {
