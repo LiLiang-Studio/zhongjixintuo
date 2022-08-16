@@ -1,4 +1,4 @@
-import * as S from './sources'
+import S from './sources'
 
 const videoPage = {
   bannerTitle: '我们能<br>做些什么？',

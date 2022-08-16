@@ -1,53 +1,55 @@
-export const iconFunc = '/images/home/function.png'
-export const iconTeam = '/images/home/team.png'
-export const iconService = '/images/home/service.png'
+export default {
+  iconFunc: '/images/home/function.png',
+  iconTeam: '/images/home/team.png',
+  iconService: '/images/home/service.png',
 
-export const businessIntroductionItemBg1 = '/images/home/business_introduction_bg1.png'
-export const businessIntroductionItemBg2 = '/images/home/business_introduction_bg2.png'
-export const businessIntroductionItemBg3 = '/images/home/business_introduction_bg3.png'
+  businessIntroductionItemBg1: '/images/home/business_introduction_bg1.png',
+  businessIntroductionItemBg2: '/images/home/business_introduction_bg2.png',
+  businessIntroductionItemBg3: '/images/home/business_introduction_bg3.png',
 
-export const videoEnhancement = '//player.bilibili.com/player.html?aid=984454064&bvid=BV1zt4y1g7gU&cid=800959361&page=1'
-export const iconVideoEnhancement = '/images/home/video_enhancement_icon.png'
-export const imgAiApp = '/images/home/ai_apply.png'
-export const iconAiApp = '/images/home/ai_apply_icon.png'
-export const imgEntEffectiveness = '/images/home/ent_effectiveness.png'
-export const iconEntEffectiveness = '/images/home/ent_effectiveness_icon.png'
+  videoEnhancement: '//player.bilibili.com/player.html?aid=984454064&bvid=BV1zt4y1g7gU&cid=800959361&page=1',
+  iconVideoEnhancement: '/images/home/video_enhancement_icon.png',
+  imgAiApp: '/images/home/ai_apply.png',
+  iconAiApp: '/images/home/ai_apply_icon.png',
+  imgEntEffectiveness: '/images/home/ent_effectiveness.png',
+  iconEntEffectiveness: '/images/home/ent_effectiveness_icon.png',
 
-export const imgVideoUseCase1 = '/images/video/case-1.jpg'
-export const imgVideoUseCase2 = '/images/video/case-2.jpg'
-export const imgVideoUseCase3 = '/images/video/case-3.jpg'
-export const imgVideoUseCase4 = '/images/video/case-4.jpg'
+  imgVideoUseCase1: '/images/video/case-1.jpg',
+  imgVideoUseCase2: '/images/video/case-2.jpg',
+  imgVideoUseCase3: '/images/video/case-3.jpg',
+  imgVideoUseCase4: '/images/video/case-4.jpg',
 
-export const iconAiTranslation = '/images/ai/translation.png'
-export const iconAiService = '/images/ai/service.png'
-export const iconAiSpeaker = '/images/ai/speaker.png'
-export const iconAi24Hours = '/images/ai/24hours.png'
-export const iconAiPos = '/images/ai/pos.png'
-export const iconAiPersons = '/images/ai/persons.png'
+  iconAiTranslation: '/images/ai/translation.png',
+  iconAiService: '/images/ai/service.png',
+  iconAiSpeaker: '/images/ai/speaker.png',
+  iconAi24Hours: '/images/ai/24hours.png',
+  iconAiPos: '/images/ai/pos.png',
+  iconAiPersons: '/images/ai/persons.png',
 
-export const imgAiUseCase1 = '/images/ai/case-1.jpg'
-export const imgAiUseCase2 = '/images/ai/case-2.jpg'
-export const imgAiUseCase3 = '/images/ai/case-3.jpg'
-export const imgAiUseCase4 = '/images/ai/case-4.jpg'
+  imgAiUseCase1: '/images/ai/case-1.jpg',
+  imgAiUseCase2: '/images/ai/case-2.jpg',
+  imgAiUseCase3: '/images/ai/case-3.jpg',
+  imgAiUseCase4: '/images/ai/case-4.jpg',
 
-export const iconEntCloud = '/images/enterprise/cloud.png'
-export const iconEntConnect = '/images/enterprise/connect.png'
-export const iconEntExtend = '/images/enterprise/extend.png'
-export const iconEntIntelligent = '/images/enterprise/intelligent.png'
-export const iconEntMedia = '/images/enterprise/media.png'
-export const iconEntSafety = '/images/enterprise/safety.png'
-export const iconEntSeat = '/images/enterprise/seat.png'
-export const iconEntUpdate = '/images/enterprise/update.png'
+  iconEntCloud: '/images/enterprise/cloud.png',
+  iconEntConnect: '/images/enterprise/connect.png',
+  iconEntExtend: '/images/enterprise/extend.png',
+  iconEntIntelligent: '/images/enterprise/intelligent.png',
+  iconEntMedia: '/images/enterprise/media.png',
+  iconEntSafety: '/images/enterprise/safety.png',
+  iconEntSeat: '/images/enterprise/seat.png',
+  iconEntUpdate: '/images/enterprise/update.png',
 
-export const imgEntCommentAnalysis = '/images/enterprise/comment_analysis.jpg'
-export const imgEntHotPointAnalysis = '/images/enterprise/hot_point_analysis.jpg'
-export const imgEntIncomingCall = '/images/enterprise/incoming_call.jpg'
-export const imgEntSpeechAnalysis = '/images/enterprise/speech_analysis.jpg'
-export const imgEntRootClustering = '/images/enterprise/root_clustering.jpg'
-export const imgEntInformation = '/images/enterprise/information.jpg'
+  imgEntCommentAnalysis: '/images/enterprise/comment_analysis.jpg',
+  imgEntHotPointAnalysis: '/images/enterprise/hot_point_analysis.jpg',
+  imgEntIncomingCall: '/images/enterprise/incoming_call.jpg',
+  imgEntSpeechAnalysis: '/images/enterprise/speech_analysis.jpg',
+  imgEntRootClustering: '/images/enterprise/root_clustering.jpg',
+  imgEntInformation: '/images/enterprise/information.jpg',
 
-export const iconEntIcon1 = '/images/enterprise/icon_1.png'
-export const iconEntIcon2 = '/images/enterprise/icon_2.png'
-export const iconEntIcon3 = '/images/enterprise/icon_3.png'
-export const iconEntIcon4 = '/images/enterprise/icon_4.png'
-export const iconEntIcon5 = '/images/enterprise/icon_5.png'
+  iconEntIcon1: '/images/enterprise/icon_1.png',
+  iconEntIcon2: '/images/enterprise/icon_2.png',
+  iconEntIcon3: '/images/enterprise/icon_3.png',
+  iconEntIcon4: '/images/enterprise/icon_4.png',
+  iconEntIcon5: '/images/enterprise/icon_5.png'
+}
