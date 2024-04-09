@@ -338,7 +338,7 @@ const homePage = {
       {
         icon: S.iconTeam,
         title: 'trusted team',
-        desc: 'The company has a total of more than 50 developers, with full support;'
+        desc: 'The company has a total of more than 20 developers, with full support;'
       },
       {
         icon: S.iconService,
@@ -390,7 +390,7 @@ const appHeader = { menu }
 
 const appFooter = {
   menu,
-  address: 'Room 1213-2, Unit 1, Floor 12, Building 2, No. 87, Building Materials City West Road, Changping District, Beijing'
+  address: 'Room 601, No. 99 Yanmi Road, Xitiangezhuang Town, Miyun District, Beijing'
 }
 
 export default {

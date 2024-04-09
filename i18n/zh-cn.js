@@ -338,7 +338,7 @@ const homePage = {
       {
         icon: S.iconTeam,
         title: '值得信赖的团队',
-        desc: '公司共有50余名开发人员，全力支撑；'
+        desc: '公司共有20余名开发人员，全力支撑；'
       },
       {
         icon: S.iconService,
@@ -390,7 +390,7 @@ const appHeader = { menu }
 
 const appFooter = {
   menu,
-  address: '北京市昌平区建材城西路87号2号楼12层1单元1213-2室'
+  address: '北京市密云区西田各庄镇雁密路99号601室'
 }
 
 export default {
